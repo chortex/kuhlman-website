@@ -1,0 +1,204 @@
+
+html {
+  scroll-behavior: initial !important;
+}
+/* body {padding-top: 70px;} */
+/* Header */
+.navbar .navbar-nav .nav-link:hover {
+  color: #444444;
+}
+.container {
+  max-width: 90% !important;
+}
+/* DO NOT FORGET TO FIX RESPONSIVE ON HOME PAGE */
+@media only screen and (min-width: 960px) {
+  .navbar .navbar-nav .nav-link {
+    padding: 1em 0.7em;
+  }
+  .navbar {
+    padding: 0;
+  }
+  .navbar .navbar-brand {
+    padding: 0 0.7em;
+  }
+}
+.navbar .navbar-nav .nav-link {
+  position: relative;
+}
+.navbar .navbar-nav .nav-link::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-color: #444444;
+  color: transparent;
+  width: 0%;
+  content: '';
+  height: 3px;
+  transition: all 0.5s;
+}
+.navbar .navbar-nav .nav-link:hover::after {
+  width: 60%;
+}
+.navbar-light .navbar-nav .active::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60%;
+  content: " ";
+  border-bottom: 3px solid #444444;
+}
+
+/* Footeer */
+.privacy-policy-link:hover {
+  color: #444 !important;
+}
+.footer-social {
+  padding: 0 8px;
+  color: #bbb;
+}
+.footer-social:hover {
+  color: #444;
+}
+
+/* Jumbotron */
+.jumbo {
+  background: url(./assets/image.png) no-repeat fixed bottom;
+  background-size: cover;
+  color: #ccc;
+  height: 750px;
+  position: sticky;
+  z-index: -2;
+}
+.overlay {
+  background-color: #444;
+  opacity: 0.2;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+.jumbo-socials {
+  z-index: 1000;
+}
+
+/* mision */
+
+/* Animated Heading */
+.animated-heading {
+  animation-duration: 1s;
+  animation-name: slidein-bottom;
+  animation-iteration-count: 1;
+}
+@keyframes slidein-bottom {
+  from {
+    margin-bottom: 40%;
+    width: 100%;
+  }
+
+  to {
+    margin-top: 0%;
+    width: 100%;
+  }
+}
+
+/* Contacts */
+.contacts-link {
+  color: #444;
+  text-decoration: none;
+}
+.contacts-link:hover {
+  color: #bbb;
+}
+
+/* Main Services */
+.main-services {
+  border-right: 1px solid #bbb;
+  height: 300px;
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #444;
+  transition: all 500ms ease-out;
+}
+.main-services:hover {
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  border: none;
+  color: #fff;
+  letter-spacing: 0.04rem;
+}
+.main-services:first-child {
+  border-left: 1px solid #bbb;
+}
+@media only screen and (max-width: 992px) {
+  .main-services, .main-services:first-child {
+    border: none;
+  }
+}
+.main-bim-modeling:hover {
+  background-image: url(../src/assets/ContactsCoverTest.jpg);
+}
+.main-architectural-design:hover {
+  background-image: url(../src/assets/10.jpg);
+}
+.main-interior-design:hover {
+  background-image: url(../src/assets/image.png);
+}
+.main-architectural-visualization:hover {
+  background-image: url(../src/assets/ContactsCoverTest.jpg);
+}
+
+/* ABOUT */
+
+.video-background-holder {
+  position: relative;
+  background-color: black;
+  height: calc(100vh - 72px);
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+.video-background-holder video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.video-background-content {
+  position: relative;
+  z-index: 2;
+}
+
+.video-background-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #444;
+  opacity: 0.5;
+  z-index: 1;
+}
+/* .service-card {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+} */
