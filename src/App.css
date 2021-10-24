@@ -2,6 +2,25 @@
 html {
   scroll-behavior: initial !important;
 }
+/* width */
+::-webkit-scrollbar {
+  width: 12px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: #fff;
+  
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #babac0;
+  border-radius: 10px;
+  border: 3px solid #fff;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  opacity: 0.3;
+}
 /* body {padding-top: 70px;} */
 /* Header */
 .navbar .navbar-nav .nav-link:hover {
@@ -68,7 +87,7 @@ html {
   background-size: cover;
   color: #ccc;
   height: 750px;
-  position: sticky;
+  position: relative;
   z-index: -2;
 }
 .overlay {
@@ -144,16 +163,16 @@ html {
   }
 }
 .main-bim-modeling:hover {
-  background-image: url(../src/assets/ContactsCoverTest.jpg);
+  background-image: url(../src/assets/BIM_service.jpg);
 }
 .main-architectural-design:hover {
-  background-image: url(../src/assets/10.jpg);
+  background-image: url(../src/assets/ArchDesignService.jpg);
 }
 .main-interior-design:hover {
-  background-image: url(../src/assets/image.png);
+  background-image: url(../src/assets/InteriorDesignService.jpg);
 }
 .main-architectural-visualization:hover {
-  background-image: url(../src/assets/ContactsCoverTest.jpg);
+  background-image: url(../src/assets/ArchVisualizationService.jpg);
 }
 
 /* ABOUT */

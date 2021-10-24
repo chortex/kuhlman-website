@@ -14,19 +14,19 @@ export default class Services extends Component {
         <div className='pt-5 pb-5'>
           <h1 className='display-3' style={{fontWeight: "600"}}>Services</h1>
         </div>
-        <div className="col-lg-6 service-card pb-3 d-block">
+        <div className="col-lg-6 service-card pb-3 d-block mb-5">
           <BIMModelingCard />
         </div>
-        <div className="col-lg-6 service-card pb-3 d-block">
+        <div className="col-lg-6 service-card pb-3 d-block mb-5">
           <ArchitecturalDesignCard />
         </div>
-        <div className="col-lg-6 service-card pb-3 d-block">
+        <div className="col-lg-6 service-card pb-3 d-block mb-5">
         <InteriorDesignCard />
         </div>
-        <div className="col-lg-6 service-card pb-3 d-block">
+        <div className="col-lg-6 service-card pb-3 d-block mb-5">
           <ArchitecturalVisualizationCard />
         </div>
-        <div className="col-lg-6 service-card pb-3 d-block">
+        <div className="col-lg-6 service-card pb-3 d-block mb-5">
           <VRCard />
         </div>
         </Container>

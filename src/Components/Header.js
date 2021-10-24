@@ -9,6 +9,7 @@ import Services from '../Pages/Services';
 import About from '../Pages/About';
 import Contacts from '../Pages/Contacts';
 import PrivacyPolicy from '../Pages/PrivacyPolicy';
+import NoMatch from '../Components/NoMatch';
 
 
 
@@ -64,6 +65,7 @@ export default class Header extends Component {
           <Route path='/about' component={About} />
           <Route path='/contacts' component={Contacts} />
           <Route path='/privacy-policy' component={PrivacyPolicy} />
+          <Route component={NoMatch} />
         </Switch>
       </Router>
       </>
