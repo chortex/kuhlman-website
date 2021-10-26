@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Collapse from 'react-bootstrap/Collapse';
 import { Button } from 'react-bootstrap';
-import serviceImage from '../assets/ArchDesignService.jpg';
+import serviceImage from '../assets/Services/ArchDesignService.jpg';
 
 
 function ArchitecturalDesignCard() {
@@ -12,16 +12,16 @@ function ArchitecturalDesignCard() {
   return (
     <>
       <div className="w-md-100 d-flex m-auto row">
-        <div className="col d-flex justify-content-center">
+        <div className="col-xl-5 d-flex justify-content-center">
         <div className="d-block">
           <img 
             src={serviceImage}
-            style={{width:"300px", height:"auto"}}
+            style={{width:"100%", height:"auto"}}
             alt="Architectural Design"
           />
         </div>
         </div>
-        <div className="col">
+        <div className="col-xl-7">
           <h5 className="service-heading">Architectural Design</h5>
           <Button
             onClick={() => setOpenArchitecturalConcept(!openArchitecturalConcept)}

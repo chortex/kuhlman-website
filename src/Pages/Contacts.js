@@ -39,7 +39,7 @@ export default class Contacts extends Component {
             </div>
           </div>
           <hr />
-          <div className='pb-5'>
+          <div className='pb-3'>
             <p className='text-secondary'><i class="far fa-clock fa-2x"></i> Schedule</p>
             <p>Mon - Fri: 10 AM - 8 PM</p>
             <p>Sat - Sun: Day off</p>

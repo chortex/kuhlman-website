@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Collapse from 'react-bootstrap/Collapse';
 import { Button } from 'react-bootstrap';
+import serviceImage from '../assets/Services/3DVRARCard.jpg';
 
 
 function VRCard() {
@@ -11,8 +12,14 @@ function VRCard() {
   return (
     <>
       <div className="w-md-100 d-flex m-auto row">
-        <div className="col d-flex justify-content-center">
-          <iframe src="https://player.vimeo.com/video/551800429" width="300" height="175" title="VR, AR & 3D Animation Service" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+        <div className="col-xl-5 d-flex justify-content-center">
+          <div className="d-block">
+            <img 
+              src={serviceImage}
+              style={{width:"100%", height:"auto"}}
+              alt="Interior Design"
+            />
+          </div>
         </div>
         <div className="col">
           <h5 className="service-heading">VR, AR & 3D Animation</h5>

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Collapse from 'react-bootstrap/Collapse';
 import { Button } from 'react-bootstrap';
-import serviceImage from '../assets/BIM_service.jpg';
+import serviceImage from '../assets/Services/BIM_service.jpg';
 
 
 function BIMModelingCard() {
@@ -12,16 +12,16 @@ function BIMModelingCard() {
   return (
     <>
       <div className="w-md-100 d-flex m-auto row">
-        <div className="col d-flex justify-content-center">
+        <div className="col-xl-5 d-flex justify-content-center">
           <div className="d-block">
             <img 
               src={serviceImage}
-              style={{width:"300px", height:"auto"}}
+              style={{width:"100%", height:"auto"}}
               alt="BIM Modeling"
             />
           </div>
         </div>
-        <div className="col">
+        <div className="col-xl-7">
           <h5 className="service-heading">BIM Modeling</h5>
           <Button
             onClick={() => setOpenBIMModeling(!openBIMModeling)}

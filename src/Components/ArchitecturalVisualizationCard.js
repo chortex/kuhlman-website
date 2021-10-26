@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Collapse from 'react-bootstrap/Collapse';
 import { Button } from 'react-bootstrap';
-import serviceImage from '../assets/ArchVisualizationService.jpg';
+import serviceImage from '../assets/Services/ArchVisualizationService.jpg';
 
 
 function ArchitecturalVisualizationCard() {
@@ -12,16 +12,16 @@ function ArchitecturalVisualizationCard() {
   return (
     <>
       <div className="w-md-100 d-flex m-auto row">
-        <div className="col d-flex justify-content-center">
+        <div className="col-xl-5 d-flex justify-content-center">
           <div className="d-block">
             <img 
               src={serviceImage}
-              style={{width:"300px", height:"auto"}}
+              style={{width:"100%", height:"auto"}}
               alt="Architectural Visualization"
             />
           </div>
         </div>
-        <div className="col">
+        <div className="col-xl-7">
           <h5 className="service-heading">Architectural Visualization</h5>
           <Button
             onClick={() => setOpenArchitecturalVisualizationExterior(!openArchitecturalVisualizationExterior)}

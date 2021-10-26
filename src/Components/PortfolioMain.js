@@ -3,6 +3,16 @@ import {Container} from 'react-bootstrap';
 import PropTypes from 'prop-types';
 import Gallery from 'react-grid-gallery';
 
+import mountHope from '../assets/Portfolio/PortfolioHomePage/2 Mount Hope.jpg';
+import sunsetTrail from '../assets/Portfolio/PortfolioHomePage/35 Sunset Trail.jpg';
+import airport from '../assets/Portfolio/PortfolioHomePage/Airport.jpg';
+import blosser from '../assets/Portfolio/PortfolioHomePage/Blosser.jpg';
+import kitchen from '../assets/Portfolio/PortfolioHomePage/Kitchen.jpg';
+import livingRoom from '../assets/Portfolio/PortfolioHomePage/Living room.jpg';
+import napa from '../assets/Portfolio/PortfolioHomePage/Napa.jpg';
+import parkRide from '../assets/Portfolio/PortfolioHomePage/Park & Ride.jpg';
+import subwayHub from '../assets/Portfolio/PortfolioHomePage/Subway Hub.jpg';
+import warnerMall from '../assets/Portfolio/PortfolioHomePage/Warner Mall.jpg';
 
 export default class PortfolioMain extends Component {
   constructor(props){
@@ -25,7 +35,7 @@ export default class PortfolioMain extends Component {
   }
 
   render () {
-    var images = this.state.images.map((i) => {
+    const images = this.state.images.map((i) => {
       i.customOverlay = (
         <div style={captionStyle}>
           <div>{i.caption}</div>
@@ -47,6 +57,9 @@ export default class PortfolioMain extends Component {
           <Gallery
             images={images}
             enableImageSelection={false}
+            rowHeight={333}
+            margin={5}
+            
           />
         </div>
       </Container>
@@ -72,7 +85,7 @@ export default class PortfolioMain extends Component {
 
   const captionStyle = {
   backgroundColor: "rgba(0, 0, 0, 0.8)",
-  maxHeight: "240px",
+  maxHeight: "740px",
   overflow: "hidden",
   position: "absolute",
   bottom: "0",
@@ -100,102 +113,74 @@ export default class PortfolioMain extends Component {
   PortfolioMain.defaultProps = {
   images: ([
     {
-        src: "https://c3.staticflickr.com/9/8583/28354353794_9f2d08d8c0_b.jpg",
-        thumbnail: "https://c3.staticflickr.com/9/8583/28354353794_9f2d08d8c0_n.jpg",
-        thumbnailWidth: 320,
-        thumbnailHeight: 190,
-        caption: "286H (gratisography.com)"
+        src: `${mountHope}`,
+        thumbnail: `${mountHope}`,
+        thumbnailWidth: "100%",
+        thumbnailHeight: "auto",
+        caption: "2 Mount Hope"
     },
     {
-        src: "https://c7.staticflickr.com/9/8569/28941134686_d57273d933_b.jpg",
-        thumbnail: "https://c7.staticflickr.com/9/8569/28941134686_d57273d933_n.jpg",
-        thumbnailWidth: 320,
-        thumbnailHeight: 148,
-        caption: "315H (gratisography.com)"
+        src: `${subwayHub}`,
+        thumbnail: `${subwayHub}`,
+        thumbnailWidth: "100%",
+        thumbnailHeight: "auto",
+        caption: "Subway Hub"
     },
     {
-        src: "https://c6.staticflickr.com/9/8342/28897193381_800db6419e_b.jpg",
-        thumbnail: "https://c6.staticflickr.com/9/8342/28897193381_800db6419e_n.jpg",
-        thumbnailWidth: 320,
-        thumbnailHeight: 213,
-        caption: "201H (gratisography.com)"
+        src: `${warnerMall}`,
+        thumbnail: `${warnerMall}`,
+        thumbnailWidth: "100%",
+        thumbnailHeight: "auto",
+        caption: "Warner Mall"
     },
     {
-        src: "https://c2.staticflickr.com/9/8239/28897202241_1497bec71a_b.jpg",
-        thumbnail: "https://c2.staticflickr.com/9/8239/28897202241_1497bec71a_n.jpg",
-        thumbnailWidth: 248,
-        thumbnailHeight: 320,
-        caption: "Big Ben (Tom Eversley - isorepublic.com)"
+        src: `${airport}`,
+        thumbnail: `${airport}`,
+        thumbnailWidth: "100%",
+        thumbnailHeight: "auto",
+        caption: "Airport"
     },
     {
-        src: "https://c1.staticflickr.com/9/8785/28687743710_870813dfde_h.jpg",
-        thumbnail: "https://c1.staticflickr.com/9/8785/28687743710_3580fcb5f0_n.jpg",
-        thumbnailWidth: 320,
-        thumbnailHeight: 113,
-        caption: "Red Zone - Paris (Tom Eversley - isorepublic.com)"
+        src: `${kitchen}`,
+        thumbnail: `${kitchen}`,
+        thumbnailWidth: "100%",
+        thumbnailHeight: "auto",
+        caption: "Kitchen"
     },
     {
-        src: "https://c6.staticflickr.com/9/8520/28357073053_cafcb3da6f_b.jpg",
-        thumbnail: "https://c6.staticflickr.com/9/8520/28357073053_cafcb3da6f_n.jpg",
-        thumbnailWidth: 313,
-        thumbnailHeight: 320,
-        caption: "Wood Glass (Tom Eversley - isorepublic.com)"
+        src: `${blosser}`,
+        thumbnail: `${blosser}`,
+        thumbnailWidth: "100%",
+        thumbnailHeight: "auto",
+        caption: "Blosser"
     },
     {
-        src: "https://c8.staticflickr.com/9/8104/28973555735_ae7c208970_b.jpg",
-        thumbnail: "https://c8.staticflickr.com/9/8104/28973555735_ae7c208970_n.jpg",
-        thumbnailWidth: 320,
-        thumbnailHeight: 213,
-        caption: "Flower Interior Macro (Tom Eversley - isorepublic.com)"
+        src: `${livingRoom}`,
+        thumbnail: `${livingRoom}`,
+        thumbnailWidth: "100%",
+        thumbnailHeight: "auto",
+        caption: "Living room"
     },
     {
-        src: "https://c8.staticflickr.com/9/8104/28973555735_ae7c208970_b.jpg",
-        thumbnail: "https://c8.staticflickr.com/9/8104/28973555735_ae7c208970_n.jpg",
-        thumbnailWidth: 320,
-        thumbnailHeight: 213,
-        caption: "Flower Interior Macro (Tom Eversley - isorepublic.com)"
+        src: `${napa}`,
+        thumbnail: `${napa}`,
+        thumbnailWidth: "100%",
+        thumbnailHeight: "auto",
+        caption: "Napa"
     },
     {
-        src: "https://c1.staticflickr.com/9/8707/28868704912_cba5c6600e_b.jpg",
-        thumbnail: "https://c1.staticflickr.com/9/8707/28868704912_cba5c6600e_n.jpg",
-        thumbnailWidth: 320,
-        thumbnailHeight: 213,
-        caption: "Man on BMX (Tom Eversley - isorepublic.com)"
+        src: `${sunsetTrail}`,
+        thumbnail: `${sunsetTrail}`,
+        thumbnailWidth: 500,
+        thumbnailHeight: 350,
+        caption: "35 Sunset Trail"
     },
     {
-        src: "https://c4.staticflickr.com/9/8578/28357117603_97a8233cf5_b.jpg",
-        thumbnail: "https://c4.staticflickr.com/9/8578/28357117603_97a8233cf5_n.jpg",
-        thumbnailWidth: 320,
-        thumbnailHeight: 213,
-        caption: "Ropeman - Thailand (Tom Eversley - isorepublic.com)"
-    },
-    {
-        src: "https://c1.staticflickr.com/9/8056/28354485944_148d6a5fc1_b.jpg",
-        thumbnail: "https://c1.staticflickr.com/9/8056/28354485944_148d6a5fc1_n.jpg",
-        thumbnailWidth: 257,
-        thumbnailHeight: 320,
-        caption: "A photo by 贝莉儿 NG. (unsplash.com)"
-    },
-    {
-      src: "https://c2.staticflickr.com/9/8817/28973449265_07e3aa5d2e_b.jpg",
-      thumbnail: "https://c2.staticflickr.com/9/8817/28973449265_07e3aa5d2e_n.jpg",
-      thumbnailWidth: 320,
-      thumbnailHeight: 174,
-      caption: "After Rain (Jeshu John - designerspics.com)"
-  },
-  {
-      src: "https://c6.staticflickr.com/9/8890/28897154101_a8f55be225_b.jpg",
-      thumbnail: "https://c6.staticflickr.com/9/8890/28897154101_a8f55be225_n.jpg",
-      thumbnailWidth: 320,
-      thumbnailHeight: 183,
-      caption: "37H (gratispgraphy.com)"
-  },
-  {
-      src: "https://c7.staticflickr.com/9/8106/28941228886_86d1450016_b.jpg",
-      thumbnail: "https://c7.staticflickr.com/9/8106/28941228886_86d1450016_n.jpg",
-      thumbnailWidth: 271,
-      thumbnailHeight: 320,
-      caption: "Orange Macro (Tom Eversley - isorepublic.com)"
-  }
+        src: `${parkRide}`,
+        thumbnail: `${parkRide}`,
+        thumbnailWidth: "100%",
+        thumbnailHeight: "auto",
+        caption: "Park & Ride"
+    }
   ])
 }

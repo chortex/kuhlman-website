@@ -2,25 +2,21 @@
 html {
   scroll-behavior: initial !important;
 }
-/* width */
-::-webkit-scrollbar {
+/* Scrollbar */
+/* ::-webkit-scrollbar {
   width: 12px;
 }
-/* Track */
 ::-webkit-scrollbar-track {
   background: #fff;
-  
 }
-/* Handle */
 ::-webkit-scrollbar-thumb {
   background: #babac0;
   border-radius: 10px;
   border: 3px solid #fff;
 }
-/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   opacity: 0.3;
-}
+} */
 /* body {padding-top: 70px;} */
 /* Header */
 .navbar .navbar-nav .nav-link:hover {
@@ -39,6 +35,11 @@ html {
   }
   .navbar .navbar-brand {
     padding: 0 0.7em;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .mission {
+    display: none;
   }
 }
 .navbar .navbar-nav .nav-link {
@@ -107,19 +108,35 @@ html {
 /* mision */
 
 /* Animated Heading */
-.animated-heading {
-  animation-duration: 1s;
+.animated-heading-bottom {
+  animation-duration: 2s;
   animation-name: slidein-bottom;
   animation-iteration-count: 1;
 }
 @keyframes slidein-bottom {
   from {
-    margin-bottom: 40%;
+    margin-bottom: 15%;
     width: 100%;
   }
 
   to {
     margin-top: 0%;
+    width: 100%;
+  }
+}
+.animated-heading-left {
+  animation-duration: 3s;
+  animation-name: slidein-left;
+  animation-iteration-count: 1;
+}
+@keyframes slidein-left {
+  from {
+    opacity: 0;
+    width: 100%;
+  }
+
+  to {
+    opacity: 1;
     width: 100%;
   }
 }
@@ -136,8 +153,9 @@ html {
 /* Main Services */
 .main-services {
   border-right: 1px solid #bbb;
-  height: 300px;
-  width: auto;
+  min-height: 300px;
+  height: auto;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -154,25 +172,25 @@ html {
   color: #fff;
   letter-spacing: 0.04rem;
 }
-.main-services:first-child {
-  border-left: 1px solid #bbb;
+.main-services:last-child {
+  border-right: none;
 }
 @media only screen and (max-width: 992px) {
-  .main-services, .main-services:first-child {
-    border: none;
+  .services-main-section {
+    display: none;
   }
 }
 .main-bim-modeling:hover {
-  background-image: url(../src/assets/BIM_service.jpg);
+  background-image: url(../src/assets/Services/BIMMainServices.jpg);
 }
 .main-architectural-design:hover {
-  background-image: url(../src/assets/ArchDesignService.jpg);
+  background-image: url(../src/assets/Services/ArchitecturalDesignServiceMain.jpg);
 }
 .main-interior-design:hover {
-  background-image: url(../src/assets/InteriorDesignService.jpg);
+  background-image: url(../src/assets/Services/InteriorDesignServiceMain.jpg);
 }
 .main-architectural-visualization:hover {
-  background-image: url(../src/assets/ArchVisualizationService.jpg);
+  background-image: url(../src/assets/Services/ArchitecturalVisualizationServiceMain.jpg);
 }
 
 /* ABOUT */

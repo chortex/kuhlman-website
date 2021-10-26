@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Navbar, Nav, Container } from 'react-bootstrap';
-import logo from '../assets/HeaderLogo.svg';
+import logoLight from '../assets/HeaderLogo.svg';
+import logoDark from '../assets/HeaderLogoDark.svg';
 import { BrowserRouter as Router, Switch, Route, NavLink } from 'react-router-dom';
 
 import Main from '../Pages/Main';
@@ -16,14 +17,15 @@ import NoMatch from '../Components/NoMatch';
 
 export default class Header extends Component {
   state = {
-    bg: "transparent"
+    bg: "transparent",
+    logo: logoDark
   };
 
   listenScrollEvent = e => {
     if (window.scrollY > 20) {
-      this.setState({ bg: "white"});
+      this.setState({ bg: "white", logo: logoLight});
     } else {
-      this.setState({ bg: "transparent"});
+      this.setState({ bg: "transparent", logo: logoDark});
     }
   };
 
@@ -34,11 +36,11 @@ export default class Header extends Component {
     return (
       <>
       <Router>
-        <Navbar bg={this.state.bg} expand="md" variant={this.state.variant} fixed="top" className='shadow-sm p-0'>
+        <Navbar bg={this.state.bg} expand="md" variant={this.state.variant} fixed="top" className='shadow-sm p-0 navbar'>
           <Container>
             <Navbar.Brand href='/' className='d-flex align-items-center '>
               <img
-                src={logo}
+                src={this.state.logo}
                 height='72'
                 width='auto'
                 className='d-inline-block align-top logo-image pe-3'
