@@ -136,6 +136,20 @@ export default class PortfolioMain extends Component {
         caption: "Warner Mall"
     },
     {
+        src: `${livingRoom}`,
+        thumbnail: `${livingRoom}`,
+        thumbnailWidth: "100%",
+        thumbnailHeight: "auto",
+        caption: "Living room"
+    },
+    {
+        src: `${napa}`,
+        thumbnail: `${napa}`,
+        thumbnailWidth: "100%",
+        thumbnailHeight: "auto",
+        caption: "Napa"
+    },
+    {
         src: `${airport}`,
         thumbnail: `${airport}`,
         thumbnailWidth: "100%",
@@ -155,20 +169,6 @@ export default class PortfolioMain extends Component {
         thumbnailWidth: "100%",
         thumbnailHeight: "auto",
         caption: "Blosser"
-    },
-    {
-        src: `${livingRoom}`,
-        thumbnail: `${livingRoom}`,
-        thumbnailWidth: "100%",
-        thumbnailHeight: "auto",
-        caption: "Living room"
-    },
-    {
-        src: `${napa}`,
-        thumbnail: `${napa}`,
-        thumbnailWidth: "100%",
-        thumbnailHeight: "auto",
-        caption: "Napa"
     },
     {
         src: `${sunsetTrail}`,

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import {Container} from 'react-bootstrap';
 import aboutVideo from '../assets/about_video.mp4';
-import teamPhoto from '../assets/teamPhoto_2.jpg';
+import teamPhoto from '../assets/KuhlmannTeam.jpg';
 
 export default class About extends Component {
   render() {

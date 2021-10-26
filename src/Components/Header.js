@@ -36,7 +36,7 @@ export default class Header extends Component {
     return (
       <>
       <Router>
-        <Navbar bg={this.state.bg} expand="md" variant={this.state.variant} fixed="top" className='shadow-sm p-0 navbar'>
+        <Navbar bg={this.state.bg} expand="md" fixed="top" className='shadow-sm p-0 navbar'>
           <Container>
             <Navbar.Brand href='/' className='d-flex align-items-center '>
               <img
