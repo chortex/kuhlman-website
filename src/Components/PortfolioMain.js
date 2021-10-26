@@ -53,7 +53,9 @@ export default class PortfolioMain extends Component {
             display: "block",
             minHeight: "1px",
             width: "100%",
-            overflow: "auto"}}>
+            overflow: "auto"}}
+            className="portfolio-gallery"
+            >
           <Gallery
             images={images}
             enableImageSelection={false}
@@ -84,30 +86,30 @@ export default class PortfolioMain extends Component {
   };
 
   const captionStyle = {
-  backgroundColor: "rgba(0, 0, 0, 0.8)",
-  maxHeight: "740px",
-  overflow: "hidden",
-  position: "absolute",
-  bottom: "0",
-  width: "100%",
-  color: "white",
-  padding: "2px",
-  fontSize: "90%"
+    backgroundColor: "rgba(68, 68, 68, 0.8)",
+    maxHeight: "740px",
+    overflow: "hidden",
+    position: "absolute",
+    bottom: "0",
+    width: "100%",
+    color: "white",
+    padding: "2px",
+    fontSize: "90%"
   };
 
   const customTagStyle = {
-  wordWrap: "break-word",
-  display: "inline-block",
-  backgroundColor: "white",
-  height: "auto",
-  fontSize: "75%",
-  fontWeight: "600",
-  lineHeight: "1",
-  padding: ".2em .6em .3em",
-  borderRadius: ".25em",
-  color: "black",
-  verticalAlign: "baseline",
-  margin: "2px"
+    wordWrap: "break-word",
+    display: "inline-block",
+    backgroundColor: "white",
+    height: "auto",
+    fontSize: "75%",
+    fontWeight: "600",
+    lineHeight: "1",
+    padding: ".2em .6em .3em",
+    borderRadius: ".25em",
+    color: "black",
+    verticalAlign: "baseline",
+    margin: "2px"
   };
 
   PortfolioMain.defaultProps = {
