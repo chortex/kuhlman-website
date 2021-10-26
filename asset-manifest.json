@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.7c16c64a.chunk.css",
-    "main.js": "/static/js/main.a881f1a3.chunk.js",
-    "main.js.map": "/static/js/main.a881f1a3.chunk.js.map",
+    "main.js": "/static/js/main.00763a1e.chunk.js",
+    "main.js.map": "/static/js/main.00763a1e.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.9f369dc4.js",
     "runtime-main.js.map": "/static/js/runtime-main.9f369dc4.js.map",
     "static/css/2.a589cb3a.chunk.css": "/static/css/2.a589cb3a.chunk.css",
@@ -29,19 +29,19 @@
     "static/media/HeaderLogoDark.969ceb17.svg": "/static/media/HeaderLogoDark.969ceb17.svg",
     "static/media/InteriorDesignService.df34d8a2.jpg": "/static/media/InteriorDesignService.df34d8a2.jpg",
     "static/media/Kitchen.2e47af6e.jpg": "/static/media/Kitchen.2e47af6e.jpg",
+    "static/media/KuhlmannTeam.8e8a3e43.jpg": "/static/media/KuhlmannTeam.8e8a3e43.jpg",
     "static/media/Living room.f485095a.jpg": "/static/media/Living room.f485095a.jpg",
     "static/media/Napa.b7132a53.jpg": "/static/media/Napa.b7132a53.jpg",
     "static/media/Park & Ride.a84612cb.jpg": "/static/media/Park & Ride.a84612cb.jpg",
     "static/media/Subway Hub.b4bf3e3e.jpg": "/static/media/Subway Hub.b4bf3e3e.jpg",
     "static/media/Warner Mall.e45c8977.jpg": "/static/media/Warner Mall.e45c8977.jpg",
-    "static/media/about_video.2edc8187.mp4": "/static/media/about_video.2edc8187.mp4",
-    "static/media/teamPhoto_2.0c1fef44.jpg": "/static/media/teamPhoto_2.0c1fef44.jpg"
+    "static/media/about_video.2edc8187.mp4": "/static/media/about_video.2edc8187.mp4"
   },
   "entrypoints": [
     "static/js/runtime-main.9f369dc4.js",
     "static/css/2.a589cb3a.chunk.css",
     "static/js/2.8ee98deb.chunk.js",
     "static/css/main.7c16c64a.chunk.css",
-    "static/js/main.a881f1a3.chunk.js"
+    "static/js/main.00763a1e.chunk.js"
   ]
 }
