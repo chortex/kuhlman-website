@@ -22,22 +22,10 @@ export default class PortfolioMain extends Component {
     };
   }
 
-  setCustomTags (i) {
-    return (
-      i.tags.map((t) => {
-        return (<div
-          key={t.value}
-          style={customTagStyle}>
-          {t.title}
-          </div>);
-      })
-    );
-  }
-
   render () {
     const images = this.state.images.map((i) => {
       i.customOverlay = (
-        <div style={captionStyle}>
+        <div>
           <div>{i.caption}</div>
           {i.hasOwnProperty('tags') && this.setCustomTags(i)}
         </div>);
@@ -50,16 +38,16 @@ export default class PortfolioMain extends Component {
           <h1 className='display-3 text-end' style={{fontWeight: "600"}}>Portfolio</h1>
         </div>
           <div style={{
-            display: "block",
-            minHeight: "1px",
-            width: "100%",
-            overflow: "auto"}}
+              display: "block",
+              minHeight: "1px",
+              width: "100%",
+              overflow: "auto"}}
             className="portfolio-gallery"
             >
           <Gallery
             images={images}
             enableImageSelection={false}
-            rowHeight={333}
+            rowHeight={300}
             margin={5}
             
           />
@@ -85,102 +73,76 @@ export default class PortfolioMain extends Component {
   ).isRequired
   };
 
-  const captionStyle = {
-    backgroundColor: "rgba(68, 68, 68, 0.8)",
-    maxHeight: "740px",
-    overflow: "hidden",
-    position: "absolute",
-    bottom: "0",
-    width: "100%",
-    color: "white",
-    padding: "2px",
-    fontSize: "90%"
-  };
-
-  const customTagStyle = {
-    wordWrap: "break-word",
-    display: "inline-block",
-    backgroundColor: "white",
-    height: "auto",
-    fontSize: "75%",
-    fontWeight: "600",
-    lineHeight: "1",
-    padding: ".2em .6em .3em",
-    borderRadius: ".25em",
-    color: "black",
-    verticalAlign: "baseline",
-    margin: "2px"
-  };
-
   PortfolioMain.defaultProps = {
   images: ([
     {
         src: `${mountHope}`,
         thumbnail: `${mountHope}`,
-        thumbnailWidth: "100%",
+        thumbnailWidth: "auto",
         thumbnailHeight: "auto",
         caption: "2 Mount Hope"
     },
     {
         src: `${subwayHub}`,
         thumbnail: `${subwayHub}`,
-        thumbnailWidth: "100%",
+        thumbnailWidth: "auto",
         thumbnailHeight: "auto",
         caption: "Subway Hub"
     },
     {
         src: `${warnerMall}`,
         thumbnail: `${warnerMall}`,
-        thumbnailWidth: "100%",
+        thumbnailWidth: "auto",
         thumbnailHeight: "auto",
         caption: "Warner Mall"
     },
-    {
-        src: `${livingRoom}`,
-        thumbnail: `${livingRoom}`,
-        thumbnailWidth: "100%",
-        thumbnailHeight: "auto",
-        caption: "Living room"
-    },
-    {
-        src: `${napa}`,
-        thumbnail: `${napa}`,
-        thumbnailWidth: "100%",
-        thumbnailHeight: "auto",
-        caption: "Napa"
-    },
+    
     {
         src: `${airport}`,
         thumbnail: `${airport}`,
-        thumbnailWidth: "100%",
+        thumbnailWidth: "auto",
         thumbnailHeight: "auto",
         caption: "Airport"
     },
     {
         src: `${kitchen}`,
         thumbnail: `${kitchen}`,
-        thumbnailWidth: "100%",
+        thumbnailWidth: "auto",
         thumbnailHeight: "auto",
         caption: "Kitchen"
     },
     {
         src: `${blosser}`,
         thumbnail: `${blosser}`,
-        thumbnailWidth: "100%",
+        thumbnailWidth: "auto",
         thumbnailHeight: "auto",
         caption: "Blosser"
     },
     {
+        src: `${livingRoom}`,
+        thumbnail: `${livingRoom}`,
+        thumbnailWidth: "auto",
+        thumbnailHeight: "auto",
+        caption: "Living room"
+    },
+    {
+        src: `${napa}`,
+        thumbnail: `${napa}`,
+        thumbnailWidth: "auto",
+        thumbnailHeight: "auto",
+        caption: "Napa"
+    },
+    {
         src: `${sunsetTrail}`,
         thumbnail: `${sunsetTrail}`,
-        thumbnailWidth: 500,
-        thumbnailHeight: 350,
+        thumbnailWidth: "auto",
+        thumbnailHeight: "auto",
         caption: "35 Sunset Trail"
     },
     {
         src: `${parkRide}`,
         thumbnail: `${parkRide}`,
-        thumbnailWidth: "100%",
+        thumbnailWidth: "auto",
         thumbnailHeight: "auto",
         caption: "Park & Ride"
     }

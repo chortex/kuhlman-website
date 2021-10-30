@@ -18,70 +18,101 @@ function BIMModelingCard() {
               src={serviceImage}
               style={{width:"100%", height:"auto"}}
               alt="BIM Modeling"
+              className="shadow-sm"
             />
           </div>
         </div>
         <div className="col-xl-7">
           <h5 className="service-heading">BIM Modeling</h5>
           <Button
-            onClick={() => setOpenBIMModeling(!openBIMModeling)}
-            aria-controls="BIM-modeling-text"
-            aria-expanded={openBIMModeling}
+            
             variant="light"
-            className="d-flex justify-content-start btn-sm w-100"
+            className="d-flex justify-content-between btn-sm w-100"
           >
-            BIM Modeling
-          </Button>
-          <Collapse in={openBIMModeling}>
-            <div id="BIM-modeling-text" className="pt-3">
-              <p className="text-muted">
-                With the help of BIM technologies, a digital information model is created that provides an accurate vision of the whole building as a whole. We do BIM Modeling of Architecture & Structure based on 2D Drawings, Point Cloud, and sketches, delivering fully coordinated revised drawings ready for construction for residential, commercial, and industrial buildings. The high-quality BIM Model allows design and construction teams to see the building as a fulfilled complex and to solve any issues that may occur before construction started.
-              </p>
-              <p className="text-muted">
+            <span>BIM Modeling</span>
+            <span className="text-muted">
               <i class="fas fa-dollar-sign"></i> <b>Hourly basis</b>
+            </span>
+          </Button>
+          
+            <div className="pt-3">
+              <p className="text-muted">
+                With the help of BIM technologies, a digital information model is created <Collapse in={openBIMModeling}><span id="BIM-modeling-text">that provides an accurate vision of the whole building as a whole. We do BIM Modeling of Architecture & Structure based on 2D Drawings, Point Cloud, and sketches, delivering fully coordinated revised drawings ready for construction for residential, commercial, and industrial buildings. The high-quality BIM Model allows design and construction teams to see the building as a fulfilled complex and to solve any issues that may occur before construction started.</span></Collapse>
+                <br />
+                <Button
+                  onClick={() => setOpenBIMModeling(!openBIMModeling)}
+                  aria-controls="BIM-modeling-text"
+                  aria-expanded={openBIMModeling}
+                  variant="link"
+                  className="p-0 text-lowercase show-more-service"
+                  style={{color:"#bbb"}}
+                >
+                  show more..
+                </Button>
               </p>
+              
+              
             </div>
-          </Collapse>
 
           <Button
-            onClick={() => setOpenBIMDrafting(!openBIMDrafting)}
-            aria-controls="BIM-drafting-text"
-            aria-expanded={openBIMDrafting}
+            
             variant="light"
-            className= "d-flex justify-content-start btn-sm mt-3 w-100"
+            className= "d-flex justify-content-between btn-sm mt-3 w-100"
           >
-            BIM Drafting
-          </Button>
-          <Collapse in={openBIMDrafting}>
-            <div id="BIM-drafting-text" className="pt-3">
-              <p className="text-muted">
-                We help Architects, Structural Engineers, and Interior Designers to stay focused on designing, taking on the production of the construction drawings by our professional team. Floor Plans, Facades, RCP, Elevations, and Sections, as well as 3D Details and Materials, can be easily produced based on the BIM Model developed for your project
-              </p>
-              <p className="text-muted">
+            <span>BIM Drafting</span>
+            <span className="text-muted">
               <i class="fas fa-dollar-sign"></i> <b>Hourly basis</b>
+            </span>
+          </Button>
+          
+            <div className="pt-3">
+              <p className="text-muted">
+                We help Architects, Structural Engineers, and Interior Designers to stay focused on designing<Collapse in={openBIMDrafting}><span id="BIM-drafting-text">, taking on the production of the construction drawings by our professional team. Floor Plans, Facades, RCP, Elevations, and Sections, as well as 3D Details and Materials, can be easily produced based on the BIM Model developed for your project</span></Collapse>
+                <br />
+                <Button
+                  onClick={() => setOpenBIMDrafting(!openBIMDrafting)}
+                  aria-controls="BIM-drafting-text"
+                  aria-expanded={openBIMDrafting}
+                  variant="link"
+                  className="p-0 text-lowercase show-more-service"
+                  style={{color:"#bbb"}}
+                >
+                  show more..
+                </Button>
               </p>
+              
             </div>
-          </Collapse>
+          
 
           <Button
-            onClick={() => setOpenBIMConsulting(!openBIMConsulting)}
-            aria-controls="BIM-consulting-text"
-            aria-expanded={openBIMConsulting}
+            
             variant="light"
-            className= "d-flex justify-content-start btn-sm mt-3 w-100"
+            className= "d-flex justify-content-between btn-sm mt-3 w-100"
           >
-            BIM Consulting
-          </Button>
-          <Collapse in={openBIMConsulting}>
-            <div id="BIM-consulting-text" className="pt-3">
-              <p className="text-muted">
-                Support for companies, who would like to explore and implement BIM within their enterprise. We explain BIM Standards, help to develop Revit templates, and library of Revit families
-              </p>
-              <p className="text-muted">
+            <span>BIM Consulting</span>
+            <span className="text-muted">
               <i class="fas fa-dollar-sign"></i> <b>Hourly basis</b>
+            </span>
+          </Button>
+          
+            <div  className="pt-3">
+              <p className="text-muted">
+                Support for companies, who would like to explore and implement BIM within their enterprise. <Collapse in={openBIMConsulting}><span id="BIM-consulting-text">We explain BIM Standards, help to develop Revit templates, and library of Revit families</span></Collapse>
+                <br />
+                <Button
+                  onClick={() => setOpenBIMConsulting(!openBIMConsulting)}
+                  aria-controls="BIM-consulting-text"
+                  aria-expanded={openBIMConsulting}
+                  variant="link"
+                  className="p-0 text-lowercase show-more-service"
+                  style={{color:"#bbb"}}
+                >
+                  show more..
+                </Button>
               </p>
+              
             </div>
-          </Collapse>
+          
         </div>
       </div>
     </>

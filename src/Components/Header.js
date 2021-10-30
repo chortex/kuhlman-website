@@ -29,6 +29,10 @@ export default class Header extends Component {
     }
   };
 
+  changeBg = e => {
+    this.setState({ bg: "white", logo: logoLight})
+  }
+
   componentDidMount() {
     window.addEventListener("scroll", this.listenScrollEvent);
   }
@@ -47,7 +51,7 @@ export default class Header extends Component {
                 alt='Logo'
               />{" "}
             </Navbar.Brand>
-            <Navbar.Toggle aria-controls='responsive-navbar-nav' />
+            <Navbar.Toggle aria-controls='responsive-navbar-nav' onClick={this.changeBg} />
             <Navbar.Collapse id='responsive-navbar-nav'>
               <Nav className='d-flex align-items-center ms-auto'>
                 <Nav.Link as={NavLink} exact to='/' className="p-4 nav-link"> Home </Nav.Link>

@@ -23,7 +23,7 @@ html {
   color: #444444;
 }
 .container {
-  max-width: 90% !important;
+  max-width: 95% !important;
 }
 /* DO NOT FORGET TO FIX RESPONSIVE ON HOME PAGE */
 @media only screen and (min-width: 960px) {
@@ -37,10 +37,24 @@ html {
     padding: 0 0.7em;
   }
 }
+.mobile-cover-header {
+  display: none;
+}
 @media only screen and (max-width: 768px) {
-  .mission {
+  .desktop-cover-header {
     display: none;
   }
+  .mobile-cover-header {
+    display: block;
+  }
+  .team-photo {
+    width: 100%;
+    height: auto;
+  }
+}
+.team-photo {
+  width: 80%;
+  height: auto;
 }
 .navbar .navbar-nav .nav-link {
   position: relative;
@@ -89,27 +103,36 @@ html {
   color: #ccc;
   height: 750px;
   position: relative;
-  z-index: -2;
+  z-index: 0;
 }
 .overlay {
   background-color: #444;
-  opacity: 0.2;
+  opacity: 0.1;
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: -1;
+  z-index: 1;
 }
 .jumbo-socials {
-  z-index: 1000;
+  z-index: 2;
+  position: absolute;
+  bottom: 50px;
+}
+.cover-social {
+  padding: 0 8px;
+  color: #bbb;
+}
+.cover-social:hover {
+  color: #fff;
 }
 
 /* mision */
 
 /* Animated Heading */
 .animated-heading-bottom {
-  animation-duration: 1s;
+  animation-duration: 1.5s;
   animation-name: slidein-bottom;
   animation-iteration-count: 1;
 }
@@ -125,7 +148,7 @@ html {
   }
 }
 .animated-heading-left {
-  animation-duration: 3s;
+  animation-duration: 2s;
   animation-name: slidein-left;
   animation-iteration-count: 1;
 }
@@ -154,11 +177,11 @@ html {
 .services-main-wrapper {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  
 }
 .main-services {
   border-right: 1px solid #bbb;
-  min-height: 300px;
-  height: auto;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -167,9 +190,12 @@ html {
   font-weight: 600;
   color: #444;
   transition: all 500ms ease-out;
+  width: auto;
+  min-height: 233px;
+  height: auto;
 }
 .main-services:hover {
-  background-size: 100% 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   border: none;
   color: #fff;
@@ -240,9 +266,19 @@ html {
 
 /* Home portfolio gallery animation */
 .portfolio-gallery img {
-  width: 100%;
   transition: transform 500ms ease;
 }
 .portfolio-gallery img:hover {
   transform: scale(1.1);
+}
+
+.nav-link{
+  color: #0000008C !important;
+}
+.portfolio-tabs .active, .portfolio-tabs .nav-link:hover {
+  color: #444 !important;
+  box-shadow: inset 0 -2px 0 #444 !important;
+}
+.btn-link:hover {
+  color: #444 !important;
 }

@@ -20,27 +20,27 @@ export default class Contacts extends Component {
         <div className='p-lg-5 p-3 row d-flex justify-content-around'>
           <div className="col-sm-6">
             <div className='pb-5'>
-              <p className='text-secondary'><i class="fas fa-envelope-open fa-2x"></i> E-mail</p>
+              <p className='text-secondary'><i className="fas fa-envelope-open fa-2x"></i> E-mail</p>
               <a href='mailto:ostap@kuhlmann.com.ua' className='contacts-link'>ostap@kuhlmann.com.ua</a>
             </div>
             <div className='pb-5'>
-              <p className='text-secondary'><i class="fas fa-phone fa-2x"></i> Phone | WatsApp</p>
+              <p className='text-secondary'><i className="fas fa-phone fa-2x"></i> Phone | WatsApp</p>
               <a href='tel:+380953923232' className='contacts-link'>+380953923232</a>
             </div>
           </div>
           <div className="col-sm-6">
             <div className='pb-5'>
-              <p className='text-secondary'><i class="fab fa-skype fa-2x"></i> Skype</p>
+              <p className='text-secondary'><i className="fab fa-skype fa-2x"></i> Skype</p>
               <a href='skype:o.korolyak?chat' className='contacts-link'>o.korolyak</a>
             </div>
             <div className='pb-5'>
-              <p className='text-secondary'><i class="fas fa-map-marker-alt fa-2x"></i> Address</p>
+              <p className='text-secondary'><i className="fas fa-map-marker-alt fa-2x"></i> Address</p>
               <a href='https://g.page/Kuhlmann_Team?share' target="_blank" rel="noreferrer" className='contacts-link'>Ukraine/Lviv</a>
             </div>
           </div>
           <hr />
           <div className='pb-3'>
-            <p className='text-secondary'><i class="far fa-clock fa-2x"></i> Schedule</p>
+            <p className='text-secondary'><i className="far fa-clock fa-2x"></i> Schedule</p>
             <p>Mon - Fri: 10 AM - 8 PM</p>
             <p>Sat - Sun: Day off</p>
           </div>
