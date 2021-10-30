@@ -24,64 +24,94 @@ function ArchitecturalVisualizationCard() {
         <div className="col-xl-7">
           <h5 className="service-heading">Architectural Visualization</h5>
           <Button
-            onClick={() => setOpenArchitecturalVisualizationExterior(!openArchitecturalVisualizationExterior)}
-            aria-controls="exterior-rendering-text"
-            aria-expanded={openArchitecturalVisualizationExterior}
+            href='https://www.upwork.com/ag/kuhlmann/' target='_blank' rel="noreferrer"
             variant="light"
-            className="d-flex justify-content-start btn-sm w-100"
+            className="d-flex justify-content-between btn-sm w-100"
           >
-            Exterior rendering
+            <span>Exterior rendering</span>
+            <span className="text-muted">
+              <i className="far fa-calendar-alt"></i> <b>3-7 business days</b>
+            </span>
           </Button>
-          <Collapse in={openArchitecturalVisualizationExterior}>
-            <div id="exterior-rendering-text" className="pt-3">
-              <p className="text-muted">
-                High-quality photorealistic 3D visualization of the facade of the building, site, and landscape around it. It will be exciting to see how different options of colors and materials will look at the same facade. We do exterior visualizations for residential, commercial, and industrial buildings as well as for the larger areas such as hotel complexes, site plans, streets, and high tech villages
+          
+            <div className="pt-3">
+              <p className="text-muted lh-sm">
+                High-quality photorealistic 3D visualization of the facade of the building, site, and landscape <Collapse timeout={0} in={openArchitecturalVisualizationExterior}><span id="exterior-rendering-text">around it. It will be exciting to see how different options of colors and materials will look at the same facade. We do exterior visualizations for residential, commercial, and industrial buildings as well as for the larger areas such as hotel complexes, site plans, streets, and high tech villages</span></Collapse>
+                <br />
+                <Button
+                  onClick={() => setOpenArchitecturalVisualizationExterior(!openArchitecturalVisualizationExterior)}
+                  aria-controls="exterior-rendering-text"
+                  aria-expanded={openArchitecturalVisualizationExterior}
+                  variant="link"
+                  className="p-0 m-0 text-lowercase show-more-service"
+                  style={{color:"#bbb"}}
+                >
+                  show more..
+                </Button>
               </p>
-              <p className="text-muted">
-                <i className="far fa-calendar-alt"></i> Timelines: <b>3-7 business days</b>
-              </p>
+              
             </div>
-          </Collapse>
+          
 
           <Button
-            onClick={() => setOpenArchitecturalVisualizationInterior(!openArchitecturalVisualizationInterior)}
-            aria-controls="interior-rendering-text"
-            aria-expanded={openArchitecturalVisualizationInterior}
+            href='https://www.upwork.com/ag/kuhlmann/' target='_blank' rel="noreferrer"
             variant="light"
-            className="d-flex justify-content-start btn-sm w-100 mt-3"
+            className="d-flex justify-content-between btn-sm w-100 mt-3"
           >
-            Interior rendering
+            <span>Interior rendering</span>
+            <span className="text-muted">
+              <i className="far fa-calendar-alt"></i> <b>3-5 business days</b>
+            </span>
           </Button>
-          <Collapse in={openArchitecturalVisualizationInterior}>
-            <div id="interior-rendering-text" className="pt-3">
-              <p className="text-muted">
-                High-quality photorealistic 3D visualization inside the building, which presents a design that has been developed. It's a pleasure to see how the different finishes, colors, and lighting interacts with space, including furniture and appliances. We do visualizations for residential houses, apartments, villas, also of public spaces, universities, theaters, hospitals as well as for commercial spaces such as restaurants and cafes, offices, hotels, etc.
+          
+            <div className="pt-3">
+              <p className="text-muted lh-sm">
+                High-quality photorealistic 3D visualization inside the building, which presents a design <Collapse timeout={0} in={openArchitecturalVisualizationInterior}><span id="interior-rendering-text">that has been developed. It's a pleasure to see how the different finishes, colors, and lighting interacts with space, including furniture and appliances. We do visualizations for residential houses, apartments, villas, also of public spaces, universities, theaters, hospitals as well as for commercial spaces such as restaurants and cafes, offices, hotels, etc.</span></Collapse>
+                <br />
+                <Button
+                  onClick={() => setOpenArchitecturalVisualizationInterior(!openArchitecturalVisualizationInterior)}
+                  aria-controls="interior-rendering-text"
+                  aria-expanded={openArchitecturalVisualizationInterior}
+                  variant="link"
+                  className="p-0 m-0 text-lowercase show-more-service"
+                  style={{color:"#bbb"}}
+                >
+                  show more..
+                </Button>
               </p>
-              <p className="text-muted">
-                <i className="far fa-calendar-alt"></i> Timelines: <b>3-5 business days</b>
-              </p>
+              
             </div>
-          </Collapse>
+          
 
           <Button
-            onClick={() => setOpenArchitecturalVisualizationPanorama(!openArchitecturalVisualizationPanorama)}
-            aria-controls="panorama-rendering-text"
-            aria-expanded={openArchitecturalVisualizationPanorama}
+            href='https://www.upwork.com/ag/kuhlmann/' target='_blank' rel="noreferrer"
             variant="light"
-            className="d-flex justify-content-start btn-sm w-100 mt-3"
+            className="d-flex justify-content-between btn-sm w-100 mt-3"
           >
-            360° Panorama Render
+            <span>360° Panorama Render</span>
+            <span className="text-muted">
+              <i className="far fa-calendar-alt"></i> <b>3-7 business days</b>
+            </span>
           </Button>
-          <Collapse in={openArchitecturalVisualizationPanorama}>
-            <div id="panorama-rendering-text" className="pt-3">
-              <p className="text-muted">
-                This kind of rendering allows seeing the space from every angle covering the full horizontal and vertical fields of view around a person. It's very useful for the spaces, which have a lot of design components, which can't be presented with by single images
+          
+            <div className="pt-3">
+              <p className="text-muted lh-sm">
+                This kind of rendering allows seeing the space from every angle <Collapse timeout={0} in={openArchitecturalVisualizationPanorama}><span id="panorama-rendering-text">covering the full horizontal and vertical fields of view around a person. It's very useful for the spaces, which have a lot of design components, which can't be presented with by single images</span></Collapse>
+                <br />
+                <Button
+                  onClick={() => setOpenArchitecturalVisualizationPanorama(!openArchitecturalVisualizationPanorama)}
+                  aria-controls="panorama-rendering-text"
+                  aria-expanded={openArchitecturalVisualizationPanorama}
+                  variant="link"
+                  className="p-0 m-0 text-lowercase show-more-service"
+                  style={{color:"#bbb"}}
+                >
+                  show more..
+                </Button>
               </p>
-              <p className="text-muted">
-                <i className="far fa-calendar-alt"></i> Timelines: <b>3-7 business days</b>
-              </p>
+              
             </div>
-          </Collapse>
+          
         </div>
       </div>
     </>

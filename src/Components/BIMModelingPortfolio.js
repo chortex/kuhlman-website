@@ -69,6 +69,34 @@ export default class BIMPortfolio extends Component {
   BIMPortfolio.defaultProps = {
   images: ([
     {
+      src: `${airport}`,
+      thumbnail: `${airport}`,
+      thumbnailWidth: "auto",
+      thumbnailHeight: "auto",
+      caption: "Airport"
+    },
+    {
+      src: `${parkRide}`,
+      thumbnail: `${parkRide}`,
+      thumbnailWidth: "auto",
+      thumbnailHeight: "auto",
+      caption: "Park & Ride"
+    },
+    {
+      src: `${alehNegev}`,
+      thumbnail: `${alehNegev}`,
+      thumbnailWidth: "auto",
+      thumbnailHeight: "auto",
+      caption: "Aleh Negev"
+    },
+    {
+      src: `${library}`,
+      thumbnail: `${library}`,
+      thumbnailWidth: "auto",
+      thumbnailHeight: "auto",
+      caption: "National Library of Israel"
+    },
+    {
         src: `${fulton}`,
         thumbnail: `${fulton}`,
         thumbnailWidth: "auto",
@@ -76,54 +104,25 @@ export default class BIMPortfolio extends Component {
         caption: "1118 Fulton"
     },
     {
-        src: `${alehNegev}`,
-        thumbnail: `${alehNegev}`,
-        thumbnailWidth: "auto",
-        thumbnailHeight: "auto",
-        caption: "Aleh Negev"
+      src: `${sunsetTrail}`,
+      thumbnail: `${sunsetTrail}`,
+      thumbnailWidth: "auto",
+      thumbnailHeight: "auto",
+      caption: "35 Sunset Trail"
     },
     {
-        src: `${baitBalev}`,
-        thumbnail: `${baitBalev}`,
-        thumbnailWidth: "auto",
-        thumbnailHeight: "auto",
-        caption: "Bait Balev"
-    },
-    
-    {
-        src: `${airport}`,
-        thumbnail: `${airport}`,
-        thumbnailWidth: "auto",
-        thumbnailHeight: "auto",
-        caption: "Airport"
+      src: `${beitHaedidud}`,
+      thumbnail: `${beitHaedidud}`,
+      thumbnailWidth: "auto",
+      thumbnailHeight: "auto",
+      caption: "Beit Hayedidut"
     },
     {
-        src: `${beitHaedidud}`,
-        thumbnail: `${beitHaedidud}`,
-        thumbnailWidth: "auto",
-        thumbnailHeight: "auto",
-        caption: "Beit Hayedidut"
-    },
-    {
-        src: `${library}`,
-        thumbnail: `${library}`,
-        thumbnailWidth: "auto",
-        thumbnailHeight: "auto",
-        caption: "National Library of Israel"
-    },
-    {
-        src: `${sunsetTrail}`,
-        thumbnail: `${sunsetTrail}`,
-        thumbnailWidth: "auto",
-        thumbnailHeight: "auto",
-        caption: "35 Sunset Trail"
-    },
-    {
-        src: `${parkRide}`,
-        thumbnail: `${parkRide}`,
-        thumbnailWidth: "auto",
-        thumbnailHeight: "auto",
-        caption: "Park & Ride"
+      src: `${baitBalev}`,
+      thumbnail: `${baitBalev}`,
+      thumbnailWidth: "auto",
+      thumbnailHeight: "auto",
+      caption: "Bait Balev"
     }
   ])
 }

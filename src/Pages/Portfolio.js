@@ -12,7 +12,7 @@ export default class Portfolio extends Component {
           <div className='pt-5 pb-5'>
             <h1 className='display-3' style={{fontWeight: "600"}}>Portfolio</h1>
           </div>
-          <Tabs defaultActiveKey="BIM" id="uncontrolled-tab-example" className="mb-5 portfolio-tabs pb-5">
+          <Tabs defaultActiveKey="BIM" id="uncontrolled-tab-example" className="btn-lg mb-5 portfolio-tabs pb-5">
             <Tab eventKey="BIM" title="BIM Modeling">
               <BIMModelingPortfolio />
             </Tab>

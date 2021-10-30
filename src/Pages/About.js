@@ -22,9 +22,9 @@ export default class About extends Component {
         </div>
       </div>
       <Container className='row pb-5 m-auto'>
-      <div className='pt-5 pe-5 col-lg-6'>
+      <div className='pt-5 pe-5 col-xl-5'>
         <h1 className='display-3 text-start' style={{fontWeight: "600"}}>About us</h1>
-        <div className='pt-lg-3 w-75'>
+        <div className='pt-lg-3'>
           <p className="text-muted">
             Kuhlmann - some story about kuhlmann team must be here. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias aut, repellat ipsum facere voluptate dicta obcaecati deserunt nobis suscipit eaque?
           </p>
@@ -36,11 +36,12 @@ export default class About extends Component {
           </div>
         </div>
       </div>
-      <div className='pt-5 col-lg-6 d-flex justify-content-center team-photo'>
+      <div className='pt-5 col-xl-7'>
         <img
           src={teamPhoto}
           height='auto'
-          width='95%'
+          width='80%'
+          className=''
           alt='contacts'
         />
       </div>

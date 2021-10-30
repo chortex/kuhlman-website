@@ -24,64 +24,94 @@ function ArchitecturalDesignCard() {
         <div className="col-xl-7">
           <h5 className="service-heading">Architectural Design</h5>
           <Button
-            onClick={() => setOpenArchitecturalConcept(!openArchitecturalConcept)}
-            aria-controls="architectural-concept-text"
-            aria-expanded={openArchitecturalConcept}
+            href='https://www.upwork.com/ag/kuhlmann/' target='_blank' rel="noreferrer"
             variant="light"
-            className="d-flex justify-content-start btn-sm w-100"
+            className="d-flex justify-content-between btn-sm w-100"
           >
-            Architectural Concept
+            <span>Architectural Concept</span>
+            <span className="text-muted">
+              <i className="far fa-calendar-alt"></i> <b>2-5 weeks</b>
+            </span>
           </Button>
-          <Collapse in={openArchitecturalConcept}>
-            <div id="architectural-concept-text" className="pt-3">
-              <p className="text-muted">
-                This is the realization of the vision of the design. At this stage, we listening to the client about their wishes, needs, and how that space should be used, organized, and arranged. We play around with forms and volumes to get the best solution. As a result, you will get basic schemes such as a 3D view of the building with few options of space planning and main materials selections. We develop concept schematic designs for residential as well as for commercial buildings
+          
+            <div className="pt-3">
+              <p className="text-muted lh-sm">
+                This is the realization of the vision of the design. At this stage, we listening to the client <Collapse timeout={0} in={openArchitecturalConcept}><span id="architectural-concept-text">about their wishes, needs, and how that space should be used, organized, and arranged. We play around with forms and volumes to get the best solution. As a result, you will get basic schemes such as a 3D view of the building with few options of space planning and main materials selections. We develop concept schematic designs for residential as well as for commercial buildings</span></Collapse>
+                <br />
+                <Button
+                  onClick={() => setOpenArchitecturalConcept(!openArchitecturalConcept)}
+                  aria-controls="architectural-concept-text"
+                  aria-expanded={openArchitecturalConcept}
+                  variant="link"
+                  className="p-0 m-0 text-lowercase show-more-service"
+                  style={{color:"#bbb"}}
+                >
+                  show more..
+                </Button>
               </p>
-              <p className="text-muted">
-                <i className="far fa-calendar-alt"></i> Timelines: <b>2-5 weeks</b>
-              </p>
+              
             </div>
-          </Collapse>
+          
 
           <Button
-            onClick={() => setOpenArchitecturalDesign(!openArchitecturalDesign)}
-            aria-controls="architectural-design-text"
-            aria-expanded={openArchitecturalDesign}
+            href='https://www.upwork.com/ag/kuhlmann/' target='_blank' rel="noreferrer"
             variant="light"
-            className= "d-flex justify-content-start btn-sm w-100 mt-3"
+            className= "d-flex justify-content-between btn-sm w-100 mt-3"
           >
-            Architectural Design
+            <span>Architectural Design</span>
+            <span className="text-muted">
+              <i className="far fa-calendar-alt"></i> <b>5-12 weeks</b>
+            </span>
           </Button>
-          <Collapse in={openArchitecturalDesign}>
+          
             <div id="architectural-design-text" className="pt-3">
-              <p className="text-muted">
-                This is a transformation of the concept into a more technical look. At this stage, schematic plans and elevations are being revised and a building starts getting more sustainable in layout and dimensions. We invite a structural engineer, and consultants of MEP services, if the project's complexity required. As a result, you will get a Permit Set of Drawings not issued for construction yet. We develop designs drawings for residential as well as for commercial buildings
+              <p className="text-muted lh-sm">
+                This is a transformation of the concept into a more technical look. <Collapse timeout={0} in={openArchitecturalDesign}><span>At this stage, schematic plans and elevations are being revised and a building starts getting more sustainable in layout and dimensions. We invite a structural engineer, and consultants of MEP services, if the project's complexity required. As a result, you will get a Permit Set of Drawings not issued for construction yet. We develop designs drawings for residential as well as for commercial buildings</span></Collapse>
+                <br />
+                <Button
+                  onClick={() => setOpenArchitecturalDesign(!openArchitecturalDesign)}
+                  aria-controls="architectural-concept-text"
+                  aria-expanded={openArchitecturalDesign}
+                  variant="link"
+                  className="p-0 m-0 text-lowercase show-more-service"
+                  style={{color:"#bbb"}}
+                >
+                  show more..
+                </Button>
               </p>
-              <p className="text-muted">
-                <i className="far fa-calendar-alt"></i> Timelines: <b>5-12 weeks</b>
-              </p>
+              
             </div>
-          </Collapse>
+          
 
           <Button
-            onClick={() => setOpenArchitecturalConstruction(!openArchitecturalConstruction)}
-            aria-controls="architectural-construction-text"
-            aria-expanded={openArchitecturalConstruction}
+            href='https://www.upwork.com/ag/kuhlmann/' target='_blank' rel="noreferrer"
             variant="light"
-            className= "d-flex justify-content-start btn-sm w-100 mt-3"
+            className= "d-flex justify-content-between btn-sm w-100 mt-3"
           >
-            Architectural Construction
+            <span>Construction Drawings</span>
+            <span className="text-muted">
+              <i className="far fa-calendar-alt"></i> <b>8-12 weeks</b>
+            </span>
           </Button>
-          <Collapse in={openArchitecturalConstruction}>
-            <div id="architectural-construction-text" className="pt-3">
-              <p className="text-muted">
-                This is the instruction on how to build the building. At this stage, a lot of details of how to connect different elements of the building are being developed. Every floor plan and elevation is getting all the necessary dimensions and info to instruct builders during construction. As a result, you will get Drawings and Specifications ready for construction. We develop consruction drawings for residential as well as for commercial buildings
+          
+            <div  className="pt-3">
+              <p className="text-muted lh-sm">
+                This is the instruction on how to build the building. At this stage, a lot of details <Collapse timeout={0} in={openArchitecturalConstruction}><span id="architectural-construction-text">of how to connect different elements of the building are being developed. Every floor plan and elevation is getting all the necessary dimensions and info to instruct builders during construction. As a result, you will get Drawings and Specifications ready for construction. We develop consruction drawings for residential as well as for commercial buildings</span></Collapse>
+                <br />
+                <Button
+                  onClick={() => setOpenArchitecturalConstruction(!openArchitecturalConstruction)}
+                  aria-controls="architectural-concept-text"
+                  aria-expanded={openArchitecturalConstruction}
+                  variant="link"
+                  className="p-0 m-0 text-lowercase show-more-service"
+                  style={{color:"#bbb"}}
+                >
+                  show more..
+                </Button>
               </p>
-              <p className="text-muted">
-                <i className="far fa-calendar-alt"></i> Timelines: <b>8-12 weeks</b>
-              </p>
+
             </div>
-          </Collapse>
+          
         </div>
       </div>
     </>

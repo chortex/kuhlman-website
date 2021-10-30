@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Collapse from 'react-bootstrap/Collapse';
 import { Button } from 'react-bootstrap';
-import serviceImage from '../assets/Services/BIM_service.jpg';
+import serviceImage from '../assets/Services/BIM_Service.jpg';
 
 
 function BIMModelingCard() {
@@ -18,14 +18,13 @@ function BIMModelingCard() {
               src={serviceImage}
               style={{width:"100%", height:"auto"}}
               alt="BIM Modeling"
-              className="shadow-sm"
             />
           </div>
         </div>
         <div className="col-xl-7">
           <h5 className="service-heading">BIM Modeling</h5>
           <Button
-            
+            href='https://www.upwork.com/ag/kuhlmann/' target='_blank' rel="noreferrer"
             variant="light"
             className="d-flex justify-content-between btn-sm w-100"
           >
@@ -36,15 +35,15 @@ function BIMModelingCard() {
           </Button>
           
             <div className="pt-3">
-              <p className="text-muted">
-                With the help of BIM technologies, a digital information model is created <Collapse in={openBIMModeling}><span id="BIM-modeling-text">that provides an accurate vision of the whole building as a whole. We do BIM Modeling of Architecture & Structure based on 2D Drawings, Point Cloud, and sketches, delivering fully coordinated revised drawings ready for construction for residential, commercial, and industrial buildings. The high-quality BIM Model allows design and construction teams to see the building as a fulfilled complex and to solve any issues that may occur before construction started.</span></Collapse>
+              <p className="text-muted lh-sm">
+                With the help of BIM technologies, a digital information model is created <Collapse timeout={0} in={openBIMModeling}><span id="BIM-modeling-text">that provides an accurate vision of the whole building as a whole. We do BIM Modeling of Architecture & Structure based on 2D Drawings, Point Cloud, and sketches, delivering fully coordinated revised drawings ready for construction for residential, commercial, and industrial buildings. The high-quality BIM Model allows design and construction teams to see the building as a fulfilled complex and to solve any issues that may occur before construction started.</span></Collapse>
                 <br />
                 <Button
                   onClick={() => setOpenBIMModeling(!openBIMModeling)}
                   aria-controls="BIM-modeling-text"
                   aria-expanded={openBIMModeling}
                   variant="link"
-                  className="p-0 text-lowercase show-more-service"
+                  className="p-0 m-0 text-lowercase show-more-service"
                   style={{color:"#bbb"}}
                 >
                   show more..
@@ -55,7 +54,7 @@ function BIMModelingCard() {
             </div>
 
           <Button
-            
+            href='https://www.upwork.com/ag/kuhlmann/' target='_blank' rel="noreferrer"
             variant="light"
             className= "d-flex justify-content-between btn-sm mt-3 w-100"
           >
@@ -66,8 +65,8 @@ function BIMModelingCard() {
           </Button>
           
             <div className="pt-3">
-              <p className="text-muted">
-                We help Architects, Structural Engineers, and Interior Designers to stay focused on designing<Collapse in={openBIMDrafting}><span id="BIM-drafting-text">, taking on the production of the construction drawings by our professional team. Floor Plans, Facades, RCP, Elevations, and Sections, as well as 3D Details and Materials, can be easily produced based on the BIM Model developed for your project</span></Collapse>
+              <p className="text-muted lh-sm">
+                We help Architects, Structural Engineers, and Interior Designers to stay focused on designing, taking on the production <Collapse timeout={0} in={openBIMDrafting}><span id="BIM-drafting-text" className="inline-block">of the construction drawings by our professional team. Floor Plans, Facades, RCP, Elevations, and Sections, as well as 3D Details and Materials, can be easily produced based on the BIM Model developed for your project</span></Collapse>
                 <br />
                 <Button
                   onClick={() => setOpenBIMDrafting(!openBIMDrafting)}
@@ -85,7 +84,7 @@ function BIMModelingCard() {
           
 
           <Button
-            
+            href='https://www.upwork.com/ag/kuhlmann/' target='_blank' rel="noreferrer"
             variant="light"
             className= "d-flex justify-content-between btn-sm mt-3 w-100"
           >
@@ -96,8 +95,8 @@ function BIMModelingCard() {
           </Button>
           
             <div  className="pt-3">
-              <p className="text-muted">
-                Support for companies, who would like to explore and implement BIM within their enterprise. <Collapse in={openBIMConsulting}><span id="BIM-consulting-text">We explain BIM Standards, help to develop Revit templates, and library of Revit families</span></Collapse>
+              <p className="text-muted lh-sm">
+                Support for companies, who would like to explore and implement BIM within their enterprise. <Collapse timeout={0} in={openBIMConsulting}><span id="BIM-consulting-text">We explain BIM Standards, help to develop Revit templates, and library of Revit families</span></Collapse>
                 <br />
                 <Button
                   onClick={() => setOpenBIMConsulting(!openBIMConsulting)}

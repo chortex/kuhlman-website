@@ -13,7 +13,7 @@ function Jumbotron() {
       <Container className='pt-3 pl-3'>
         <div className='pt-5 animated-heading-left desktop-cover-header'>
           <h1 className='text-white animated-heading-bottom d-flex col align-items-center' style={{fontWeight: "500", fontSize: "11rem", textAlign: "left"}}>BIM<div className="d-flex row" ><span className='display-3'>Architectural</span><span className='display-3'>Studio</span></div></h1>
-          <h4 className='text-white ps-3' id="mission" style={{fontWeight: "300", fontSize: "1.2rem", width:"32%", position:"relative"}}>We create and implement innovative designs solutions closely collaborating with our clients <Collapse timeout={0} in={openMision}><span id="mision-more">to making our clients’ works on projects easier on a daily basis, building long-term relationships with our company</span></Collapse>
+          <h4 className='text-white ps-3' id="mission" style={{fontWeight: "300", fontSize: "1.2rem", width:"32%", position:"relative"}}>We create and implement innovative designs solutions closely collaborating with our clients <Collapse in={openMision}><div id="mision-more">to making our clients’ works on projects easier on a daily basis, building long-term relationships with our company</div></Collapse>
             <br />
             <Button
               onClick={() => setOpenMision(!openMision)}
@@ -32,7 +32,7 @@ function Jumbotron() {
           <div className='jumbo-socials'>
             <a href='https://www.linkedin.com/company/kuhlmannteam/' target='_blank' rel="noreferrer" className='cover-social'><i className="fab fa-linkedin fa-2x"></i></a>
             <a href='https://www.instagram.com/kuhlmannteam/' target='_blank' rel="noreferrer" className='cover-social'><i className="fab fa-instagram-square fa-2x"></i></a>
-            <a href='https://vimeo.com/kuhlmann' target='_blank' rel="noreferrer" className='cover-social'><i className="fab fa-behance-square fa-2x"></i></a>
+            <a href='https://www.behance.net/kuhlmannteam1' target='_blank' rel="noreferrer" className='cover-social'><i className="fab fa-behance-square fa-2x"></i></a>
             <a href='https://www.facebook.com/kuhlmannteam/' target='_blank' rel="noreferrer" className='cover-social'><i className="fab fa-facebook-square fa-2x"></i></a>
             <a href='https://vimeo.com/kuhlmann' target='_blank' rel="noreferrer" className='cover-social'><i className="fab fa-vimeo fa-2x"></i></a>
           </div>
