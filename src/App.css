@@ -190,7 +190,6 @@ html {
   font-weight: 600;
   color: #444;
   transition: all 500ms ease-out;
-  width: auto;
   min-height: 233px;
   height: auto;
 }
