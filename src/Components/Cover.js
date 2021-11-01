@@ -9,9 +9,8 @@ function Cover() {
 
   return (
     <>
-    <div className='overlay'></div>
     <Carousel fade className="carousel slide" data-wrap="false">
-      <Carousel.Item className='pt-3 pl-3' interval={10000}>
+      <Carousel.Item className='pt-3 pl-3'>
         <Container>
         <div className='pt-5 animated-heading-left desktop-cover-header'>
           <h1 className='text-white animated-heading-bottom d-flex col align-items-center' style={{fontWeight: "500", fontSize: "10rem", textAlign: "left"}}>BIM<div className="d-flex row" ><span className='display-3'>Architectural</span><span className='display-3'>Studio</span></div></h1>
@@ -35,7 +34,7 @@ function Cover() {
         </Container>
         </Carousel.Item>
 
-        <Carousel.Item className="ps-3" interval={10000}>
+        <Carousel.Item className="ps-3">
           <Container className='pt-5'>
           <div className='pt-5 animated-heading-left desktop-cover-header'>
             <h1 className='col text-white display-1' style={{fontWeight:"600"}}>Interior Design</h1>
@@ -44,7 +43,7 @@ function Cover() {
           </Container>
         </Carousel.Item>
 
-        <Carousel.Item className="ps-3" interval={10000}>
+        <Carousel.Item className="ps-3">
           <Container className='pt-5'>
           <div className='pt-5 animated-heading-left desktop-cover-header'>
             <h1 className='col text-white display-1' style={{fontWeight:"600"}}>Architecture</h1>
@@ -53,7 +52,7 @@ function Cover() {
           </Container>
         </Carousel.Item>
 
-        <Carousel.Item className="ps-3" interval={10000}>
+        <Carousel.Item className="ps-3">
           <Container className='pt-5'>
           <div className='pt-5 animated-heading-left desktop-cover-header'>
             <h1 className='col text-white display-1' style={{fontWeight:"600"}}>Architectural<br />Visualization</h1>
@@ -62,7 +61,7 @@ function Cover() {
           </Container>
         </Carousel.Item>
 
-        <Carousel.Item className="ps-3" interval={10000}>
+        <Carousel.Item className="ps-3">
           <Container className='pt-5'>
           <div className='pt-5 animated-heading-left desktop-cover-header'>
             <h1 className='col text-white display-1' style={{fontWeight:"600"}}>BIM Services</h1>

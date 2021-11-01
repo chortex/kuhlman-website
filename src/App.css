@@ -137,29 +137,7 @@ html {
         background-size: cover;
         background-position: center center;
       }
-      .carousel-item {
-        transition: transform 2.6s ease-in-out;
-      }
-      
-      .carousel-fade .active.carousel-item-start,
-      .carousel-fade .active.carousel-item-end {
-        transition: opacity 0s 2.6s;
-      }
 
-.overlay {
-  background:linear-gradient(
-    45deg,
-    rgba(29, 236, 197, 0.7),
-    rgba(91, 14, 214, 0.7) 100%
-  ) ;
-  opacity: 0.1;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 1;
-} 
 
 /* Jumbotron */
 /* .jumbo {
