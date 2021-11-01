@@ -96,12 +96,77 @@ html {
   color: #444;
 }
 
+#introCarousel,
+      .carousel-inner,
+      .carousel-item,
+      .carousel-item.active {
+        height: 100vh;
+      }
+
+      .carousel-item:nth-child(1) {
+        background-image: url('../src/assets/Cover/exterior.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+      }
+
+      .carousel-item:nth-child(2) {
+        background-image: url('../src/assets/Cover/interior.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+      }
+
+      .carousel-item:nth-child(3) {
+        background-image: url('../src/assets/Cover/architecture.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+      }
+
+      .carousel-item:nth-child(4) {
+        background-image: url('../src/assets/Cover/exterior.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+      }
+
+      .carousel-item:nth-child(5) {
+        background-image: url('../src/assets/Cover/engineering.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+      }
+      .carousel-item {
+        transition: transform 5.6s ease-in-out;
+      }
+      
+      .carousel-fade .active.carousel-item-start,
+      .carousel-fade .active.carousel-item-end {
+        transition: opacity 0s 5.6s;
+      }
+
+.overlay {
+  background:linear-gradient(
+    45deg,
+    rgba(29, 236, 197, 0.7),
+    rgba(91, 14, 214, 0.7) 100%
+  ) ;
+  opacity: 0.1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+} 
+
 /* Jumbotron */
-.jumbo {
+/* .jumbo {
   background: url(./assets/cover.jpg) no-repeat center;
   background-size: cover;
   color: #ccc;
-  height: 750px;
+  height: 870px;
   position: relative;
   z-index: 0;
 }
@@ -114,7 +179,7 @@ html {
   bottom: 0;
   left: 0;
   z-index: 1;
-}
+} */
 .jumbo-socials {
   z-index: 2;
   position: absolute;

@@ -35,7 +35,7 @@ export default class Contacts extends Component {
             </div>
             <div className='pb-5'>
               <p className='text-secondary'><i className="fas fa-map-marker-alt fa-2x"></i> Address</p>
-              <a href='https://g.page/Kuhlmann_Team?share' target="_blank" rel="noreferrer" className='contacts-link'>Ukraine/Lviv</a>
+              <a href='https://goo.gl/maps/SUtBJn3dGtuQoKT96' target="_blank" rel="noreferrer" className='contacts-link'>Ukraine/Lviv</a>
             </div>
           </div>
           <hr />

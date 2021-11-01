@@ -58,19 +58,19 @@ export default class PortfolioMain extends Component {
   }
 
   PortfolioMain.propTypes = {
-  images: PropTypes.arrayOf(
+    images: PropTypes.arrayOf(
       PropTypes.shape({
-          src: PropTypes.string.isRequired,
-          thumbnail: PropTypes.string.isRequired,
-          srcset: PropTypes.array,
-          caption: PropTypes.oneOfType([
-              PropTypes.string,
-              PropTypes.element
-          ]),
-          thumbnailWidth: PropTypes.number.isRequired,
-          thumbnailHeight: PropTypes.number.isRequired
+        src: PropTypes.string.isRequired,
+        thumbnail: PropTypes.string.isRequired,
+        srcset: PropTypes.array,
+        caption: PropTypes.oneOfType([
+            PropTypes.string,
+            PropTypes.element
+        ]),
+        thumbnailWidth: PropTypes.number.isRequired,
+        thumbnailHeight: PropTypes.number.isRequired
       })
-  ).isRequired
+    ).isRequired
   };
 
   PortfolioMain.defaultProps = {

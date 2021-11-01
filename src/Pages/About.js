@@ -26,10 +26,26 @@ export default class About extends Component {
         <h1 className='display-3 text-start' style={{fontWeight: "600"}}>About us</h1>
         <div className='pt-lg-3'>
           <p className="text-muted">
-            Kuhlmann - some story about kuhlmann team must be here. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias aut, repellat ipsum facere voluptate dicta obcaecati deserunt nobis suscipit eaque?
+          Kuhlmann Studio was founded in 2017 by Ostap Koroliak, who started as an independent entrepreneur in a small room in his house and grew into a company, which delivers high-quality services to clients from all around the world. Our clients are Architects, Interior Designers, Architectural, Engineering, and construction companies from the USA, Canada, UK, European Union, Denmark, Sweden, Norway, and Australia.
           </p>
           <p className="text-muted">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias aut, repellat ipsum facere voluptate dicta obcaecati deserunt nobis suscipit eaque?
+          In need to find a great team? Someone who is not just excellent, but also a good person you can form a dependable, life-long business relationship with. We are sure, you are going to need multiple architectural services along with your life and you can do this search once by choosing us.
+          </p>
+          <p>
+          We work together to design, create and produce work that we are proud of.
+          </p>
+          <p>
+          Our core values are:
+          </p>
+          <ul>
+            <li><b>PASSION:</b> Do what you love, love what you do</li>
+            <li><b>RESPONSIBILITY:</b> Act with a high sense of responsibility</li>
+            <li><b>QUALITY:</b> Deliver superior quality and even more</li>
+            <li><b>COLLABORATION:</b> Achieve more through friendly team and customer collaboration</li>
+            <li><b>INNOVATION:</b> Challenge the traditional approach and encourage creative ideas</li>
+          </ul>
+          <p>
+          We look forward to meeting you soon
           </p>
           <div>
             <a href='/contacts' className='btn btn-secondary'>Contact us</a>

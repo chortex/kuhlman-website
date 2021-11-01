@@ -11,6 +11,8 @@ import About from '../Pages/About';
 import Contacts from '../Pages/Contacts';
 import PrivacyPolicy from '../Pages/PrivacyPolicy';
 import NoMatch from '../Components/NoMatch';
+import RouterScrollTop from '../Components/RouterScrollTop';
+import SubwayHub from '../Components/SubwayHub';
 
 
 
@@ -40,6 +42,7 @@ export default class Header extends Component {
     return (
       <>
       <Router>
+        <RouterScrollTop />
         <Navbar bg={this.state.bg} expand="md" fixed="top" className='shadow-sm p-0 navbar'>
           <Container>
             <Navbar.Brand href='/' className='d-flex align-items-center '>
@@ -71,6 +74,7 @@ export default class Header extends Component {
           <Route path={process.env.PUBLIC_URL + '/about'} component={About} />
           <Route path={process.env.PUBLIC_URL + '/contacts'} component={Contacts} />
           <Route path={process.env.PUBLIC_URL + '/privacy-policy'} component={PrivacyPolicy} />
+          <Route path={process.env.PUBLIC_URL + '/subway-hub'} component={SubwayHub} />
           <Route component={NoMatch} />
         </Switch>
       </Router>
