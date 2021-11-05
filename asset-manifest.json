@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.5bc49d47.chunk.css",
-    "main.js": "/static/js/main.225ffa24.chunk.js",
-    "main.js.map": "/static/js/main.225ffa24.chunk.js.map",
+    "main.js": "/static/js/main.4bd77465.chunk.js",
+    "main.js.map": "/static/js/main.4bd77465.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.5f822dfb.js",
     "runtime-main.js.map": "/static/js/runtime-main.5f822dfb.js.map",
     "static/css/2.bf294617.chunk.css": "/static/css/2.bf294617.chunk.css",
@@ -19,6 +19,7 @@
     "static/media/35 Sunset Trail.45dcb033.jpg": "/static/media/35 Sunset Trail.45dcb033.jpg",
     "static/media/35 Sunset Trail.d3ff6a7a.jpg": "/static/media/35 Sunset Trail.d3ff6a7a.jpg",
     "static/media/3DVRARCard.1a1dfb27.jpg": "/static/media/3DVRARCard.1a1dfb27.jpg",
+    "static/media/74-18 Gjeversrudveien 10 - Axonometric 2.d9222123.jpg": "/static/media/74-18 Gjeversrudveien 10 - Axonometric 2.d9222123.jpg",
     "static/media/Airport.c0e92f43.jpg": "/static/media/Airport.c0e92f43.jpg",
     "static/media/Airport.c1655761.jpg": "/static/media/Airport.c1655761.jpg",
     "static/media/Airport_View 1.c0e92f43.jpg": "/static/media/Airport_View 1.c0e92f43.jpg",
@@ -32,6 +33,7 @@
     "static/media/Beit Hayedidut.0311c984.jpg": "/static/media/Beit Hayedidut.0311c984.jpg",
     "static/media/Blosser.93b3d94d.jpg": "/static/media/Blosser.93b3d94d.jpg",
     "static/media/Blosser_Axonometric.fedbf768.jpg": "/static/media/Blosser_Axonometric.fedbf768.jpg",
+    "static/media/Botanical Garden Facade.93d5216b.jpg": "/static/media/Botanical Garden Facade.93d5216b.jpg",
     "static/media/Botanical Garden.316fb5b1.jpg": "/static/media/Botanical Garden.316fb5b1.jpg",
     "static/media/Bus Station_View 1.e8796f7f.jpg": "/static/media/Bus Station_View 1.e8796f7f.jpg",
     "static/media/Bus Station_View 2.c0453cb2.jpg": "/static/media/Bus Station_View 2.c0453cb2.jpg",
@@ -41,6 +43,7 @@
     "static/media/Central Park Section 2.f9945b54.jpg": "/static/media/Central Park Section 2.f9945b54.jpg",
     "static/media/Cofee Shop - View 2.b5fe7146.jpg": "/static/media/Cofee Shop - View 2.b5fe7146.jpg",
     "static/media/ContactsCover.9fcd9e9a.jpg": "/static/media/ContactsCover.9fcd9e9a.jpg",
+    "static/media/Discovery Garden Section.e27e24dc.jpg": "/static/media/Discovery Garden Section.e27e24dc.jpg",
     "static/media/Discovery Garden.88e8612d.jpg": "/static/media/Discovery Garden.88e8612d.jpg",
     "static/media/Entrance.8682134e.jpg": "/static/media/Entrance.8682134e.jpg",
     "static/media/FooterLogo.ffa8fad0.svg": "/static/media/FooterLogo.ffa8fad0.svg",
@@ -91,6 +94,7 @@
     "static/media/School.1609750c.jpg": "/static/media/School.1609750c.jpg",
     "static/media/Section Topo.54318fed.jpg": "/static/media/Section Topo.54318fed.jpg",
     "static/media/Shop.3b11e3b2.jpg": "/static/media/Shop.3b11e3b2.jpg",
+    "static/media/Shops_3DView.3d5de4aa.jpg": "/static/media/Shops_3DView.3d5de4aa.jpg",
     "static/media/Skatepark.f4f81d7e.jpg": "/static/media/Skatepark.f4f81d7e.jpg",
     "static/media/Slokker Homes.a9a6efb3.jpg": "/static/media/Slokker Homes.a9a6efb3.jpg",
     "static/media/Spa View 2.7b446b80.jpg": "/static/media/Spa View 2.7b446b80.jpg",
@@ -111,6 +115,6 @@
     "static/css/2.bf294617.chunk.css",
     "static/js/2.fae24d40.chunk.js",
     "static/css/main.5bc49d47.chunk.css",
-    "static/js/main.225ffa24.chunk.js"
+    "static/js/main.4bd77465.chunk.js"
   ]
 }
