@@ -13,12 +13,14 @@ function ArchitecturalDesignCard() {
     <>
       <div className="w-md-100 d-flex m-auto row">
         <div className="col-xl-5 d-flex justify-content-center">
-        <div className="d-block">
-          <img 
-            src={serviceImage}
-            style={{width:"100%", height:"auto"}}
-            alt="Architectural Design"
-          />
+        <div className="d-block link-wrapper">
+          <a href='/portfolio#architectural-design'>
+            <img 
+              src={serviceImage}
+              style={{width:"100%", height:"auto"}}
+              alt="Architectural Design"
+            />
+          </a>
         </div>
         </div>
         <div className="col-xl-7">
@@ -46,7 +48,7 @@ function ArchitecturalDesignCard() {
                   className="p-0 m-0 text-lowercase show-more-service"
                   style={{color:"#bbb"}}
                 >
-                  show more..
+                  {!openArchitecturalConcept ? "show more.." : "show less.."}
                 </Button>
               </p>
               
@@ -76,7 +78,7 @@ function ArchitecturalDesignCard() {
                   className="p-0 m-0 text-lowercase show-more-service"
                   style={{color:"#bbb"}}
                 >
-                  show more..
+                  {!openArchitecturalDesign ? "show more.." : "show less.."}
                 </Button>
               </p>
               
@@ -106,7 +108,7 @@ function ArchitecturalDesignCard() {
                   className="p-0 m-0 text-lowercase show-more-service"
                   style={{color:"#bbb"}}
                 >
-                  show more..
+                  {!openArchitecturalConstruction ? "show more.." : "show less.."}
                 </Button>
               </p>
 

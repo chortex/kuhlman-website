@@ -13,12 +13,14 @@ function VRCard() {
     <>
       <div className="w-md-100 d-flex m-auto row">
         <div className="col-xl-5 d-flex justify-content-center">
-          <div className="d-block">
-            <img 
-              src={serviceImage}
-              style={{width:"100%", height:"auto"}}
-              alt="Interior Design"
-            />
+          <div className="d-block link-wrapper">
+            <a href='/portfolio#VR'>
+              <img 
+                src={serviceImage}
+                style={{width:"100%", height:"auto"}}
+                alt="Interior Design"
+              />
+            </a>
           </div>
         </div>
         <div className="col">
@@ -46,7 +48,7 @@ function VRCard() {
                   className="p-0 m-0 text-lowercase show-more-service"
                   style={{color:"#bbb"}}
                 >
-                  show more..
+                  {!open3DAnimation ? "show more.." : "show less.."}
                 </Button>
               </p>
               
@@ -76,7 +78,7 @@ function VRCard() {
                   className="p-0 m-0 text-lowercase show-more-service"
                   style={{color:"#bbb"}}
                 >
-                  show more..
+                  {!openVirtualReality ? "show more.." : "show less.."}
                 </Button>
               </p>
               
@@ -106,7 +108,7 @@ function VRCard() {
                   className="p-0 m-0 text-lowercase show-more-service"
                   style={{color:"#bbb"}}
                 >
-                  show more..
+                  {!openAugmentedReality ? "show more.." : "show less.."}
                 </Button>
               </p>
               

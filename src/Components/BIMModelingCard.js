@@ -13,12 +13,14 @@ function BIMModelingCard() {
     <>
       <div className="w-md-100 d-flex m-auto row">
         <div className="col-xl-5 d-flex justify-content-center">
-          <div className="d-block">
-            <img 
-              src={serviceImage}
-              style={{width:"100%", height:"auto"}}
-              alt="BIM Modeling"
-            />
+          <div className="d-block link-wrapper">
+            <a href="/portfolio#BIM">
+              <img 
+                src={serviceImage}
+                style={{width:"100%", height:"auto"}}
+                alt="BIM Modeling"
+              />
+            </a>
           </div>
         </div>
         <div className="col-xl-7">
@@ -46,7 +48,7 @@ function BIMModelingCard() {
                   className="p-0 m-0 text-lowercase show-more-service"
                   style={{color:"#bbb"}}
                 >
-                  show more..
+                  {!openBIMModeling ? "show more.." : "show less.."}
                 </Button>
               </p>
               
@@ -76,7 +78,7 @@ function BIMModelingCard() {
                   className="p-0 text-lowercase show-more-service"
                   style={{color:"#bbb"}}
                 >
-                  show more..
+                  {!openBIMDrafting ? "show more.." : "show less.."}
                 </Button>
               </p>
               
@@ -106,7 +108,7 @@ function BIMModelingCard() {
                   className="p-0 text-lowercase show-more-service"
                   style={{color:"#bbb"}}
                 >
-                  show more..
+                  {!openBIMConsulting ? "show more.." : "show less.."}
                 </Button>
               </p>
               

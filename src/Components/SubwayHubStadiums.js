@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
-import Gallery from 'react-grid-gallery';
+import ImageGallery from 'react-image-gallery';
+import "react-image-gallery/styles/css/image-gallery.css";
 
 
 import golfFootballStadiums from '../assets/Projects/SubwayHub/Stadiums/Golf Stadium & Football Stadium.jpg';
@@ -38,25 +39,13 @@ export default class SubwayHubStadiums extends Component {
 
     return(
       <div className='pt-5 pb-5 mb-5 row'>
-        <h2 className='text-end text-muted display-5 fw-bold'>Stadiums</h2>
         <div className='col-lg-8'>
-        <div 
-          style={{
-            display: "block",
-            minHeight: "1px",
-            width: "100%",
-            overflow: "auto"}}
-          className="portfolio-gallery"
-        >
-          <Gallery
-            images={images}
-            enableImageSelection={false}
-            rowHeight={180}
-            margin={5}
-          />
+        <div>
+          <ImageGallery items={images} thumbnailClass={'justify-content-center'} />
         </div>
         </div>
         <div className='col-lg-4'>
+          <h2 className='text-muted display-5 fw-bold'>Stadiums</h2>
           <p className='text-muted lh-sm'>
           <b>SPORTS STADIUMS:</b> This is a complex of sports facilities with all the necessary ancillary and technologica lfacilities. Includes the following facilities and planar facilities: gym, swimming pool, ice arena, baseball, football, treadmill and golf. These structures can be divided into functional purposes intocomplexes and groups, namely:
           </p>
@@ -94,81 +83,59 @@ SubwayHubStadiums.propTypes = {
   SubwayHubStadiums.defaultProps = {
   images: ([
     {
-      src: `${golfFootballStadiums}`,
+      original: `${golfFootballStadiums}`,
       thumbnail: `${golfFootballStadiums}`,
-      thumbnailWidth: "auto",
-      thumbnailHeight: "auto",
-      caption: "Golf Stadium & Football Stadium"
+      description: "Golf Stadium & Football Stadium"
     },
     {
-      src: `${poolTennisHockey}`,
+      original: `${poolTennisHockey}`,
       thumbnail: `${poolTennisHockey}`,
-      thumbnailWidth: "auto",
-      thumbnailHeight: "auto",
-      caption: "Pool-Tennis & Hockey Stadiums"
+      description: "Pool-Tennis & Hockey Stadiums"
     },
     {
-      src: `${plazaB1B2B3}`,
+      original: `${plazaB1B2B3}`,
       thumbnail: `${plazaB1B2B3}`,
-      thumbnailWidth: "auto",
-      thumbnailHeight: "auto",
-      caption: "Plaza - Level B1 B2 B3"
+      description: "Plaza - Level B1 B2 B3"
     },
     {
-      src: `${plazaB3Rink}`,
+      original: `${plazaB3Rink}`,
       thumbnail: `${plazaB3Rink}`,
-      thumbnailWidth: "auto",
-      thumbnailHeight: "auto",
-      caption: "Plaza - Level B3 Rink"
+      description: "Plaza - Level B3 Rink"
     },
     {
-      src: `${plazaB3Plus3Rink}`,
+      original: `${plazaB3Plus3Rink}`,
       thumbnail: `${plazaB3Plus3Rink}`,
-      thumbnailWidth: "auto",
-      thumbnailHeight: "auto",
-      caption: "Plaza - Level B3 +3.000 Rink"
+      description: "Plaza - Level B3 +3.000 Rink"
     },
     {
-      src: `${levelB3TennisSwimmingPool}`,
+      original: `${levelB3TennisSwimmingPool}`,
       thumbnail: `${levelB3TennisSwimmingPool}`,
-      thumbnailWidth: "auto",
-      thumbnailHeight: "auto",
-      caption: "Plaza - Level B3 Tennis & Swimming Pool"
+      description: "Plaza - Level B3 Tennis & Swimming Pool"
     },
     {
-      src: `${levelB3FloorPlanTennisSwimmingPool}`,
+      original: `${levelB3FloorPlanTennisSwimmingPool}`,
       thumbnail: `${levelB3FloorPlanTennisSwimmingPool}`,
-      thumbnailWidth: "auto",
-      thumbnailHeight: "auto",
-      caption: "Plaza - Level B3 Floor Plan Tennis & Swimming Pool"
+      description: "Plaza - Level B3 Floor Plan Tennis & Swimming Pool"
     },
     {
-      src: `${plazaB2FloorPlanTennisSwimmingPool}`,
+      original: `${plazaB2FloorPlanTennisSwimmingPool}`,
       thumbnail: `${plazaB2FloorPlanTennisSwimmingPool}`,
-      thumbnailWidth: "auto",
-      thumbnailHeight: "auto",
-      caption: "Plaza - Level B2 Floor Plan Tennis & Swimming Pool"
+      description: "Plaza - Level B2 Floor Plan Tennis & Swimming Pool"
     },
     {
-      src: `${levelB3FootballBaseball}`,
+      original: `${levelB3FootballBaseball}`,
       thumbnail: `${levelB3FootballBaseball}`,
-      thumbnailWidth: "auto",
-      thumbnailHeight: "auto",
-      caption: "Plaza - Level B3 Football & Baseball"
+      description: "Plaza - Level B3 Football & Baseball"
     },
     {
-      src: `${levelB3FloorPlanFootballBaseball}`,
+      original: `${levelB3FloorPlanFootballBaseball}`,
       thumbnail: `${levelB3FloorPlanFootballBaseball}`,
-      thumbnailWidth: "auto",
-      thumbnailHeight: "auto",
-      caption: "Plaza - Level B3 Floor Plan Football & Baseball"
+      description: "Plaza - Level B3 Floor Plan Football & Baseball"
     },
     {
-      src: `${levelB3Golf}`,
+      original: `${levelB3Golf}`,
       thumbnail: `${levelB3Golf}`,
-      thumbnailWidth: "auto",
-      thumbnailHeight: "auto",
-      caption: "Plaza - Level B3 Golf"
+      description: "Plaza - Level B3 Golf"
     }
   ])
 }

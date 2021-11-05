@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
-import Gallery from 'react-grid-gallery';
+import ImageGallery from 'react-image-gallery';
+import "react-image-gallery/styles/css/image-gallery.css";
 
 
 import axonometricView from '../assets/Projects/SubwayHub/Plaza/Plaza_Axonometric View.jpg';
@@ -31,25 +32,13 @@ export default class SubwayHubPlaza extends Component {
 
     return(
       <div className='pt-5 pb-5 mb-5 row'>
-        <h2 className='text-end text-muted display-5 fw-bold'>Plaza</h2>
         <div className='col-lg-8'>
-        <div 
-          style={{
-            display: "block",
-            minHeight: "1px",
-            width: "100%",
-            overflow: "auto"}}
-          className="portfolio-gallery"
-        >
-          <Gallery
-            images={images}
-            enableImageSelection={false}
-            rowHeight={290}
-            margin={5}
-          />
+        <div>
+          <ImageGallery items={images} thumbnailClass={'justify-content-center'} />
         </div>
         </div>
         <div className='col-lg-4'>
+          <h2 className='text-muted display-5 fw-bold'>Plaza</h2>
           <p className='text-muted lh-sm'>
           <b>LEVEL B1:</b> The entrance to this level is designed from the southern part. At the entrance there is a lobby group of rooms which is connected to the elevator hall. And also the reference zone, reception, group of rooms of bathrooms are located here. The entrance is solved in the form of an atrium. From this level there are entrances to sports facilities on the stands for spectators. Also from this level it is possible to get to any other point of a multipurpose complex. In general, the level can be called educational-primary, as there are a variety of educational facilities, conference halls, workshops, and interactive museums. 
           </p>
@@ -85,32 +74,24 @@ SubwayHubPlaza.propTypes = {
   SubwayHubPlaza.defaultProps = {
   images: ([
     {
-      src: `${axonometricView}`,
+      original: `${axonometricView}`,
       thumbnail: `${axonometricView}`,
-      thumbnailWidth: "auto",
-      thumbnailHeight: "auto",
-      caption: "Plaza Axonometric View"
+      description: "Plaza Axonometric View"
     },
     {
-      src: `${plazaB1}`,
+      original: `${plazaB1}`,
       thumbnail: `${plazaB1}`,
-      thumbnailWidth: "auto",
-      thumbnailHeight: "auto",
-      caption: "Plaza Level B1"
+      description: "Plaza Level B1"
     },
     {
-      src: `${plazaB2}`,
+      original: `${plazaB2}`,
       thumbnail: `${plazaB2}`,
-      thumbnailWidth: "auto",
-      thumbnailHeight: "auto",
-      caption: "Plaza Level B2"
+      description: "Plaza Level B2"
     },
     {
-      src: `${plazaB3}`,
+      original: `${plazaB3}`,
       thumbnail: `${plazaB3}`,
-      thumbnailWidth: "auto",
-      thumbnailHeight: "auto",
-      caption: "Plaza Level B3"
+      description: "Plaza Level B3"
     }
   ])
 }

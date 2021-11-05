@@ -19,12 +19,12 @@ export default class Portfolio extends Component {
             <h1 className='display-3' style={{fontWeight: "600"}}>Portfolio</h1>
           </div>
           <NavLink
-            className='btn btn-warning w-25 d-block'
+            className='btn btn-secondary'
             path to='/subway-hub'
           >
             Subway Hub
           </NavLink>
-          <Tabs defaultActiveKey="BIM" id="uncontrolled-tab-example" className="btn-lg mb-5 portfolio-tabs pb-5">
+          <Tabs defaultActiveKey="BIM" id="uncontrolled-tab-example" variant='custom' className="btn-lg mb-5 portfolio-tabs pb-5">
             <Tab eventKey="BIM" title="BIM Modeling">
               <BIMModelingPortfolio />
             </Tab>

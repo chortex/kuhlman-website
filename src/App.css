@@ -111,7 +111,7 @@ html {
       }
 
       .carousel-item:nth-child(2) {
-        background-image: url('../src/assets/Cover/interior.jpg');
+        background-image: url('../src/assets/Cover/engineering.jpg');
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
@@ -125,17 +125,32 @@ html {
       }
 
       .carousel-item:nth-child(4) {
-        background-image: url('../src/assets/Cover/exterior.jpg');
+        background-image: url('../src/assets/Cover/interior.jpg');
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
       }
 
       .carousel-item:nth-child(5) {
-        background-image: url('../src/assets/Cover/engineering.jpg');
+        background-image: url('../src/assets/Cover/exterior.jpg');
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
+      }
+
+      .carousel-inner .carousel-item {
+        opacity: 0;
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: block;
+        position: absolute;
+      }
+      .carousel-inner .carousel-item:first-of-type {
+        position: relative;
+      }
+      .carousel-inner .active {
+        opacity: 1;
       }
 
 
@@ -307,10 +322,10 @@ html {
 }
 
 /* Home portfolio gallery animation */
-.portfolio-gallery img {
-  transition: transform 500ms ease;
+.portfolio-gallery img, .link-wrapper img {
+  transition: transform 1.5s ease;
 }
-.portfolio-gallery img:hover {
+.portfolio-gallery img:hover, .link-wrapper img:hover {
   transform: scale(1.1);
 }
 
@@ -326,4 +341,11 @@ html {
 }
 .btn-link:hover {
   color: #444 !important;
+}
+.lh-sm, .about-us-description {
+  text-align: justify;
+}
+
+.tab-content {
+  display: block;
 }
