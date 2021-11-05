@@ -3,9 +3,10 @@ import PropTypes from 'prop-types';
 import Gallery from 'react-grid-gallery';
 
 import blosser from '../assets/Portfolio/ArchitecturalDesignPortfolio/Blosser_Axonometric.jpg';
-// import shops from '../assets/Portfolio/ArchitecturalDesignPortfolio/Shops_3DView.jpg';
-// import botanicalGarden from '../assets/Portfolio/ArchitecturalDesignPortfolio/Botanical Garden Facade.jpg';
-// import discoveryGarden from '../assets/Portfolio/ArchitecturalDesignPortfolio/Discovery Garden Section.jpg';
+import gjeversrudveien from '../assets/Portfolio/ArchitecturalDesignPortfolio/74-18 Gjeversrudveien 10 - Axonometric 2.jpg';
+import shops from '../assets/Portfolio/ArchitecturalDesignPortfolio/Shops_3DView.jpg';
+import botanicalGarden from '../assets/Portfolio/ArchitecturalDesignPortfolio/Botanical Garden Facade.jpg';
+import discoveryGarden from '../assets/Portfolio/ArchitecturalDesignPortfolio/Discovery Garden Section.jpg';
 import topo from '../assets/Portfolio/ArchitecturalDesignPortfolio/Section Topo.jpg';
 import park from '../assets/Portfolio/ArchitecturalDesignPortfolio/Central Park Section 2.jpg';
 import skatepark from '../assets/Portfolio/ArchitecturalDesignPortfolio/Skatepark.jpg';
@@ -80,27 +81,34 @@ export default class ArchitecturalDesignPortfolio extends Component {
       thumbnailHeight: "auto",
       caption: ""
     },
-    // {
-    //   src: `${shops}`,
-    //   thumbnail: `${shops}`,
-    //   thumbnailWidth: "auto",
-    //   thumbnailHeight: "auto",
-    //   caption: ""
-    // },
-    // {
-    //   src: `${botanicalGarden}`,
-    //   thumbnail: `${botanicalGarden}`,
-    //   thumbnailWidth: "auto",
-    //   thumbnailHeight: "auto",
-    //   caption: ""
-    // },
-    // {
-    //   src: `${discoveryGarden}`,
-    //   thumbnail: `${discoveryGarden}`,
-    //   thumbnailWidth: "auto",
-    //   thumbnailHeight: "auto",
-    //   caption: ""
-    // },
+    {
+      src: `${gjeversrudveien}`,
+      thumbnail: `${gjeversrudveien}`,
+      thumbnailWidth: "auto",
+      thumbnailHeight: "auto",
+      caption: ""
+    },
+    {
+      src: `${shops}`,
+      thumbnail: `${shops}`,
+      thumbnailWidth: "auto",
+      thumbnailHeight: "auto",
+      caption: ""
+    },
+    {
+      src: `${botanicalGarden}`,
+      thumbnail: `${botanicalGarden}`,
+      thumbnailWidth: "auto",
+      thumbnailHeight: "auto",
+      caption: ""
+    },
+    {
+      src: `${discoveryGarden}`,
+      thumbnail: `${discoveryGarden}`,
+      thumbnailWidth: "auto",
+      thumbnailHeight: "auto",
+      caption: ""
+    },
     {
         src: `${topo}`,
         thumbnail: `${topo}`,
