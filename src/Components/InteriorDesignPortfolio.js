@@ -5,6 +5,7 @@ import Gallery from 'react-grid-gallery';
 import fuchs from '../assets/Portfolio/InteriorDesignPortfolio/Fuchs_View 1.jpg';
 import livingRoom from '../assets/Portfolio/InteriorDesignPortfolio/Living room_View 2.jpg';
 import desVoskes from '../assets/Portfolio/InteriorDesignPortfolio/Place des Vosges_Seyour 1.jpg';
+import balletHall from '../assets/Portfolio/InteriorDesignPortfolio/Ballet Hall_View 1.jpg';
 
 
 export default class InteriorDesignPortfolio extends Component {
@@ -34,7 +35,7 @@ export default class InteriorDesignPortfolio extends Component {
           overflow: "auto"}}
         className="portfolio-gallery"
       >
-        <Gallery
+        <CustomGallery
           images={images}
           enableImageSelection={false}
           rowHeight={300}
@@ -69,21 +70,40 @@ export default class InteriorDesignPortfolio extends Component {
       thumbnail: `${fuchs}`,
       thumbnailWidth: "auto",
       thumbnailHeight: "auto",
-      caption: ""
+      caption: "Fuchs",
+      detailUrl: "/fuchs"
     },
     {
       src: `${livingRoom}`,
       thumbnail: `${livingRoom}`,
       thumbnailWidth: "auto",
       thumbnailHeight: "auto",
-      caption: ""
+      caption: "Living room",
+      detailUrl: "/doroshenko-residence"
     },
     {
       src: `${desVoskes}`,
       thumbnail: `${desVoskes}`,
       thumbnailWidth: "auto",
       thumbnailHeight: "auto",
-      caption: ""
+      caption: "Place des Vosges",
+      detailUrl: "/place-des-vosges"
+    },
+    {
+      src: `${balletHall}`,
+      thumbnail: `${balletHall}`,
+      thumbnailWidth: "auto",
+      thumbnailHeight: "auto",
+      caption: "Ballet Hall",
+      detailUrl: "/ballet-hall"
     }
   ])
+}
+
+
+class CustomGallery extends Gallery {
+  onClickImage(e) {
+      var image = this.state.images[this.state.currentImage];
+      window.location.href = image.detailUrl;
+  }
 }

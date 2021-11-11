@@ -14,7 +14,7 @@ import parkRide from '../assets/Portfolio/PortfolioHomePage/Park & Ride.jpg';
 import subwayHub from '../assets/Portfolio/PortfolioHomePage/Subway Hub.jpg';
 import warnerMall from '../assets/Portfolio/PortfolioHomePage/Warner Mall.jpg';
 
-export default class PortfolioMain extends Component {
+class PortfolioMain extends Component {
   constructor(props){
     super(props);
     this.state = {
@@ -44,12 +44,11 @@ export default class PortfolioMain extends Component {
               overflow: "auto"}}
             className="portfolio-gallery"
             >
-          <Gallery
+          <CustomGallery
             images={images}
             enableImageSelection={false}
             rowHeight={300}
             margin={5}
-            
           />
         </div>
       </Container>
@@ -87,7 +86,8 @@ export default class PortfolioMain extends Component {
         thumbnail: `${subwayHub}`,
         thumbnailWidth: "auto",
         thumbnailHeight: "auto",
-        caption: "Subway Hub"
+        caption: "Subway Hub",
+        detailUrl: '/subway-hub'
     },
     {
         src: `${warnerMall}`,
@@ -148,3 +148,13 @@ export default class PortfolioMain extends Component {
     }
   ])
 }
+
+class CustomGallery extends Gallery {
+  onClickImage(e) {
+      var image = this.state.images[this.state.currentImage];
+      window.location.href = image.detailUrl;
+  }
+}
+
+
+export default PortfolioMain

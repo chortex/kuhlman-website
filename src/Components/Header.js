@@ -12,7 +12,14 @@ import Contacts from '../Pages/Contacts';
 import PrivacyPolicy from '../Pages/PrivacyPolicy';
 import NoMatch from '../Components/NoMatch';
 import RouterScrollTop from '../Components/RouterScrollTop';
-import SubwayHub from '../Components/SubwayHub';
+import SubwayHub from '../Components/Projects/SubwayHub';
+import Gjeversrudveien from '../Components/Projects/Gjeversrudveien';
+import Blosser from '../Components/Projects/Blosser';
+import SlokkerHomes from '../Components/Projects/SlokkerHomes';
+import DoroshenkoResidence from '../Components/Projects/DoroshenkoResidence';
+import PlaceDesVosges from '../Components/Projects/PlaceDesVosges';
+import Fuchs from '../Components/Projects/Fuchs';
+import BalletHall from '../Components/Projects/BalletHall';
 
 
 
@@ -75,6 +82,13 @@ export default class Header extends Component {
           <Route path={process.env.PUBLIC_URL + '/contacts'} component={Contacts} />
           <Route path={process.env.PUBLIC_URL + '/privacy-policy'} component={PrivacyPolicy} />
           <Route path={process.env.PUBLIC_URL + '/subway-hub'} component={SubwayHub} />
+          <Route path={process.env.PUBLIC_URL + '/gjeversrudveien'} component={Gjeversrudveien} />
+          <Route path={process.env.PUBLIC_URL + '/blosser'} component={Blosser} />
+          <Route path={process.env.PUBLIC_URL + '/slokker-homes'} component={SlokkerHomes} />
+          <Route path={process.env.PUBLIC_URL + '/doroshenko-residence'} component={DoroshenkoResidence} />
+          <Route path={process.env.PUBLIC_URL + '/place-des-vosges'} component={PlaceDesVosges} />
+          <Route path={process.env.PUBLIC_URL + '/fuchs'} component={Fuchs} />
+          <Route path={process.env.PUBLIC_URL + '/ballet-hall'} component={BalletHall} />
           <Route component={NoMatch} />
         </Switch>
       </Router>

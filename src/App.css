@@ -97,61 +97,61 @@ html {
 }
 
 #introCarousel,
-      .carousel-inner,
-      .carousel-item,
-      .carousel-item.active {
-        height: 100vh;
-      }
+  .carousel-inner,
+  .carousel-item,
+  .carousel-item.active {
+    height: 100vh;
+  }
 
-      .carousel-item:nth-child(1) {
-        background-image: url('../src/assets/Cover/exterior.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center center;
-      }
+  .carousel-item:nth-child(1) {
+    background-image: url('../src/assets/Cover/exterior.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
 
-      .carousel-item:nth-child(2) {
-        background-image: url('../src/assets/Cover/engineering.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center center;
-      }
+  .carousel-item:nth-child(2) {
+    background-image: url('../src/assets/Cover/engineering.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
 
-      .carousel-item:nth-child(3) {
-        background-image: url('../src/assets/Cover/architecture.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center center;
-      }
+  .carousel-item:nth-child(3) {
+    background-image: url('../src/assets/Cover/architecture.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
 
-      .carousel-item:nth-child(4) {
-        background-image: url('../src/assets/Cover/interior.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center center;
-      }
+  .carousel-item:nth-child(4) {
+    background-image: url('../src/assets/Cover/interior.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
 
-      .carousel-item:nth-child(5) {
-        background-image: url('../src/assets/Cover/exterior.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center center;
-      }
+  .carousel-item:nth-child(5) {
+    background-image: url('../src/assets/Cover/exterior.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
 
-      .carousel-inner .carousel-item {
-        opacity: 0;
-        top: 0;
-        left: 0;
-        width: 100%;
-        display: block;
-        position: absolute;
-      }
-      .carousel-inner .carousel-item:first-of-type {
-        position: relative;
-      }
-      .carousel-inner .active {
-        opacity: 1;
-      }
+  .carousel-inner .carousel-item {
+    opacity: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: block;
+    position: absolute;
+  }
+  .carousel-inner .carousel-item:first-of-type {
+    position: relative;
+  }
+  .carousel-inner .active {
+    opacity: 1;
+  }
 
 
 /* Jumbotron */
@@ -323,7 +323,7 @@ html {
 
 /* Home portfolio gallery animation */
 .portfolio-gallery img, .link-wrapper img {
-  transition: transform 1.5s ease;
+  transition: transform 1s ease;
 }
 .portfolio-gallery img:hover, .link-wrapper img:hover {
   transform: scale(1.1);

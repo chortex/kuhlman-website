@@ -7,10 +7,14 @@ import ArchitecturalDesignPortfolio from '../Components/ArchitecturalDesignPortf
 import InteriorDesignPortfolio from '../Components/InteriorDesignPortfolio';
 import ExteriorVisualizationPortfolio from '../Components/ExteriorVisualizationPortfolio';
 import InteriorVisualizationPortfolio from '../Components/InteriorVisualizationPortfolio';
-import { NavLink } from 'react-router-dom';
+import PanoramaRendersPortfolio from '../Components/PanoramaRendersPortfolio';
+import ARPortfolio from '../Components/ARPortfolio';
+
 
 
 export default class Portfolio extends Component {
+  
+  
   render() {
     return (
       <div className='pt-5'>
@@ -18,13 +22,7 @@ export default class Portfolio extends Component {
           <div className='pt-5 pb-5'>
             <h1 className='display-3' style={{fontWeight: "600"}}>Portfolio</h1>
           </div>
-          <NavLink
-            className='btn btn-secondary'
-            path to='/subway-hub'
-          >
-            Subway Hub
-          </NavLink>
-          <Tabs defaultActiveKey="BIM" id="uncontrolled-tab-example" variant='custom' className="btn-lg mb-5 portfolio-tabs pb-5">
+          <Tabs onSelect={this.handleSelect} defaultActiveKey="BIM" id="uncontrolled-tab-example" variant='custom' className="btn-lg mb-5 portfolio-tabs pb-5">
             <Tab eventKey="BIM" title="BIM Modeling">
               <BIMModelingPortfolio />
             </Tab>
@@ -41,7 +39,7 @@ export default class Portfolio extends Component {
               <InteriorVisualizationPortfolio />
             </Tab>
             <Tab eventKey="panorama-renders" title="360° Panorama renders">
-              <h1>360° Panorama renders coming soon..</h1>
+              <PanoramaRendersPortfolio />
             </Tab>
             <Tab eventKey="3D-animations" title="3D Animation">
               <Animation />
@@ -50,7 +48,7 @@ export default class Portfolio extends Component {
               <VRPortfolio />
             </Tab>
             <Tab eventKey="AR" title="AR">
-              <h1>Augmented Reality coming soon..</h1>
+              <ARPortfolio />
             </Tab>
           </Tabs>
         </Container>

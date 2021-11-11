@@ -4,12 +4,11 @@ import Gallery from 'react-grid-gallery';
 
 import blosser from '../assets/Portfolio/ArchitecturalDesignPortfolio/Blosser_Axonometric.jpg';
 import gjeversrudveien from '../assets/Portfolio/ArchitecturalDesignPortfolio/74-18 Gjeversrudveien 10 - Axonometric 2.jpg';
-import shops from '../assets/Portfolio/ArchitecturalDesignPortfolio/Shops_3DView.jpg';
+import shops from '../assets/Portfolio/ArchitecturalDesignPortfolio/Shops 3D View.jpg';
 import botanicalGarden from '../assets/Portfolio/ArchitecturalDesignPortfolio/Botanical Garden Facade.jpg';
 import discoveryGarden from '../assets/Portfolio/ArchitecturalDesignPortfolio/Discovery Garden Section.jpg';
 import topo from '../assets/Portfolio/ArchitecturalDesignPortfolio/Section Topo.jpg';
 import park from '../assets/Portfolio/ArchitecturalDesignPortfolio/Central Park Section 2.jpg';
-import skatepark from '../assets/Portfolio/ArchitecturalDesignPortfolio/Skatepark.jpg';
 import theatre from '../assets/Portfolio/ArchitecturalDesignPortfolio/Theatre 3D section.jpg';
 import planetarium from '../assets/Portfolio/ArchitecturalDesignPortfolio/Planetarium 1.jpg';
 import golf from '../assets/Portfolio/ArchitecturalDesignPortfolio/Golf Stadium & Football Stadium.jpg';
@@ -79,84 +78,77 @@ export default class ArchitecturalDesignPortfolio extends Component {
       thumbnail: `${blosser}`,
       thumbnailWidth: "auto",
       thumbnailHeight: "auto",
-      caption: ""
+      caption: "Blosser Axonometric"
     },
     {
       src: `${gjeversrudveien}`,
       thumbnail: `${gjeversrudveien}`,
       thumbnailWidth: "auto",
       thumbnailHeight: "auto",
-      caption: ""
+      caption: "74-18 Gjeversrudveien 10 - Axonometric 2"
     },
     {
       src: `${shops}`,
       thumbnail: `${shops}`,
       thumbnailWidth: "auto",
       thumbnailHeight: "auto",
-      caption: ""
+      caption: "Shops 3DView"
     },
     {
       src: `${botanicalGarden}`,
       thumbnail: `${botanicalGarden}`,
       thumbnailWidth: "auto",
       thumbnailHeight: "auto",
-      caption: ""
+      caption: "Botanical Garden Facade"
     },
     {
       src: `${discoveryGarden}`,
       thumbnail: `${discoveryGarden}`,
       thumbnailWidth: "auto",
       thumbnailHeight: "auto",
-      caption: ""
+      caption: "Discovery Garden Section"
     },
     {
         src: `${topo}`,
         thumbnail: `${topo}`,
         thumbnailWidth: "auto",
         thumbnailHeight: "auto",
-        caption: ""
+        caption: "Section Topo"
     },
     {
       src: `${park}`,
       thumbnail: `${park}`,
       thumbnailWidth: "auto",
       thumbnailHeight: "auto",
-      caption: ""
-    },
-    {
-      src: `${skatepark}`,
-      thumbnail: `${skatepark}`,
-      thumbnailWidth: "auto",
-      thumbnailHeight: "auto",
-      caption: ""
+      caption: "Central Park Section 2"
     },
     {
       src: `${theatre}`,
       thumbnail: `${theatre}`,
       thumbnailWidth: "auto",
       thumbnailHeight: "auto",
-      caption: ""
+      caption: "Theatre 3D section"
     },
     {
       src: `${planetarium}`,
       thumbnail: `${planetarium}`,
       thumbnailWidth: "auto",
       thumbnailHeight: "auto",
-      caption: ""
+      caption: "Planetarium"
     },
     {
       src: `${golf}`,
       thumbnail: `${golf}`,
       thumbnailWidth: "auto",
       thumbnailHeight: "auto",
-      caption: ""
+      caption: "Golf Stadium & Football Stadium"
     },
     {
       src: `${subway}`,
       thumbnail: `${subway}`,
       thumbnailWidth: "auto",
       thumbnailHeight: "auto",
-      caption: ""
+      caption: "Subway Section 1"
     }
   ])
 }

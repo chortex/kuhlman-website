@@ -14,7 +14,7 @@ function ArchitecturalDesignCard() {
       <div className="w-md-100 d-flex m-auto row">
         <div className="col-xl-5 d-flex justify-content-center">
         <div className="d-block link-wrapper">
-          <a href='/portfolio#architectural-design'>
+          <a href='/portfolio'>
             <img 
               src={serviceImage}
               style={{width:"100%", height:"auto"}}
