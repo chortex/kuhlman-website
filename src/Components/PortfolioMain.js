@@ -48,6 +48,7 @@ class PortfolioMain extends Component {
             images={images}
             enableImageSelection={false}
             rowHeight={300}
+            lightboxWidth={1440}
             margin={5}
           />
         </div>
@@ -77,73 +78,73 @@ class PortfolioMain extends Component {
     {
         src: `${mountHope}`,
         thumbnail: `${mountHope}`,
-        thumbnailWidth: "auto",
-        thumbnailHeight: "auto",
+        thumbnailWidth: 400,
+        thumbnailHeight: 400,
         caption: "2 Mount Hope"
     },
     {
         src: `${subwayHub}`,
         thumbnail: `${subwayHub}`,
-        thumbnailWidth: "auto",
-        thumbnailHeight: "auto",
+        thumbnailWidth: 400,
+        thumbnailHeight: 250,
         caption: "Subway Hub",
         detailUrl: '/subway-hub'
     },
     {
         src: `${warnerMall}`,
         thumbnail: `${warnerMall}`,
-        thumbnailWidth: "auto",
-        thumbnailHeight: "auto",
+        thumbnailWidth: 400,
+        thumbnailHeight: 375,
         caption: "Warner Mall"
     },
     
     {
         src: `${airport}`,
         thumbnail: `${airport}`,
-        thumbnailWidth: "auto",
-        thumbnailHeight: "auto",
+        thumbnailWidth: 400,
+        thumbnailHeight: 450,
         caption: "Airport"
     },
     {
         src: `${kitchen}`,
         thumbnail: `${kitchen}`,
-        thumbnailWidth: "auto",
-        thumbnailHeight: "auto",
+        thumbnailWidth: 320,
+        thumbnailHeight: 300,
         caption: "Kitchen"
     },
     {
         src: `${blosser}`,
         thumbnail: `${blosser}`,
-        thumbnailWidth: "auto",
-        thumbnailHeight: "auto",
+        thumbnailWidth: 520,
+        thumbnailHeight: 350,
         caption: "Blosser"
     },
     {
         src: `${livingRoom}`,
         thumbnail: `${livingRoom}`,
-        thumbnailWidth: "auto",
-        thumbnailHeight: "auto",
+        thumbnailWidth: 550,
+        thumbnailHeight: 370,
         caption: "Living room"
     },
     {
         src: `${napa}`,
         thumbnail: `${napa}`,
-        thumbnailWidth: "auto",
-        thumbnailHeight: "auto",
+        thumbnailWidth: 550,
+        thumbnailHeight: 300,
         caption: "Napa"
     },
     {
         src: `${sunsetTrail}`,
         thumbnail: `${sunsetTrail}`,
-        thumbnailWidth: "auto",
-        thumbnailHeight: "auto",
+        thumbnailWidth: 520,
+        thumbnailHeight: 300,
         caption: "35 Sunset Trail"
     },
     {
         src: `${parkRide}`,
         thumbnail: `${parkRide}`,
-        thumbnailWidth: "auto",
-        thumbnailHeight: "auto",
+        thumbnailWidth: 520,
+        thumbnailHeight: 300,
         caption: "Park & Ride"
     }
   ])
