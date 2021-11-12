@@ -44,11 +44,12 @@ export default class BIMPortfolio extends Component {
           overflow: "auto"}}
         className="portfolio-gallery"
       >
-        <Gallery
+        <CustomGallery
           images={images}
           enableImageSelection={false}
           rowHeight={300}
           margin={5}
+          lightboxWidth={1440}
         />
       </div>
     );
@@ -77,100 +78,115 @@ export default class BIMPortfolio extends Component {
     {
       src: `${airport}`,
       thumbnail: `${airport}`,
-      thumbnailWidth: "auto",
-      thumbnailHeight: "auto",
+      thumbnailWidth: 500,
+      thumbnailHeight: 310,
       caption: "Airport"
     },
     {
       src: `${botanicalGarden}`,
       thumbnail: `${botanicalGarden}`,
-      thumbnailWidth: "auto",
-      thumbnailHeight: "auto",
-      caption: "Botanical Garden"
+      thumbnailWidth: 500,
+      thumbnailHeight: 310,
+      caption: "Botanical Garden",
+      detailUrl: '/subway-hub'
     },
     {
       src: `${discoveryGarden}`,
       thumbnail: `${discoveryGarden}`,
-      thumbnailWidth: "auto",
-      thumbnailHeight: "auto",
-      caption: "Discovery Garden"
+      thumbnailWidth: 500,
+      thumbnailHeight: 310,
+      caption: "Discovery Garden",
+      detailUrl: '/subway-hub'
     },
     {
       src: `${parkRide}`,
       thumbnail: `${parkRide}`,
-      thumbnailWidth: "auto",
-      thumbnailHeight: "auto",
+      thumbnailWidth: 500,
+      thumbnailHeight: 310,
       caption: "Park & Ride"
     },
     {
       src: `${alehNegev}`,
       thumbnail: `${alehNegev}`,
-      thumbnailWidth: "auto",
-      thumbnailHeight: "auto",
+      thumbnailWidth: 500,
+      thumbnailHeight: 310,
       caption: "Aleh Negev"
     },
     {
       src: `${subwayHub}`,
       thumbnail: `${subwayHub}`,
-      thumbnailWidth: "auto",
-      thumbnailHeight: "auto",
-      caption: "Subway Hub Stadium complex"
+      thumbnailWidth: 500,
+      thumbnailHeight: 310,
+      caption: "Subway Hub Stadium complex",
+      detailUrl: '/subway-hub'
     },
     {
       src: `${planetarium}`,
       thumbnail: `${planetarium}`,
-      thumbnailWidth: "auto",
-      thumbnailHeight: "auto",
-      caption: "Planetarium"
+      thumbnailWidth: 500,
+      thumbnailHeight: 310,
+      caption: "Planetarium",
+      detailUrl: '/subway-hub'
     },
     {
       src: `${school}`,
       thumbnail: `${school}`,
-      thumbnailWidth: "auto",
-      thumbnailHeight: "auto",
-      caption: "School"
+      thumbnailWidth: 500,
+      thumbnailHeight: 310,
+      caption: "School",
+      detailUrl: '/subway-hub'
     },
     {
       src: `${slokkerHomes}`,
       thumbnail: `${slokkerHomes}`,
-      thumbnailWidth: "auto",
-      thumbnailHeight: "auto",
-      caption: "Slokker Homes"
+      thumbnailWidth: 500,
+      thumbnailHeight: 310,
+      caption: "Slokker Homes",
+      detailUrl: '/slokker-homes'
     },
     {
       src: `${shop}`,
       thumbnail: `${shop}`,
-      thumbnailWidth: "auto",
-      thumbnailHeight: "auto",
-      caption: "Shop"
+      thumbnailWidth: 500,
+      thumbnailHeight: 310,
+      caption: "Shop",
+      detailUrl: '/subway-hub'
     },
     {
       src: `${beitHaedidud}`,
       thumbnail: `${beitHaedidud}`,
-      thumbnailWidth: "auto",
-      thumbnailHeight: "auto",
+      thumbnailWidth: 500,
+      thumbnailHeight: 310,
       caption: "Beit Hayedidut"
     },
     {
       src: `${baitBalev}`,
       thumbnail: `${baitBalev}`,
-      thumbnailWidth: "auto",
-      thumbnailHeight: "auto",
+      thumbnailWidth: 500,
+      thumbnailHeight: 310,
       caption: "Bait Balev"
     },
     {
       src: `${sunsetTrail}`,
       thumbnail: `${sunsetTrail}`,
-      thumbnailWidth: "auto",
-      thumbnailHeight: "auto",
+      thumbnailWidth: 500,
+      thumbnailHeight: 310,
       caption: "35 Sunset Trail"
     },
     {
       src: `${fulton}`,
       thumbnail: `${fulton}`,
-      thumbnailWidth: "auto",
-      thumbnailHeight: "auto",
+      thumbnailWidth: 500,
+      thumbnailHeight: 310,
       caption: "1118 Fulton"
     },
   ])
+}
+
+
+class CustomGallery extends Gallery {
+  onClickImage(e) {
+      var image = this.state.images[this.state.currentImage];
+      window.location.href = image.detailUrl;
+  }
 }

@@ -55,6 +55,7 @@ export default class ExteriorVisualizationPortfolio extends Component {
           enableImageSelection={false}
           rowHeight={300}
           margin={5}
+          lightboxWidth={1440}
         />
       </div>
     );
@@ -83,134 +84,134 @@ export default class ExteriorVisualizationPortfolio extends Component {
     {
       src: `${napa3}`,
       thumbnail: `${napa3}`,
-      thumbnailWidth: "auto",
-      thumbnailHeight: "auto",
+      thumbnailWidth: 440,
+      thumbnailHeight: 250,
       caption: "Napa Residence"
     },
     {
       src: `${parkAndRideTop}`,
       thumbnail: `${parkAndRideTop}`,
-      thumbnailWidth: "auto",
-      thumbnailHeight: "auto",
+      thumbnailWidth: 480,
+      thumbnailHeight: 260,
       caption: "Park & Ride"
     },
     {
       src: `${busStation4}`,
       thumbnail: `${busStation4}`,
-      thumbnailWidth: "auto",
-      thumbnailHeight: "auto",
+      thumbnailWidth: 440,
+      thumbnailHeight: 250,
       caption: "Bus Station"
     },
     {
       src: `${residence}`,
       thumbnail: `${residence}`,
-      thumbnailWidth: "auto",
-      thumbnailHeight: "auto",
+      thumbnailWidth: 400,
+      thumbnailHeight: 260,
       caption: "Residence"
     },
     {
       src: `${busStation3}`,
       thumbnail: `${busStation3}`,
-      thumbnailWidth: "auto",
-      thumbnailHeight: "auto",
+      thumbnailWidth: 480,
+      thumbnailHeight: 260,
       caption: "Bus Station"
     },
     {
       src: `${busStation1}`,
       thumbnail: `${busStation1}`,
-      thumbnailWidth: "auto",
-      thumbnailHeight: "auto",
+      thumbnailWidth: 440,
+      thumbnailHeight: 250,
       caption: "Bus Station"
     },
     {
       src: `${residence1}`,
       thumbnail: `${residence1}`,
-      thumbnailWidth: "auto",
-      thumbnailHeight: "auto",
+      thumbnailWidth: 480,
+      thumbnailHeight: 250,
       caption: "Napa Residence"
     },
     {
       src: `${airport1}`,
       thumbnail: `${airport1}`,
-      thumbnailWidth: "auto",
-      thumbnailHeight: "auto",
+      thumbnailWidth: 320,
+      thumbnailHeight: 400,
       caption: "Airport"
     },
     {
       src: `${heisHaus1}`,
       thumbnail: `${heisHaus1}`,
-      thumbnailWidth: "auto",
-      thumbnailHeight: "auto",
+      thumbnailWidth: 440,
+      thumbnailHeight: 250,
       caption: "Heise Haus"
     },
     {
       src: `${heisHotel}`,
       thumbnail: `${heisHotel}`,
-      thumbnailWidth: "auto",
-      thumbnailHeight: "auto",
+      thumbnailWidth: 480,
+      thumbnailHeight: 260,
       caption: "Heise Haus"
     },
     {
       src: `${heisHausVillage}`,
       thumbnail: `${heisHausVillage}`,
-      thumbnailWidth: "auto",
-      thumbnailHeight: "auto",
+      thumbnailWidth: 480,
+      thumbnailHeight: 260,
       caption: "Heise Haus"
     },
     {
       src: `${napa2}`,
       thumbnail: `${napa2}`,
-      thumbnailWidth: "auto",
-      thumbnailHeight: "auto",
+      thumbnailWidth: 440,
+      thumbnailHeight: 250,
       caption: "Napa Residence"
     },
     {
       src: `${airport2}`,
       thumbnail: `${airport2}`,
-      thumbnailWidth: "auto",
-      thumbnailHeight: "auto",
+      thumbnailWidth: 320,
+      thumbnailHeight: 390,
       caption: "Airport"
-    },
-    {
-      src: `${mountHope2}`,
-      thumbnail: `${mountHope2}`,
-      thumbnailWidth: "auto",
-      thumbnailHeight: "auto",
-      caption: "2 Mount Hope"
     },
     {
       src: `${parkAndRideSection}`,
       thumbnail: `${parkAndRideSection}`,
-      thumbnailWidth: "auto",
-      thumbnailHeight: "auto",
+      thumbnailWidth: 520,
+      thumbnailHeight: 250,
       caption: "Park & Ride"
     },
     {
       src: `${napa4}`,
       thumbnail: `${napa4}`,
-      thumbnailWidth: "auto",
-      thumbnailHeight: "auto",
+      thumbnailWidth: 480,
+      thumbnailHeight: 260,
       caption: "Napa Residence"
     },
     {
       src: `${heisHausChristmas}`,
       thumbnail: `${heisHausChristmas}`,
-      thumbnailWidth: "auto",
-      thumbnailHeight: "auto",
+      thumbnailWidth: 500,
+      thumbnailHeight: 260,
       caption: "Heise Haus"
+    },
+    {
+      src: `${mountHope2}`,
+      thumbnail: `${mountHope2}`,
+      thumbnailWidth: 350,
+      thumbnailHeight: 350,
+      caption: "2 Mount Hope"
     },
     {
       src: `${parkAndRide}`,
       thumbnail: `${parkAndRide}`,
-      thumbnailWidth: "auto",
-      thumbnailHeight: "auto",
+      thumbnailWidth: 480,
+      thumbnailHeight: 250,
       caption: "Park & Ride"
     },
     {
       src: `${busStation2}`,
       thumbnail: `${busStation2}`,
-      thumbnailWidth: "auto",
-      thumbnailHeight: "auto",
+      thumbnailWidth: 480,
+      thumbnailHeight: 250,
       caption: "Bus Station"
     }
   ])

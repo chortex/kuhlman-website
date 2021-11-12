@@ -110,21 +110,24 @@ class PortfolioMain extends Component {
         thumbnail: `${kitchen}`,
         thumbnailWidth: 320,
         thumbnailHeight: 300,
-        caption: "Kitchen"
+        caption: "Kitchen",
+        detailUrl: '/place-des-vosges'
     },
     {
         src: `${blosser}`,
         thumbnail: `${blosser}`,
         thumbnailWidth: 520,
         thumbnailHeight: 350,
-        caption: "Blosser"
+        caption: "Blosser",
+        detailUrl: '/blosser'
     },
     {
         src: `${livingRoom}`,
         thumbnail: `${livingRoom}`,
         thumbnailWidth: 550,
         thumbnailHeight: 370,
-        caption: "Living room"
+        caption: "Living room",
+        detailUrl: '/doroshenko-residence'
     },
     {
         src: `${napa}`,

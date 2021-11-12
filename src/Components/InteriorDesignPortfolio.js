@@ -40,6 +40,7 @@ export default class InteriorDesignPortfolio extends Component {
           enableImageSelection={false}
           rowHeight={300}
           margin={5}
+          lightboxWidth={1440}
         />
       </div>
     );
@@ -68,32 +69,32 @@ export default class InteriorDesignPortfolio extends Component {
     {
       src: `${fuchs}`,
       thumbnail: `${fuchs}`,
-      thumbnailWidth: "auto",
-      thumbnailHeight: "auto",
+      thumbnailWidth: 470,
+      thumbnailHeight: 390,
       caption: "Fuchs",
       detailUrl: "/fuchs"
     },
     {
       src: `${livingRoom}`,
       thumbnail: `${livingRoom}`,
-      thumbnailWidth: "auto",
-      thumbnailHeight: "auto",
+      thumbnailWidth: 500,
+      thumbnailHeight: 300,
       caption: "Living room",
       detailUrl: "/doroshenko-residence"
     },
     {
       src: `${desVoskes}`,
       thumbnail: `${desVoskes}`,
-      thumbnailWidth: "auto",
-      thumbnailHeight: "auto",
+      thumbnailWidth: 400,
+      thumbnailHeight: 270,
       caption: "Place des Vosges",
       detailUrl: "/place-des-vosges"
     },
     {
       src: `${balletHall}`,
       thumbnail: `${balletHall}`,
-      thumbnailWidth: "auto",
-      thumbnailHeight: "auto",
+      thumbnailWidth: 500,
+      thumbnailHeight: 280,
       caption: "Ballet Hall",
       detailUrl: "/ballet-hall"
     }

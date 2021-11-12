@@ -51,6 +51,7 @@ export default class IteriorVisualizationPortfolio extends Component {
           enableImageSelection={false}
           rowHeight={300}
           margin={5}
+          lightboxWidth={1440}
         />
       </div>
     );
@@ -79,100 +80,100 @@ export default class IteriorVisualizationPortfolio extends Component {
     {
       src: `${balletHole1}`,
       thumbnail: `${balletHole1}`,
-      thumbnailWidth: "auto",
-      thumbnailHeight: "auto",
-      caption: ""
+      thumbnailWidth: 533,
+      thumbnailHeight: 300,
+      caption: "Ballet Hall - View 1"
     },
     {
       src: `${spa2}`,
       thumbnail: `${spa2}`,
-      thumbnailWidth: "auto",
-      thumbnailHeight: "auto",
-      caption: ""
+      thumbnailWidth: 300,
+      thumbnailHeight: 300,
+      caption: "Spa View 2"
     },
     {
       src: `${cabinet2}`,
       thumbnail: `${cabinet2}`,
-      thumbnailWidth: "auto",
-      thumbnailHeight: "auto",
-      caption: ""
+      thumbnailWidth: 425,
+      thumbnailHeight: 300,
+      caption: "Cabinet - View 2"
     },
     {
       src: `${warnerMallAppartment}`,
       thumbnail: `${warnerMallAppartment}`,
-      thumbnailWidth: "auto",
-      thumbnailHeight: "auto",
-      caption: ""
+      thumbnailWidth: 400,
+      thumbnailHeight: 300,
+      caption: "Warner Mall - Apartment"
     },
     {
       src: `${coffeeShop2}`,
       thumbnail: `${coffeeShop2}`,
-      thumbnailWidth: "auto",
-      thumbnailHeight: "auto",
-      caption: ""
+      thumbnailWidth: 800,
+      thumbnailHeight: 300,
+      caption: "Cofee Shop - View 2"
     },
     {
       src: `${warnerMallFirstFloor}`,
       thumbnail: `${warnerMallFirstFloor}`,
-      thumbnailWidth: "auto",
-      thumbnailHeight: "auto",
-      caption: ""
+      thumbnailWidth: 520,
+      thumbnailHeight: 300,
+      caption: "Warner Mall - First Floor"
     },
     {
       src: `${warnerMallModel}`,
       thumbnail: `${warnerMallModel}`,
-      thumbnailWidth: "auto",
-      thumbnailHeight: "auto",
-      caption: ""
+      thumbnailWidth: 400,
+      thumbnailHeight: 300,
+      caption: "Warner Mall - Model Room"
     },
     {
       src: `${livingRoom1}`,
       thumbnail: `${livingRoom1}`,
-      thumbnailWidth: "auto",
-      thumbnailHeight: "auto",
-      caption: ""
+      thumbnailWidth: 530,
+      thumbnailHeight: 300,
+      caption: "Living room - View 1"
     },
     {
       src: `${kitchen1}`,
       thumbnail: `${kitchen1}`,
-      thumbnailWidth: "auto",
-      thumbnailHeight: "auto",
-      caption: ""
+      thumbnailWidth: 530,
+      thumbnailHeight: 300,
+      caption: "Kitchen - View 1"
     },
     {
       src: `${kitchen2}`,
       thumbnail: `${kitchen2}`,
-      thumbnailWidth: "auto",
-      thumbnailHeight: "auto",
-      caption: ""
+      thumbnailWidth: 500,
+      thumbnailHeight: 300,
+      caption: "Kitchen - View 2"
     },
     {
       src: `${livingRoom2}`,
       thumbnail: `${livingRoom2}`,
-      thumbnailWidth: "auto",
-      thumbnailHeight: "auto",
-      caption: ""
+      thumbnailWidth: 530,
+      thumbnailHeight: 300,
+      caption: "Living room - View 2"
     },
     {
       src: `${entrance}`,
       thumbnail: `${entrance}`,
-      thumbnailWidth: "auto",
-      thumbnailHeight: "auto",
-      caption: ""
+      thumbnailWidth: 420,
+      thumbnailHeight: 300,
+      caption: "Entrance"
     },
     {
       src: `${bedroom2}`,
       thumbnail: `${bedroom2}`,
-      thumbnailWidth: "auto",
-      thumbnailHeight: "auto",
-      caption: ""
+      thumbnailWidth: 530,
+      thumbnailHeight: 300,
+      caption: "Bedroom - View 2"
     },
     {
       src: `${bedroom1}`,
       thumbnail: `${bedroom1}`,
-      thumbnailWidth: "auto",
-      thumbnailHeight: "auto",
-      caption: ""
+      thumbnailWidth: 530,
+      thumbnailHeight: 300,
+      caption: "Bedroom - View 1"
     },
   ])
 }
