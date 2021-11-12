@@ -13,8 +13,8 @@ function Cover() {
     <Carousel fade className="carousel" data-wrap="true">
       <Carousel.Item className='pt-3 pl-3'>
         <Container>
-        <div className='pt-5 animated-heading-left desktop-cover-header'>
-          <h1 className='text-white animated-heading-bottom d-flex col align-items-center' style={{fontWeight: "500", fontSize: "11rem", textAlign: "left"}}><span>BIM</span><div className="d-flex row" ><span className='display-3 fw-bold'>Architectural</span><span className='display-3 fw-bold'>Studio</span></div></h1>
+        <div className='pt-5 desktop-cover-header animated-heading-left'>
+          <h1 className='text-white animated-heading-bottom d-flex col align-items-center' style={{fontWeight: "500", fontSize: "11rem", textAlign: "left"}}><span className="">BIM</span><div className="d-flex row animated-heading-opacity" ><span className='display-3 fw-bold'>Architectural</span><span className='display-3 fw-bold'>Studio</span></div></h1>
           <h4 className='text-white ps-3' id="mission" style={{fontWeight: "300", fontSize: "1.2rem", width:"35%", position:"relative", zIndex:"2", textAlign:"justify"}}>We create and implement innovative designs solutions closely collaborating with our clients <Collapse in={openMision}><div id="mision-more">to making our clients’ works on projects easier on a daily basis, building long-term relationships with our company</div></Collapse>
             <br />
             <div className="d-flex justify-content-end pe-4">

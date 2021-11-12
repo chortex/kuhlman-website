@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import {Container} from 'react-bootstrap';
 import ContactsCover from '../assets/ContactsCover.jpg';
+import { InlineWidget } from "react-calendly";
 
 export default class Contacts extends Component {
   render() {
@@ -50,6 +51,12 @@ export default class Contacts extends Component {
           </div>
         </div>
       </div>
+      <h2 className='text-center pt-3'>Schedule a meeting!</h2>
+      <InlineWidget url="https://calendly.com/ostap-korolyak?hide_landing_page_details=1&hide_gdpr_banner=1&primary_color=ecc552"
+        styles={{
+          height: "700px"
+        }}
+      />
     </Container>
     )
   }

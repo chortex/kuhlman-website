@@ -206,11 +206,28 @@ html {
   }
 }
 .animated-heading-left {
-  animation-duration: 2s;
+  animation-duration: 1s;
   animation-name: slidein-left;
   animation-iteration-count: 1;
 }
+
 @keyframes slidein-left {
+  from {
+    margin-left: -200%;
+    width: 0%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+.animated-heading-opacity {
+  animation-duration: 5s;
+  animation-name: slidein-opacity;
+  animation-iteration-count: 1;
+}
+@keyframes slidein-opacity {
   from {
     opacity: 0;
     width: 100%;
@@ -250,6 +267,16 @@ html {
   transition: all 500ms ease-out;
   min-height: 233px;
   height: auto;
+}
+@media only screen and (min-width: 1460px) {
+  .main-services {
+    min-height: 300px;
+  }
+}
+@media only screen and (min-width: 1960px) {
+  .main-services {
+    min-height: 350px;
+  }
 }
 .main-services:hover {
   background-size: cover;
