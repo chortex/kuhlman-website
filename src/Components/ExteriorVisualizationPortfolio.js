@@ -32,11 +32,12 @@ export default class ExteriorVisualizationPortfolio extends Component {
   }
 
   render () {
+    [...document.querySelectorAll('img')].forEach(img => img.title = '')
+
     const images = this.state.images.map((i) => {
       i.customOverlay = (
-        <div>
+        <div className='caption-wrapper'>
           <div>{i.caption}</div>
-          {i.hasOwnProperty('tags') && this.setCustomTags(i)}
         </div>);
       return i;
     });

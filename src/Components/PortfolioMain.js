@@ -23,11 +23,12 @@ class PortfolioMain extends Component {
   }
 
   render () {
+    [...document.querySelectorAll('img')].forEach(img => img.title = '')
+
     const images = this.state.images.map((i) => {
       i.customOverlay = (
-        <div>
+        <div className='caption-wrapper'>
           <div>{i.caption}</div>
-          {i.hasOwnProperty('tags') && this.setCustomTags(i)}
         </div>);
       return i;
     });
@@ -44,7 +45,7 @@ class PortfolioMain extends Component {
               overflow: "auto"}}
             className="portfolio-gallery"
             >
-          <CustomGallery
+          <Gallery
             images={images}
             enableImageSelection={false}
             rowHeight={300}
@@ -73,6 +74,7 @@ class PortfolioMain extends Component {
     ).isRequired
   };
 
+
   PortfolioMain.defaultProps = {
   images: ([
     {
@@ -87,8 +89,7 @@ class PortfolioMain extends Component {
         thumbnail: `${subwayHub}`,
         thumbnailWidth: 400,
         thumbnailHeight: 250,
-        caption: "Subway Hub",
-        detailUrl: '/subway-hub'
+        caption: <a href="/subway-hub">Subway Hub</a>
     },
     {
         src: `${warnerMall}`,
@@ -110,24 +111,21 @@ class PortfolioMain extends Component {
         thumbnail: `${kitchen}`,
         thumbnailWidth: 320,
         thumbnailHeight: 300,
-        caption: "Kitchen",
-        detailUrl: '/place-des-vosges'
+        caption: <a href="/place-des-vosges">Kitchen</a>
     },
     {
         src: `${blosser}`,
         thumbnail: `${blosser}`,
         thumbnailWidth: 520,
         thumbnailHeight: 350,
-        caption: "Blosser",
-        detailUrl: '/blosser'
+        caption: <a href="/blosser">Blosser</a>
     },
     {
         src: `${livingRoom}`,
         thumbnail: `${livingRoom}`,
         thumbnailWidth: 550,
         thumbnailHeight: 370,
-        caption: "Living room",
-        detailUrl: '/doroshenko-residence'
+        caption: <a href="/doroshenko-residence">Living room</a>
     },
     {
         src: `${napa}`,
@@ -151,13 +149,6 @@ class PortfolioMain extends Component {
         caption: "Park & Ride"
     }
   ])
-}
-
-class CustomGallery extends Gallery {
-  onClickImage(e) {
-      var image = this.state.images[this.state.currentImage];
-      window.location.href = image.detailUrl;
-  }
 }
 
 

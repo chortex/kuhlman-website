@@ -26,11 +26,12 @@ export default class BIMPortfolio extends Component {
   }
 
   render () {
+    [...document.querySelectorAll('img')].forEach(img => img.title = '')
+
     const images = this.state.images.map((i) => {
       i.customOverlay = (
-        <div>
+        <div className='caption-wrapper'>
           <div>{i.caption}</div>
-          {i.hasOwnProperty('tags') && this.setCustomTags(i)}
         </div>);
       return i;
     });
@@ -44,7 +45,7 @@ export default class BIMPortfolio extends Component {
           overflow: "auto"}}
         className="portfolio-gallery"
       >
-        <CustomGallery
+        <Gallery
           images={images}
           enableImageSelection={false}
           rowHeight={300}
@@ -87,16 +88,14 @@ export default class BIMPortfolio extends Component {
       thumbnail: `${botanicalGarden}`,
       thumbnailWidth: 500,
       thumbnailHeight: 310,
-      caption: "Botanical Garden",
-      detailUrl: '/subway-hub'
+      caption: <a href="/subway-hub">Botanical Garden</a>
     },
     {
       src: `${discoveryGarden}`,
       thumbnail: `${discoveryGarden}`,
       thumbnailWidth: 500,
       thumbnailHeight: 310,
-      caption: "Discovery Garden",
-      detailUrl: '/subway-hub'
+      caption: <a href="/subway-hub">Discovery Garden</a>
     },
     {
       src: `${parkRide}`,
@@ -117,40 +116,35 @@ export default class BIMPortfolio extends Component {
       thumbnail: `${subwayHub}`,
       thumbnailWidth: 500,
       thumbnailHeight: 310,
-      caption: "Subway Hub Stadium complex",
-      detailUrl: '/subway-hub'
+      caption: <a href="/subway-hub">Stadium Complex</a>
     },
     {
       src: `${planetarium}`,
       thumbnail: `${planetarium}`,
       thumbnailWidth: 500,
       thumbnailHeight: 310,
-      caption: "Planetarium",
-      detailUrl: '/subway-hub'
+      caption: <a href="/subway-hub">Planetarium</a>
     },
     {
       src: `${school}`,
       thumbnail: `${school}`,
       thumbnailWidth: 500,
       thumbnailHeight: 310,
-      caption: "School",
-      detailUrl: '/subway-hub'
+      caption: <a href="/subway-hub">School</a>
     },
     {
       src: `${slokkerHomes}`,
       thumbnail: `${slokkerHomes}`,
       thumbnailWidth: 500,
       thumbnailHeight: 310,
-      caption: "Slokker Homes",
-      detailUrl: '/slokker-homes'
+      caption: <a href="/slokker-homes">Slokker Homes</a>
     },
     {
       src: `${shop}`,
       thumbnail: `${shop}`,
       thumbnailWidth: 500,
       thumbnailHeight: 310,
-      caption: "Shop",
-      detailUrl: '/subway-hub'
+      caption: <a href="/subway-hub">Shop</a>
     },
     {
       src: `${beitHaedidud}`,
@@ -181,12 +175,4 @@ export default class BIMPortfolio extends Component {
       caption: "1118 Fulton"
     },
   ])
-}
-
-
-class CustomGallery extends Gallery {
-  onClickImage(e) {
-      var image = this.state.images[this.state.currentImage];
-      window.location.href = image.detailUrl;
-  }
 }

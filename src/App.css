@@ -376,3 +376,41 @@ html {
 .tab-content {
   display: block;
 }
+
+.caption-wrapper {
+  background: rgba(0, 0, 0, 0.4);
+  max-height: 240px;
+  overflow: hidden;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  color: #fff;
+  padding: 10px 25px;
+  font-size: 16px;
+  z-index: 1;
+}
+.caption-wrapper a {
+  color: #fff;
+  text-decoration: none;
+}
+.footerCaption_2r5qf{
+  display: flex;
+  justify-content: center;
+}
+.footerCaption_2r5qf  a {
+  padding: 15px 80px;
+  border: 1px solid #ccc;
+  border-radius: 0.2rem;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: #444;
+  background: rgba(255, 255, 255, 0.8);
+  font-weight: 500;
+  transition: all 500ms ease-out;
+}
+.footerCaption_2r5qf  a:hover {
+  background: #fff;
+  border: 1px solid #fff;
+  color: #444;
+}

@@ -17,11 +17,12 @@ export default class InteriorDesignPortfolio extends Component {
   }
 
   render () {
+    [...document.querySelectorAll('img')].forEach(img => img.title = '')
+
     const images = this.state.images.map((i) => {
       i.customOverlay = (
-        <div>
+        <div className='caption-wrapper'>
           <div>{i.caption}</div>
-          {i.hasOwnProperty('tags') && this.setCustomTags(i)}
         </div>);
       return i;
     });
@@ -35,7 +36,7 @@ export default class InteriorDesignPortfolio extends Component {
           overflow: "auto"}}
         className="portfolio-gallery"
       >
-        <CustomGallery
+        <Gallery
           images={images}
           enableImageSelection={false}
           rowHeight={300}
@@ -71,40 +72,28 @@ export default class InteriorDesignPortfolio extends Component {
       thumbnail: `${fuchs}`,
       thumbnailWidth: 470,
       thumbnailHeight: 390,
-      caption: "Fuchs",
-      detailUrl: "/fuchs"
+      caption: <a href="/fuchs">Fuchs</a>
     },
     {
       src: `${livingRoom}`,
       thumbnail: `${livingRoom}`,
       thumbnailWidth: 500,
       thumbnailHeight: 300,
-      caption: "Living room",
-      detailUrl: "/doroshenko-residence"
+      caption: <a href="/doroshenko-residence">Living room</a>
     },
     {
       src: `${desVoskes}`,
       thumbnail: `${desVoskes}`,
       thumbnailWidth: 400,
       thumbnailHeight: 270,
-      caption: "Place des Vosges",
-      detailUrl: "/place-des-vosges"
+      caption: <a href="/place-des-vosges">Place des Vosges</a>
     },
     {
       src: `${balletHall}`,
       thumbnail: `${balletHall}`,
       thumbnailWidth: 500,
       thumbnailHeight: 280,
-      caption: "Ballet Hall",
-      detailUrl: "/ballet-hall"
+      caption: <a href="/ballet-hall">Ballet Hall</a>
     }
   ])
-}
-
-
-class CustomGallery extends Gallery {
-  onClickImage(e) {
-      var image = this.state.images[this.state.currentImage];
-      window.location.href = image.detailUrl;
-  }
 }

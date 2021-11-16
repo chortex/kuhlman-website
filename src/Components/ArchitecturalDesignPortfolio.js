@@ -25,11 +25,12 @@ export default class ArchitecturalDesignPortfolio extends Component {
   }
 
   render () {
+    [...document.querySelectorAll('img')].forEach(img => img.title = '')
+
     const images = this.state.images.map((i) => {
       i.customOverlay = (
-        <div>
+        <div className='caption-wrapper'>
           <div>{i.caption}</div>
-          {i.hasOwnProperty('tags') && this.setCustomTags(i)}
         </div>);
       return i;
     });
@@ -43,7 +44,7 @@ export default class ArchitecturalDesignPortfolio extends Component {
           overflow: "auto"}}
         className="portfolio-gallery"
       >
-        <CustomGallery
+        <Gallery
           images={images}
           enableImageSelection={false}
           rowHeight={300}
@@ -79,96 +80,77 @@ export default class ArchitecturalDesignPortfolio extends Component {
       thumbnail: `${blosser}`,
       thumbnailWidth: 400,
       thumbnailHeight: 250,
-      caption: "Blosser Axonometric",
-      detailUrl: '/blosser'
+      caption: <a href="/blosser">Blosser Axonometric</a>
     },
     {
       src: `${gjeversrudveien}`,
       thumbnail: `${gjeversrudveien}`,
       thumbnailWidth: 420,
       thumbnailHeight: 300,
-      caption: "74-18 Gjeversrudveien 10 - Axonometric 2",
-      detailUrl: '/gjeversrudveien'
+      caption: <a href="/gjeversrudveien">74-18 Gjeversrudveien 10</a>
     },
     {
       src: `${shops}`,
       thumbnail: `${shops}`,
       thumbnailWidth: 450,
       thumbnailHeight: 350,
-      caption: "Shops 3DView",
-      detailUrl: '/subway-hub'
+      caption: <a href="/subway-hub">Shops 3D View</a>
     },
     {
       src: `${botanicalGarden}`,
       thumbnail: `${botanicalGarden}`,
       thumbnailWidth: 450,
       thumbnailHeight: 270,
-      caption: "Botanical Garden Facade",
-      detailUrl: '/subway-hub'
+      caption: <a href="/subway-hub">Botanical Garden</a>
     },
     {
       src: `${discoveryGarden}`,
       thumbnail: `${discoveryGarden}`,
       thumbnailWidth: 400,
       thumbnailHeight: 250,
-      caption: "Discovery Garden Section",
-      detailUrl: '/subway-hub'
+      caption: <a href="/subway-hub">Discovery Garden</a>
     },
     {
         src: `${topo}`,
         thumbnail: `${topo}`,
         thumbnailWidth: 395,
         thumbnailHeight: 250,
-        caption: "Section Topo",
-        detailUrl: '/subway-hub'
+        caption: <a href="/subway-hub">Section Topo</a>
     },
     {
       src: `${park}`,
       thumbnail: `${park}`,
       thumbnailWidth: 380,
       thumbnailHeight: 250,
-      caption: "Central Park Section 2",
-      detailUrl: '/subway-hub'
+      caption: <a href="/subway-hub">Central Park</a>
     },
     {
       src: `${theatre}`,
       thumbnail: `${theatre}`,
       thumbnailWidth: 400,
       thumbnailHeight: 250,
-      caption: "Theatre 3D section",
-      detailUrl: '/subway-hub'
+      caption: <a href="/subway-hub">Theatre</a>
     },
     {
       src: `${planetarium}`,
       thumbnail: `${planetarium}`,
       thumbnailWidth: 500,
       thumbnailHeight: 490,
-      caption: "Planetarium",
-      detailUrl: '/subway-hub'
+      caption: <a href="/subway-hub">Planetarium</a>
     },
     {
       src: `${golf}`,
       thumbnail: `${golf}`,
       thumbnailWidth: 450,
       thumbnailHeight: 310,
-      caption: "Golf Stadium & Football Stadium",
-      detailUrl: '/subway-hub'
+      caption: <a href="/subway-hub">Stadiums</a>
     },
     {
       src: `${subway}`,
       thumbnail: `${subway}`,
       thumbnailWidth: 500,
       thumbnailHeight: 225,
-      caption: "Subway Section 1",
-      detailUrl: '/subway-hub'
+      caption: <a href="/subway-hub">Subway Section</a>
     }
   ])
-}
-
-
-class CustomGallery extends Gallery {
-  onClickImage(e) {
-      var image = this.state.images[this.state.currentImage];
-      window.location.href = image.detailUrl;
-  }
 }
