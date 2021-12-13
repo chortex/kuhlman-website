@@ -110,15 +110,6 @@ function Cover() {
           </Container>
         </Carousel.Item>
 
-        {/* <Carousel.Item className="ps-3">
-          <Container className='pt-5'>
-          <div className='pt-5 animated-heading-left desktop-cover-header'>
-            <h1 className='col text-white display-1' style={{fontWeight:"600"}}>Architectural<br />Visualization</h1>
-          </div>
-          <h2 className="text-white text-center animated-heading-left display-1 mobile-cover-header mt-5 pt-5">Architecture Visualization</h2>
-          </Container>
-        </Carousel.Item> */}
-
     </Carousel>
     
     <Container className='d-flex justify-content-end align-items-end'>
