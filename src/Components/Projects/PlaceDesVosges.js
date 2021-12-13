@@ -45,9 +45,9 @@ export default class PlaceDesVosges extends Component {
             </div>
           </div>
           <div className='col-lg-4'>
-            <h4 className='text-muted fw-bold'><i className="fas fa-map-marker-alt"></i> Location: <span className='fw-light'>Paris, France</span></h4>
+            <h5 className='text-muted fw-bold'><i className="fas fa-map-marker-alt"></i> Location: <span className='fw-light'>Paris, France</span></h5>
             <br />
-            <h4 className='text-muted fw-bold'><i className="fas fa-cube"></i> Plot Size: <span className='fw-light'>70 m<sup>2</sup></span></h4>
+            <h5 className='text-muted fw-bold'><i className="fas fa-cube"></i> Plot Size: <span className='fw-light'>70 m<sup>2</sup></span></h5>
             <br/>
             <p className='text-muted lh-sm'>
             The renovation of an apartment in the historic center of Paris. Created in collaboration with Interior Designer <b>Max Gunavan</b>. The modern space in the style of minimalism, which combines well with large, antique windows and high ceilings creating a comfortable and well-lit space. We were fighting for each centimeter working within existing tight conditions but transforming the spaces into a modern look on another hand

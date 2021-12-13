@@ -49,9 +49,9 @@ export default class SlokkerHomes extends Component {
             </div>
           </div>
           <div className='col-lg-4'>
-            <h4 className='text-muted fw-bold'><i className="fas fa-map-marker-alt"></i> Location: <span className='fw-light'>Calgary, Alberta, Canada</span></h4>
+            <h5 className='text-muted fw-bold'><i className="fas fa-map-marker-alt"></i> Location: <span className='fw-light'>Calgary, Alberta, Canada</span></h5>
             <br />
-            <h4 className='text-muted fw-bold'><i className="fas fa-cube"></i> Plot Size: <span className='fw-light'>1.80 acres</span></h4>
+            <h5 className='text-muted fw-bold'><i className="fas fa-cube"></i> Plot Size: <span className='fw-light'>1.80 acres</span></h5>
             <br/>
             <p className='text-muted lh-sm'>
             The client's preference was to have a North-South walkable street attached but instead of the current commercial options, he wanted to explore angle parking and retail facing a walkable street. We have developed several options and the best one is ready for your review. Enjoy

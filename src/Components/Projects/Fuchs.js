@@ -42,9 +42,9 @@ export default class Fuchs extends Component {
             </div>
           </div>
           <div className='col-lg-4'>
-            <h4 className='text-muted fw-bold'><i className="fas fa-map-marker-alt"></i> Location: <span className='fw-light'>New York, USA</span></h4>
+            <h5 className='text-muted fw-bold'><i className="fas fa-map-marker-alt"></i> Location: <span className='fw-light'>New York, USA</span></h5>
             <br />
-            <h4 className='text-muted fw-bold'><i className="fas fa-cube"></i> Plot Size: <span className='fw-light'>180 sq.ft</span></h4>
+            <h5 className='text-muted fw-bold'><i className="fas fa-cube"></i> Plot Size: <span className='fw-light'>180 sq.ft</span></h5>
             <br/>
             <p className='text-muted lh-sm'>
             The client wanted his home library to breathe history. He was excited to see it in the traditional style. With the wooden ceiling and red furniture, this space started getting a perfect place to read your favorite book with a glass of good brandy. We've drawn every single millwork, so the furniture guys produced the cabinets exactly as we wanted

@@ -50,9 +50,9 @@ export default class Blosser extends Component {
             </div>
           </div>
           <div className='col-lg-4'>
-            <h4 className='text-muted fw-bold'><i className="fas fa-map-marker-alt"></i> Location: <span className='fw-light'>Santa Maria, California, USA</span></h4>
+            <h5 className='text-muted fw-bold'><i className="fas fa-map-marker-alt"></i> Location: <span className='fw-light'>Santa Maria, California, USA</span></h5>
             <br />
-            <h4 className='text-muted fw-bold'><i className="fas fa-cube"></i> Plot Size: <span className='fw-light'>1.30 acres</span></h4>
+            <h5 className='text-muted fw-bold'><i className="fas fa-cube"></i> Plot Size: <span className='fw-light'>1.30 acres</span></h5>
             <br/>
             <p className='text-muted lh-sm'>
             The goal was to create a site plan to place 50 units with playgrounds and sports facilities on it as well as develop floor plans for every single unit. We have found place for 51 houses, still having some zone for sports activities and landscapes design. The challenging part of this project was, that we also needed to follow Santa Maria's downtown buildings regulations

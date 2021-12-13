@@ -45,9 +45,9 @@ export default class Gjeversrudveien extends Component {
             </div>
           </div>
           <div className='col-lg-4'>
-            <h4 className='text-muted fw-bold'><i className="fas fa-map-marker-alt"></i> Location: <span className='fw-light'>Ytre Enebakk, Norway</span></h4>
+            <h5 className='text-muted fw-bold'><i className="fas fa-map-marker-alt"></i> Location: <span className='fw-light'>Ytre Enebakk, Norway</span></h5>
             <br />
-            <h4 className='text-muted fw-bold'><i className="fas fa-cube"></i> Plot Size: <span className='fw-light'>0.74 acres</span></h4>
+            <h5 className='text-muted fw-bold'><i className="fas fa-cube"></i> Plot Size: <span className='fw-light'>0.74 acres</span></h5>
             <br/>
             <p className='text-muted lh-sm'>
             The idea of these houses is to use single apartments modules, which are joined together and create a fully functional residential building. Developed in collaboration with <b>Sirkel & Mall</b> Architectural company

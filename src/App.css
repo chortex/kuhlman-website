@@ -118,7 +118,7 @@ html {
   }
 
   .carousel-item:nth-child(3) {
-    background-image: url('../src/assets/Cover/architecture.jpg');
+    background-image: url('../src/assets/Cover/exterior.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -413,4 +413,20 @@ html {
   background: #fff;
   border: 1px solid #fff;
   color: #444;
+}
+
+.go-to-portfolio-btn {
+  color: #444;
+  text-decoration: none;
+  margin: 5px;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+.go-to-portfolio-btn:hover {
+  color: #444;
+  border-bottom: 1px solid #444;
+}
+.go-to-portfolio-btn:hover i {
+  padding-left: 20px;
+  transition: all 300ms ease-out;
 }

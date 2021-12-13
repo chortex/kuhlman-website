@@ -44,9 +44,9 @@ export default class DoroshenkoResidence extends Component {
             </div>
           </div>
           <div className='col-lg-4'>
-            <h4 className='text-muted fw-bold'><i className="fas fa-map-marker-alt"></i> Location: <span className='fw-light'>Portland, USA</span></h4>
+            <h5 className='text-muted fw-bold'><i className="fas fa-map-marker-alt"></i> Location: <span className='fw-light'>Portland, USA</span></h5>
             <br />
-            <h4 className='text-muted fw-bold'><i className="fas fa-cube"></i> Plot Size: <span className='fw-light'>3200 sq.ft</span></h4>
+            <h5 className='text-muted fw-bold'><i className="fas fa-cube"></i> Plot Size: <span className='fw-light'>3200 sq.ft</span></h5>
             <br/>
             <p className='text-muted lh-sm'>
             The client wanted an exterior and interior design of major areas of the house like kitchen, bathrooms, master bedroom, guest bedroom/office, laundry, entry area. Also, we helped with paint choices, stone surfaces, staircase & railings' design

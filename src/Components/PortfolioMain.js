@@ -53,6 +53,9 @@ class PortfolioMain extends Component {
             margin={5}
           />
         </div>
+        <div className='pt-3'>
+          <a href='/portfolio' className='go-to-portfolio-btn'>Go to Portfolio <i class="fas fa-arrow-right"></i></a>
+        </div>
       </Container>
     );
     }

@@ -45,9 +45,9 @@ export default class BalletHall extends Component {
             </div>
           </div>
           <div className='col-lg-4'>
-            <h4 className='text-muted fw-bold'><i className="fas fa-map-marker-alt"></i> Location: <span className='fw-light'>Lviv, Ukraine</span></h4>
+            <h5 className='text-muted fw-bold'><i className="fas fa-map-marker-alt"></i> Location: <span className='fw-light'>Lviv, Ukraine</span></h5>
             <br />
-            <h4 className='text-muted fw-bold'><i className="fas fa-cube"></i> Plot Size: <span className='fw-light'>345 m<sup>2</sup></span></h4>
+            <h5 className='text-muted fw-bold'><i className="fas fa-cube"></i> Plot Size: <span className='fw-light'>345 m<sup>2</sup></span></h5>
             <br/>
             <p className='text-muted lh-sm'>
             Reconstruction of the ballet hall for 50 dancers. The main goal was to keep existing gypsum tiles on the walls with traditional ornament and make the feel of lightness by using the paper decorative elements on the ceiling, which form the shape of a wave
