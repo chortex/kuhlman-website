@@ -44,6 +44,9 @@ html {
   .desktop-cover-header {
     display: none;
   }
+  .cover-default {
+    left: initial !important;
+  }
   .mobile-cover-header {
     display: block;
   }
@@ -110,6 +113,7 @@ html {
 .cover-section {
   border-right: 1px solid rgba(255, 255, 255, 0.3);
   height: 88%;
+  padding: 0 !important;
 }
 
 .cover-default {
