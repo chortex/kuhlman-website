@@ -46,7 +46,7 @@ export default class SubwayHubStadiums extends Component {
         </div>
         <div className='col-lg-4'>
           <h2 className='text-muted display-5 fw-bold'>Stadiums</h2>
-          <p className='text-muted lh-sm'>
+          <p className='text-muted lh-sm' style={{textIndent: "10px"}}>
           <b>SPORTS STADIUMS:</b> This is a complex of sports facilities with all the necessary ancillary and technologica lfacilities. Includes the following facilities and planar facilities: gym, swimming pool, ice arena, baseball, football, treadmill and golf. These structures can be divided into functional purposes intocomplexes and groups, namely:
           </p>
           <ul className='text-muted lh-sm'>
@@ -54,7 +54,7 @@ export default class SubwayHubStadiums extends Component {
             <li>auxiliary, intended for practitioners, coaches and judges, as well as medical, administrative,inventory, etc</li>
             <li>complex for spectators (stands).It should be noted that the shape of the sports core is designed in the form of 4 leaflets, each ofthe petals of which is a separate sports facility</li>
           </ul>
-          <p className='text-muted lh-sm'>
+          <p className='text-muted lh-sm' style={{textIndent: "10px"}}>
           And depending on the size of a building-thesecoots have different areas. Thus, the biggest leaflet is baseball, football and athletics. A littlesmaller is a golf course, and the two smallest ones are an ice arena and a universal hall with aswimming pool.Along the perimeter of each of these petals there are auxiliary and auxiliary rooms: dressingrooms, showers, bathrooms, first aid rooms, therapeutic rooms for athletes, judges' meetingrooms, conference halls, press rooms, etc.
           </p>
         </div>

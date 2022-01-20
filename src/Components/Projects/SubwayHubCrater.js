@@ -40,7 +40,7 @@ export default class SubwayHubCrater extends Component {
         </div>
         <div className='col-lg-4'>
           <h2 className='text-muted display-5 fw-bold'>Crater</h2>
-          <p className='text-muted lh-sm'>
+          <p className='text-muted lh-sm' style={{textIndent: "10px"}}>
           Coming soon...
           </p>
         </div>

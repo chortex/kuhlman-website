@@ -96,62 +96,27 @@ html {
   color: #444;
 }
 
-#introCarousel,
-  .carousel-inner,
-  .carousel-item,
-  .carousel-item.active {
-    height: 100vh;
-  }
+.cover {
+  height: 100vh;
+  /* background-image: url('../src/assets/Cover/exterior.jpg'); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+}
 
-  .carousel-item:nth-child(1) {
-    background-image: url('../src/assets/Cover/exterior.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-  }
+.cover-section {
+  border-right: 1px solid rgba(255, 255, 255, 0.3);
+  height: 88%;
+}
 
-  .carousel-item:nth-child(2) {
-    background-image: url('../src/assets/Cover/engineering.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-  }
-
-  .carousel-item:nth-child(3) {
-    background-image: url('../src/assets/Cover/exterior.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-  }
-
-  .carousel-item:nth-child(4) {
-    background-image: url('../src/assets/Cover/interior.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-  }
-
-  .carousel-item:nth-child(5) {
-    background-image: url('../src/assets/Cover/exterior.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-  }
-
-  .carousel-inner .carousel-item {
-    opacity: 0;
-    top: 0;
-    left: 0;
-    width: 100%;
-    display: block;
-    position: absolute;
-  }
-  .carousel-inner .carousel-item:first-of-type {
-    position: relative;
-  }
-  .carousel-inner .active {
-    opacity: 1;
-  }
+.cover-default {
+  position: absolute;
+  left: 50px;
+  top: 20px;
+}
 
 
 /* Jumbotron */
@@ -385,9 +350,15 @@ html {
   bottom: 0;
   width: 100%;
   color: #fff;
-  padding: 10px 25px;
-  font-size: 16px;
+  padding: 20px 40px;
+  font-size: 20px;
   z-index: 1;
+}
+.caption-wrapper > * {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  width: 70%;
+  padding-left: 10px;
 }
 .caption-wrapper a {
   color: #fff;
@@ -398,21 +369,27 @@ html {
   justify-content: center;
 }
 .footerCaption_2r5qf  a {
-  padding: 15px 80px;
-  border: 1px solid #ccc;
+  padding: 22px 80px;
+  margin-bottom: 10px;
+  border: none;
   border-radius: 0.2rem;
   text-decoration: none;
   display: flex;
   align-items: center;
-  color: #444;
-  background: rgba(255, 255, 255, 0.8);
-  font-weight: 500;
-  transition: all 500ms ease-out;
+  color: #fff;
+  background: #ff9800;
+  font-weight: 300;
+  font-size: 22px;
+  box-shadow: 0 1px 4px rgb(0 0 0 / 40%);
+  transition: color .4s,background-color .4s,border-color .4s,box-shadow .4s;
 }
 .footerCaption_2r5qf  a:hover {
-  background: #fff;
-  border: 1px solid #fff;
-  color: #444;
+  background: #e08600;
+  border: none;
+  color: #fff;
+}
+.figure_10ki57k img {
+  max-height: calc(100vh - 120px) !important;
 }
 
 .go-to-portfolio-btn {

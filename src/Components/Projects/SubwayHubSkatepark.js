@@ -41,7 +41,7 @@ export default class SubwayHubSkatepark extends Component {
         </div>
         <div className='col-lg-4'>
           <h2 className='text-muted display-5 fw-bold'>Skatepark</h2>
-          <p className='text-muted lh-sm'>
+          <p className='text-muted lh-sm' style={{textIndent: "10px"}}>
           The central core at the B2 level is a skate park with various ramps, springboards forhigh-amplitude tricks. Here you can ride a skateboard, roller skates and scooters. At the same levelat the skate park there is a cafe area and bathrooms for visitors. Technical premises, such as rentalof skates, rollers, as well as repairs and maintenance are provided at level B1 (at the entrance tothe complex)
           </p>
         </div>

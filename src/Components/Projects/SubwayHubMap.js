@@ -38,7 +38,7 @@ export default class SubwayHubMap extends Component {
         </div>
         <div className='col-lg-4'>
           <h2 className='text-muted display-5 fw-bold'>Map</h2>
-          <p className='text-muted lh-sm'>
+          <p className='text-muted lh-sm' style={{textIndent: "10px"}}>
           The multifunctional complex consists of 3 levels: B3, B2, and B1. All levels, except for a small part of the B1 level, are underground. The main entrance to the multifunctional complex is provided from the level of B1 in the southern part of the site. Level B3 is a base for sports cores and parking. Level B2 commercial premises, Level B1-educational institutions. In addition, some functions occupy several levels: for example, sports center, library, skate park, school, theater, the garden of discoveries, and the subway occupy two or more levels
           </p>
         </div>

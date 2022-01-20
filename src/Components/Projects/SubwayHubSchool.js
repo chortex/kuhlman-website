@@ -48,7 +48,7 @@ export default class SubwayHubSchool extends Component {
         </div>
         <div className='col-lg-4'>
           <h2 className='text-muted display-5 fw-bold'>School</h2>
-          <p className='text-muted lh-sm'>
+          <p className='text-muted lh-sm' style={{textIndent: "10px"}}>
           Planned in the north-western part ofthe site-is a multi-level building. The plan is solved in the form of a torus-with a courtyard forrecreation, learningabout nature, and along the perimeter are educational facilities. The planningis decided in such a way that all classes are oriented with windows to the courtyard and in front ofthem there is a recreation in the form of galleries and a space for recreation and leisure ofstudents. The garden is located on the lowest level-but it has direct exits to the courtyard. The school is located at higher levels and has access to open galleries
           </p>
         </div>

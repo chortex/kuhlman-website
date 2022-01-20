@@ -45,7 +45,7 @@ export default class SubwayHubcentralPark extends Component {
         </div>
         <div className='col-lg-4'>
           <h2 className='text-muted display-5 fw-bold'>Central Park, Underwater Cafe & Water Pool</h2>
-          <p className='text-muted lh-sm'>
+          <p className='text-muted lh-sm' style={{textIndent: "10px"}}>
           Located at level B3 and facing out (at the level of the master plan) in the form of a vertical aquarium
           </p>
         </div>

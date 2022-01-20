@@ -49,7 +49,7 @@ export default class SubwayHubTheatre extends Component {
         </div>
         <div className='col-lg-4'>
           <h2 className='text-muted display-5 fw-bold'>Theatre</h2>
-          <p className='text-muted lh-sm'>
+          <p className='text-muted lh-sm' style={{textIndent: "10px"}}>
           Located in the northern part of the complex and occupies levels B2 and B1. The roundshape of the theater in plan is due to the shape of the site and relief. At the entrance to thetheater designed a large lobby with ticket offices, wardrobes, outerwear, places for posters. Thelobby is designed as an atrium, thevolume of which is used as a public space with areas of cafes, communication and discussion of what is seen in the theater. Behind the scenes, the space is usedas ancillary and auxiliary rooms for actors: rehearsal halls, costume rooms, dressing rooms, singingand dancing halls, etc.
           </p>
         </div>

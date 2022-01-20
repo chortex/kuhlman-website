@@ -43,7 +43,7 @@ export default class SubwayHubLibrary extends Component {
         </div>
         <div className='col-lg-4'>
           <h2 className='text-muted display-5 fw-bold'>Library</h2>
-          <p className='text-muted lh-sm'>
+          <p className='text-muted lh-sm' style={{textIndent: "10px"}}>
           Occupies levels B1 and B2. It is located on both sides of the skate park and is a multi-level public space with dedicated places for reading, studying, as well as holding conferences andmeetings with writers-artists. It should be noted that the library is not a traditional repository of books and a place to read them. This library is an interactive data center with an electronic catalogof books, video-audio storage, etc.
           </p>
         </div>

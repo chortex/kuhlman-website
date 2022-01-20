@@ -47,7 +47,7 @@ export default class SubwayHubShops extends Component {
         </div>
         <div className='col-lg-4'>
           <h2 className='text-muted display-5 fw-bold'>Shops</h2>
-          <p className='text-muted lh-sm'>
+          <p className='text-muted lh-sm' style={{textIndent: "10px"}}>
           The shops building has a total of 5 levels. The store is divided according to the specifics of goods and services and includes: grocery stores, industrial goods stores,entertainmentfacilities, permits and office space. Each cell has an entrance group with a vestibule and bathrooms for visitors, including bathroomsfor less mobile groups (ADA), utility rooms, inventory (depending on the type of trade). The main volume is occupied by trade racks and shop windows, where the goods are presented, as well as places for visitors (in permits, entertainment facilities and offices). The shops are equipped with all necessary technological equipment. Floor connections with escalators, stairwells and elevators.
           </p>
         </div>

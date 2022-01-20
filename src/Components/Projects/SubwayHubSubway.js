@@ -42,7 +42,7 @@ export default class SubwayHubSubway extends Component {
         </div>
         <div className='col-lg-4'>
           <h2 className='text-muted display-5 fw-bold'>Subway</h2>
-          <p className='text-muted lh-sm'>
+          <p className='text-muted lh-sm' style={{textIndent: "10px"}}>
           Two levels subway occupies levels B3 and B2. Connections between levels in the form of escalators
           </p>
         </div>

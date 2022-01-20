@@ -46,7 +46,7 @@ export default class SubwayHubDiscoveryGarden extends Component {
         </div>
         <div className='col-lg-4'>
           <h2 className='text-muted display-5 fw-bold'>Discovery Garden</h2>
-          <p className='text-muted lh-sm'>
+          <p className='text-muted lh-sm' style={{textIndent: "10px"}}>
           Solved in the form of multilevel space. It is an interactive museum with avariety of stands for learning, exploring and entertaining visitors
           </p>
         </div>
