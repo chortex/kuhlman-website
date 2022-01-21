@@ -26,7 +26,7 @@ function ArchitecturalDesignCard() {
         <div className="col-xl-7">
           <h5 className="service-heading">Architectural Design</h5>
           <Button
-            href='https://www.upwork.com/ag/kuhlmann/' target='_blank' rel="noreferrer"
+            href='https://www.upwork.com/services/product/full-architectural-services-design-space-planning-drawings-renders-1453673580250574848?ref=project_share' target='_blank' rel="noreferrer"
             variant="light"
             className="d-flex justify-content-between btn-sm w-100"
           >
@@ -56,7 +56,7 @@ function ArchitecturalDesignCard() {
           
 
           <Button
-            href='https://www.upwork.com/ag/kuhlmann/' target='_blank' rel="noreferrer"
+            href='https://www.upwork.com/services/product/full-architectural-services-design-space-planning-drawings-renders-1453673580250574848?ref=project_share' target='_blank' rel="noreferrer"
             variant="light"
             className= "d-flex justify-content-between btn-sm w-100 mt-3"
           >
@@ -86,7 +86,7 @@ function ArchitecturalDesignCard() {
           
 
           <Button
-            href='https://www.upwork.com/ag/kuhlmann/' target='_blank' rel="noreferrer"
+            href='https://www.upwork.com/services/product/full-architectural-services-design-space-planning-drawings-renders-1453673580250574848?ref=project_share' target='_blank' rel="noreferrer"
             variant="light"
             className= "d-flex justify-content-between btn-sm w-100 mt-3"
           >

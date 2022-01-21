@@ -26,7 +26,7 @@ function ArchitecturalVisualizationCard() {
         <div className="col-xl-7">
           <h5 className="service-heading">Architectural Visualization</h5>
           <Button
-            href='https://www.upwork.com/ag/kuhlmann/' target='_blank' rel="noreferrer"
+            href='https://www.upwork.com/services/product/a-photorealistic-exterior-render-which-perfectly-highlight-your-design-1328721589868138496?ref=project_share' target='_blank' rel="noreferrer"
             variant="light"
             className="d-flex justify-content-between btn-sm w-100"
           >
@@ -56,7 +56,7 @@ function ArchitecturalVisualizationCard() {
           
 
           <Button
-            href='https://www.upwork.com/ag/kuhlmann/' target='_blank' rel="noreferrer"
+            href='https://www.upwork.com/services/product/a-photorealistic-interior-render-which-perfectly-highlight-your-design-1404460210991157248?ref=project_share' target='_blank' rel="noreferrer"
             variant="light"
             className="d-flex justify-content-between btn-sm w-100 mt-3"
           >
@@ -86,7 +86,7 @@ function ArchitecturalVisualizationCard() {
           
 
           <Button
-            href='https://www.upwork.com/ag/kuhlmann/' target='_blank' rel="noreferrer"
+            href='https://www.upwork.com/services/product/a-photorealistic-360-virtual-reality-vr-panorama-render-1448233084229230592?ref=project_share' target='_blank' rel="noreferrer"
             variant="light"
             className="d-flex justify-content-between btn-sm w-100 mt-3"
           >

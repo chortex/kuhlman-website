@@ -26,6 +26,11 @@ export default class SubwayHub extends Component {
         <div className='pt-5 pb-5'>
           <h1 className='display-3' style={{fontWeight: "600"}}>Subway Hub</h1>
         </div>
+
+        <div>
+          
+        </div>
+
         <SubwayHubMap/>
         <SubwayHubPlaza/>
         <SubwayHubStadiums/>

@@ -26,7 +26,7 @@ function BIMModelingCard() {
         <div className="col-xl-7">
           <h5 className="service-heading">BIM Modeling</h5>
           <Button
-            href='https://www.upwork.com/ag/kuhlmann/' target='_blank' rel="noreferrer"
+            href='https://www.upwork.com/services/product/accurate-architectural-bim-revit-model-and-a-set-of-2d-drawings-1448272845800747008?ref=project_share' target='_blank' rel="noreferrer"
             variant="light"
             className="d-flex justify-content-between btn-sm w-100"
           >
@@ -56,7 +56,7 @@ function BIMModelingCard() {
             </div>
 
           <Button
-            href='https://www.upwork.com/ag/kuhlmann/' target='_blank' rel="noreferrer"
+            href='https://www.upwork.com/services/product/accurate-architectural-bim-revit-model-and-a-set-of-2d-drawings-1448272845800747008?ref=project_share' target='_blank' rel="noreferrer"
             variant="light"
             className= "d-flex justify-content-between btn-sm mt-3 w-100"
           >
@@ -86,7 +86,7 @@ function BIMModelingCard() {
           
 
           <Button
-            href='https://www.upwork.com/ag/kuhlmann/' target='_blank' rel="noreferrer"
+            href='https://www.upwork.com/services/product/accurate-architectural-bim-revit-model-and-a-set-of-2d-drawings-1448272845800747008?ref=project_share' target='_blank' rel="noreferrer"
             variant="light"
             className= "d-flex justify-content-between btn-sm mt-3 w-100"
           >

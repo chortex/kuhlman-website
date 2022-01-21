@@ -83,77 +83,77 @@ export default class IteriorVisualizationPortfolio extends Component {
       thumbnail: `${balletHole1}`,
       thumbnailWidth: 533,
       thumbnailHeight: 300,
-      caption: "Ballet Hall - View 1"
+      caption: "Ballet Hall"
     },
     {
       src: `${spa2}`,
       thumbnail: `${spa2}`,
       thumbnailWidth: 300,
       thumbnailHeight: 300,
-      caption: "Spa View 2"
+      caption: "Spa"
     },
     {
       src: `${cabinet2}`,
       thumbnail: `${cabinet2}`,
       thumbnailWidth: 425,
       thumbnailHeight: 300,
-      caption: "Cabinet - View 2"
+      caption: "Cabinet"
     },
     {
       src: `${warnerMallAppartment}`,
       thumbnail: `${warnerMallAppartment}`,
       thumbnailWidth: 400,
       thumbnailHeight: 300,
-      caption: "Warner Mall - Apartment"
+      caption: "Warner Mall"
     },
     {
       src: `${coffeeShop2}`,
       thumbnail: `${coffeeShop2}`,
       thumbnailWidth: 800,
       thumbnailHeight: 300,
-      caption: "Cofee Shop - View 2"
+      caption: "Cofee Shop"
     },
     {
       src: `${warnerMallFirstFloor}`,
       thumbnail: `${warnerMallFirstFloor}`,
       thumbnailWidth: 520,
       thumbnailHeight: 300,
-      caption: "Warner Mall - First Floor"
+      caption: "Warner Mall"
     },
     {
       src: `${warnerMallModel}`,
       thumbnail: `${warnerMallModel}`,
       thumbnailWidth: 400,
       thumbnailHeight: 300,
-      caption: "Warner Mall - Model Room"
+      caption: "Warner Mall"
     },
     {
       src: `${livingRoom1}`,
       thumbnail: `${livingRoom1}`,
       thumbnailWidth: 530,
       thumbnailHeight: 300,
-      caption: "Living room - View 1"
+      caption: "Living room"
     },
     {
       src: `${kitchen1}`,
       thumbnail: `${kitchen1}`,
       thumbnailWidth: 530,
       thumbnailHeight: 300,
-      caption: "Kitchen - View 1"
+      caption: "Kitchen"
     },
     {
       src: `${kitchen2}`,
       thumbnail: `${kitchen2}`,
       thumbnailWidth: 500,
       thumbnailHeight: 300,
-      caption: "Kitchen - View 2"
+      caption: "Kitchen"
     },
     {
       src: `${livingRoom2}`,
       thumbnail: `${livingRoom2}`,
       thumbnailWidth: 530,
       thumbnailHeight: 300,
-      caption: "Living room - View 2"
+      caption: "Living room"
     },
     {
       src: `${entrance}`,
@@ -167,14 +167,14 @@ export default class IteriorVisualizationPortfolio extends Component {
       thumbnail: `${bedroom2}`,
       thumbnailWidth: 530,
       thumbnailHeight: 300,
-      caption: "Bedroom - View 2"
+      caption: "Bedroom"
     },
     {
       src: `${bedroom1}`,
       thumbnail: `${bedroom1}`,
       thumbnailWidth: 530,
       thumbnailHeight: 300,
-      caption: "Bedroom - View 1"
+      caption: "Bedroom"
     },
   ])
 }

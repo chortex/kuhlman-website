@@ -26,7 +26,7 @@ function VRCard() {
         <div className="col">
           <h5 className="service-heading">VR, AR & 3D Animation</h5>
           <Button
-            href='https://www.upwork.com/ag/kuhlmann/' target='_blank' rel="noreferrer"
+            href='https://www.upwork.com/services/product/photorealistic-3d-architectural-exterior-interior-walkthrough-animation-1448260585109536768?ref=project_share' target='_blank' rel="noreferrer"
             variant="light"
             className="d-flex justify-content-between btn-sm w-100"
           >
@@ -56,7 +56,7 @@ function VRCard() {
           
 
           <Button
-            href='https://www.upwork.com/ag/kuhlmann/' target='_blank' rel="noreferrer"
+            href='https://www.upwork.com/services/product/interactive-vr-model-for-your-design-in-unreal-engine-or-enscape-1448303925922316288?ref=project_share' target='_blank' rel="noreferrer"
             variant="light"
             className="d-flex justify-content-between btn-sm w-100 mt-3"
           >

@@ -94,7 +94,7 @@ export default class ArchitecturalDesignPortfolio extends Component {
       thumbnail: `${shops}`,
       thumbnailWidth: 450,
       thumbnailHeight: 350,
-      caption: <a href="/subway-hub">Shops 3D View</a>
+      caption: <a href="/subway-hub">Shops</a>
     },
     {
       src: `${botanicalGarden}`,
