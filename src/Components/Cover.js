@@ -72,58 +72,60 @@ function Cover() {
 
   return (
     <>
-      <div className='cover row'
-        style={{
-          backgroundImage: `url(${cover})`
-        }}
-      >
-        <div 
-          className='col-md-3 cover-section'
-          onMouseEnter={toggleHoverBIM}
-          onMouseLeave={toggleHoverBIM}
+      <div className='cover-wrapper'>
+        <div className='cover row'
+          style={{
+            backgroundImage: `url(${cover})`
+          }}
         >
+          <div 
+            className='col-md-3 cover-section'
+            onMouseEnter={toggleHoverBIM}
+            onMouseLeave={toggleHoverBIM}
+          >
 
-        </div>
-        <div
-          className='col-md-3 cover-section'
-          onMouseEnter={toggleHoverArchitecture}
-          onMouseLeave={toggleHoverArchitecture}
-        >
-
-        </div>
-        <div
-          className='col-md-3 cover-section'
-          onMouseEnter={toggleHoverInterior}
-          onMouseLeave={toggleHoverInterior}
-        >
-
-        </div>
-        <div
-          className='col-md-3 cover-section'
-          onMouseEnter={toggleHoverExterior}
-          onMouseLeave={toggleHoverExterior}
-        >
-
-        </div>
-        <Container className='cover-default'>
-          <div className='pt-5 desktop-cover-header animated-heading-left'>
-            <h1 className='text-white animated-heading-bottom d-flex col align-items-center' style={{fontWeight: "500", fontSize: "11rem", textAlign: "left"}}><span className="">BIM</span><div className="d-flex row animated-heading-opacity" ><span className='display-3 fw-bold'>Architectural</span><span className='display-3 fw-bold'>Studio</span></div></h1>
-            <h4 className='text-white ps-3' id="mission" style={{fontWeight: "300", fontSize: "1.2rem", width:"35%", position:"relative", zIndex:"2", textAlign:"justify"}}>We create and implement innovative designs solutions closely collaborating with our clients 
-            </h4>
           </div>
-          <h2 className="text-white text-center animated-heading-left display-1 mobile-cover-header mt-5 pt-5"><b style={{fontWeight:"600"}}>BIM</b><br/><span>Architectural Studio</span></h2>
-        </Container>
-      </div>
-    
-    <Container className='d-flex justify-content-end align-items-end'>
-      <div className='jumbo-socials'>
-        <a href='https://www.linkedin.com/company/kuhlmannstudio' target='_blank' rel="noreferrer" className='cover-social'><i className="fab fa-linkedin fa-2x"></i></a>
-        <a href='https://www.instagram.com/kuhlmannstudio/' target='_blank' rel="noreferrer" className='cover-social'><i className="fab fa-instagram-square fa-2x"></i></a>
-        <a href='https://www.behance.net/kuhlmannstudio' target='_blank' rel="noreferrer" className='cover-social'><i className="fab fa-behance-square fa-2x"></i></a>
-        <a href='https://www.facebook.com/kuhlmannstudio' target='_blank' rel="noreferrer" className='cover-social'><i className="fab fa-facebook-square fa-2x"></i></a>
-        <a href='https://vimeo.com/kuhlmann' target='_blank' rel="noreferrer" className='cover-social'><i className="fab fa-vimeo fa-2x"></i></a>
-      </div>
-    </Container>
+          <div
+            className='col-md-3 cover-section'
+            onMouseEnter={toggleHoverArchitecture}
+            onMouseLeave={toggleHoverArchitecture}
+          >
+
+          </div>
+          <div
+            className='col-md-3 cover-section'
+            onMouseEnter={toggleHoverInterior}
+            onMouseLeave={toggleHoverInterior}
+          >
+
+          </div>
+          <div
+            className='col-md-3 cover-section'
+            onMouseEnter={toggleHoverExterior}
+            onMouseLeave={toggleHoverExterior}
+          >
+
+          </div>
+          <Container className='cover-default'>
+            <div className='pt-5 desktop-cover-header animated-heading-left'>
+              <h1 className='text-white animated-heading-bottom d-flex col align-items-center' style={{fontWeight: "500", fontSize: "11rem", textAlign: "left"}}><span className="">BIM</span><div className="d-flex row animated-heading-opacity" ><span className='display-3 fw-bold'>Architectural</span><span className='display-3 fw-bold'>Studio</span></div></h1>
+              <h4 className='text-white ps-3' id="mission" style={{fontWeight: "300", fontSize: "1.2rem", width:"35%", position:"relative", zIndex:"2", textAlign:"justify"}}>We create and implement innovative designs solutions closely collaborating with our clients 
+              </h4>
+            </div>
+            <h2 className="text-white text-center animated-heading-left display-1 mobile-cover-header mt-5 pt-5"><b style={{fontWeight:"600"}}>BIM</b><br/><span>Architectural Studio</span></h2>
+          </Container>
+        </div>
+      
+      <Container className='d-flex justify-content-end align-items-end'>
+        <div className='jumbo-socials'>
+          <a href='https://www.linkedin.com/company/kuhlmannstudio' target='_blank' rel="noreferrer" className='cover-social'><i className="fab fa-linkedin fa-2x"></i></a>
+          <a href='https://www.instagram.com/kuhlmannstudio/' target='_blank' rel="noreferrer" className='cover-social'><i className="fab fa-instagram-square fa-2x"></i></a>
+          <a href='https://www.behance.net/kuhlmannstudio' target='_blank' rel="noreferrer" className='cover-social'><i className="fab fa-behance-square fa-2x"></i></a>
+          <a href='https://www.facebook.com/kuhlmannstudio' target='_blank' rel="noreferrer" className='cover-social'><i className="fab fa-facebook-square fa-2x"></i></a>
+          <a href='https://vimeo.com/kuhlmann' target='_blank' rel="noreferrer" className='cover-social'><i className="fab fa-vimeo fa-2x"></i></a>
+        </div>
+      </Container>
+    </div>
     </>
   )
 }

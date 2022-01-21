@@ -99,9 +99,15 @@ html {
   color: #444;
 }
 
+.cover-wrapper {
+  background-image: url('../src/assets/Cover/exterior.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
 .cover {
   height: 100vh;
-  /* background-image: url('../src/assets/Cover/exterior.jpg'); */
+  background-image: url('../src/assets/Cover/exterior.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
