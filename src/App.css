@@ -100,6 +100,7 @@ html {
 }
 
 .cover-wrapper {
+  height: 100vh;
   background-image: url('../src/assets/Cover/exterior.jpg');
   background-repeat: no-repeat;
   background-size: cover;
@@ -114,6 +115,7 @@ html {
   position: relative;
   display: flex;
   align-items: flex-end;
+  margin: 0 !important;
 }
 
 .cover-section {
