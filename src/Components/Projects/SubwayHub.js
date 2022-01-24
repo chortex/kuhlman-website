@@ -72,20 +72,23 @@ export default function SubwayHub() {
 
 
   return(
+    
     <Container className='pt-5'>
       <div className='pt-5 pb-5'>
         <h1 className='display-3' style={{fontWeight: "600"}}>Subway Hub</h1>
       </div>
+      <SubwayHubMap/>
 
       <div className='site-plan d-none d-xl-block' style={{margin: "150px 0"}}>
-        <div className='site-plan-arrows' style={{position: "absolute", display: "flex", justifyContent: "center", zIndex: "100", top: "150px", left: "0", right:"0", paddingLeft: "207px", marginTop: "-15px"}}>
-          <img 
-            src={SitePlanArrows}
-            alt='Link Arrow'
-            style={{width: "1400px", height: "auto"}}
-          />
-        </div>
+        
         <div className='site-plan-background' style={{width: "680px", height: "382.5px", margin: "50px auto", display: "flex", position: "relative"}}>
+          <div className='site-plan-arrows' style={{position: "absolute", display: "flex", justifyContent: "center", zIndex: "100", top: "-230px", left: "0", right:"0", paddingLeft: "207px", marginTop: "-15px"}}>
+            <img 
+              src={SitePlanArrows}
+              alt='Link Arrow'
+              style={{width: "1400px", height: "auto"}}
+            />
+          </div>
           <a 
             href='/' className='site-plan-link' 
             style={{position: "absolute", zIndex: "101", top: "-172px", left: "-80px"}}
@@ -150,7 +153,6 @@ export default function SubwayHub() {
         </div>
       </div>
 
-      <SubwayHubMap/>
       <SubwayHubPlaza/>
       <SubwayHubStadiums/>
       <SubwayHubShops/>
