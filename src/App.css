@@ -419,3 +419,17 @@ html {
   padding-left: 20px;
   transition: all 300ms ease-out;
 }
+
+.site-plan-background {
+  background-image: url('../src/assets/Projects/SubwayHub/SitePlan/Site\ Plan.jpg');
+  background-size: cover;
+}
+.site-plan-link {
+  text-decoration: none;
+  color: #337ab7;
+  font-size: 20px;
+  font-weight: 300;
+}
+.site-plan-link:hover {
+  color: #2196f3;
+}

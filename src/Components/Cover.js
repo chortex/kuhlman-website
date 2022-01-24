@@ -90,7 +90,6 @@ function Cover() {
             onMouseEnter={toggleHoverArchitecture}
             onMouseLeave={toggleHoverArchitecture}
           >
-
           </div>
           <div
             className='col-md-3 cover-section'
@@ -106,7 +105,10 @@ function Cover() {
           >
 
           </div>
-          <Container className='cover-default'>
+          <Container 
+            className='cover-default'
+            style={{display: hoveredBIM || hoveredArchitecture || hoveredInterior || hoveredExterior ? 'none' : 'block'}}
+          >
             <div className='pt-5 desktop-cover-header animated-heading-left'>
               <h1 className='text-white animated-heading-bottom d-flex col align-items-center' style={{fontWeight: "500", fontSize: "11rem", textAlign: "left"}}><span className="">BIM</span><div className="d-flex row animated-heading-opacity" ><span className='display-3 fw-bold'>Architectural</span><span className='display-3 fw-bold'>Studio</span></div></h1>
               <h4 className='text-white ps-3' id="mission" style={{fontWeight: "300", fontSize: "1.2rem", width:"35%", position:"relative", zIndex:"2", textAlign:"justify"}}>We create and implement innovative designs solutions closely collaborating with our clients 
