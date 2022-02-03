@@ -429,6 +429,8 @@ html {
   color: #337ab7;
   font-size: 20px;
   font-weight: 300;
+  background: none;
+  border: none;
 }
 .site-plan-link:hover {
   color: #2196f3;

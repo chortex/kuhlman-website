@@ -32,12 +32,12 @@ export default class SubwayHubPlaza extends Component {
 
     return(
       <div className='pt-5 pb-5 mb-5 row'>
-        <div className='col-lg-8'>
+        <div className='col-lg-8 mt-5'>
         <div>
           <ImageGallery items={images} thumbnailClass={'justify-content-center'} />
         </div>
         </div>
-        <div className='col-lg-4'>
+        <div className='col-lg-4 mt-5'>
           <h2 className='text-muted display-5 fw-bold'>Plaza</h2>
           <p className='text-muted lh-sm' style={{textIndent: "10px"}}>
           <b>LEVEL B1:</b> The entrance to this level is designed from the southern part. At the entrance there is a lobby group of rooms which is connected to the elevator hall. And also the reference zone, reception, group of rooms of bathrooms are located here. The entrance is solved in the form of an atrium. From this level there are entrances to sports facilities on the stands for spectators. Also from this level it is possible to get to any other point of a multipurpose complex. In general, the level can be called educational-primary, as there are a variety of educational facilities, conference halls, workshops, and interactive museums. 

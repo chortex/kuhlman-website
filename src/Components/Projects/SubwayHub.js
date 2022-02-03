@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
 import { Container } from 'react-bootstrap';
 import SubwayHubMap from '../Projects/SubwayHubMap';
 import SubwayHubPlaza from '../Projects/SubwayHubPlaza';
@@ -52,6 +52,31 @@ export default function SubwayHub() {
   const [hoveredPlanetarium, setHoveredPlanetarium] = useState(false);
   const toggleHoverPlanetarium = () => setHoveredPlanetarium(!hoveredPlanetarium);
 
+
+
+  const refPlaza = useRef(null)
+  const executeScrollPlaza = () => refPlaza.current.scrollIntoView({ behavior: "smooth"});
+
+  const refCrater = useRef(null)
+  const executeScrollCrater = () => refCrater.current.scrollIntoView({ behavior: "smooth"});
+
+  const refSchool = useRef(null)
+  const executeScrollSchool = () => refSchool.current.scrollIntoView({ behavior: "smooth"});
+
+  const refDiscoveryGarden = useRef(null)
+  const executeScrollDiscoveryGarden = () => refDiscoveryGarden.current.scrollIntoView({ behavior: "smooth"});
+
+  const refShops = useRef(null)
+  const executeScrollShops = () => refShops.current.scrollIntoView({ behavior: "smooth"});
+
+  const refBotanicalGarden = useRef(null)
+  const executeScrollBotanicalGarden = () => refBotanicalGarden.current.scrollIntoView({ behavior: "smooth"});
+
+  const refPlanetarium = useRef(null)
+  const executeScrollPlanetarium = () => refPlanetarium.current.scrollIntoView({ behavior: "smooth"});
+
+
+
   let SitePlanHover = SitePlan;
 
   if (hoveredCrater) {
@@ -89,62 +114,69 @@ export default function SubwayHub() {
               style={{width: "1400px", height: "auto"}}
             />
           </div>
-          <a 
-            href='/' className='site-plan-link' 
+          <button 
+            className='site-plan-link'
             style={{position: "absolute", zIndex: "101", top: "-172px", left: "-80px"}}
             onMouseEnter={toggleHoverCrater}
             onMouseLeave={toggleHoverCrater}
+            onClick={executeScrollCrater}
           >
             Crater
-          </a>
-          <a 
-            href='/' className='site-plan-link' 
+          </button>
+          <button 
+            className='site-plan-link'
             style={{position: "absolute", zIndex: "101", top: "80px", left: "820px", width: "fit-content"}}
             onMouseEnter={toggleHoverBotanicalGarden}
             onMouseLeave={toggleHoverBotanicalGarden}
+            onClick={executeScrollBotanicalGarden}
           >
             Botanical Garden
-          </a>
-          <a 
-            href='/' className='site-plan-link' 
+          </button>
+          <button 
+            className='site-plan-link'
             style={{position: "absolute", zIndex: "101", top: "200px", left: "-220px"}}
             onMouseEnter={toggleHoverDiscoveryGarden}
             onMouseLeave={toggleHoverDiscoveryGarden}
+            onClick={executeScrollDiscoveryGarden}
           >
             Discovery Garden
-          </a>
-          <a 
-            href='/' className='site-plan-link' 
+          </button>
+          <button 
+            className='site-plan-link'
             style={{position: "absolute", zIndex: "101", top: "450px", left: "700px"}}
             onMouseEnter={toggleHoverShops}
             onMouseLeave={toggleHoverShops}
+            onClick={executeScrollShops}
           >
             Shops
-          </a>
-          <a 
-            href='/' className='site-plan-link' 
+          </button>
+          <button 
+            className='site-plan-link'
             style={{position: "absolute", zIndex: "101", top: "-80px", left: "-150px"}}
             onMouseEnter={toggleHoverSchool}
             onMouseLeave={toggleHoverSchool}
+            onClick={executeScrollSchool}
           >
             School
-          </a>
-          <a 
-            href='/' className='site-plan-link' 
+          </button>
+          <button 
+            className='site-plan-link' 
             style={{position: "absolute", zIndex: "101", top: "450px", left: "-50px"}}
             onMouseEnter={toggleHoverPlaza}
             onMouseLeave={toggleHoverPlaza}
+            onClick={executeScrollPlaza}
           >
             Plaza
-          </a>
-          <a 
-            href='/' className='site-plan-link' 
+          </button>
+          <button 
+            className='site-plan-link'
             style={{position: "absolute", zIndex: "101", top: "-75px", left: "650px"}}
             onMouseEnter={toggleHoverPlanetarium}
             onMouseLeave={toggleHoverPlanetarium}
+            onClick={executeScrollPlanetarium}
           >
             Planetarium
-          </a>
+          </button>
           <img
             src={SitePlanHover}
             alt="Site Plan"
@@ -153,19 +185,33 @@ export default function SubwayHub() {
         </div>
       </div>
 
-      <SubwayHubPlaza/>
-      <SubwayHubStadiums/>
-      <SubwayHubShops/>
-      <SubwayHubDiscoveryGarden/>
-      <SubwayHubSchool/>
-      <SubwayHubTheatre/>
-      <SubwayHubBotanicalGarden/>
-      <SubwayHubPlanetarium/>
-      <SubwayHubLibrary/>
-      <SubwayHubSubway/>
-      <SubwayHubcentralPark/>
-      <SubwayHubSkatepark/>
-      <SubwayHubCrater/>
+      <div ref={refPlaza}>
+        <SubwayHubPlaza />
+      </div>
+        <SubwayHubStadiums/>
+      <div ref={refShops}>
+        <SubwayHubShops/>
+      </div>
+      <div ref={refDiscoveryGarden}>
+        <SubwayHubDiscoveryGarden/>
+      </div>
+      <div ref={refSchool}>
+        <SubwayHubSchool/>
+      </div>
+        <SubwayHubTheatre/>
+      <div ref={refBotanicalGarden}>
+        <SubwayHubBotanicalGarden/>
+      </div>
+      <div ref={refPlanetarium}>
+        <SubwayHubPlanetarium/>
+      </div>
+        <SubwayHubLibrary/>
+        <SubwayHubSubway/>
+        <SubwayHubcentralPark/>
+        <SubwayHubSkatepark/>
+      <div ref={refCrater}>
+        <SubwayHubCrater/>
+      </div>
     </Container>
   )
 }

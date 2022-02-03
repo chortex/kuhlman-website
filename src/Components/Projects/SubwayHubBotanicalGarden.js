@@ -34,12 +34,12 @@ export default class SubwayHubBotanicalGarden extends Component {
 
     return(
       <div className='pt-5 pb-5 mb-5 row'>
-        <div className='col-lg-8'>
+        <div className='col-lg-8 mt-5'>
           <div>
             <ImageGallery items={images}/>
           </div>
         </div>
-        <div className='col-lg-4'>
+        <div className='col-lg-4 mt-5'>
           <h2 className='text-muted display-5 fw-bold'>Botanical Garden</h2>
           <p className='text-muted lh-sm' style={{textIndent: "10px"}}>
           Coming soon...

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Row } from 'react-bootstrap';
 import qrCode from '../assets/Portfolio/AR/AR.jpg'
-import arExample from '../assets/Portfolio/AR/ARExample.jpeg'
+import arExample from '../assets/Portfolio/AR/ARExample.jpg'
 
 
 
